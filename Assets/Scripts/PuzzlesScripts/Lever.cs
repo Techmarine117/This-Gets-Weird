@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-[SerializeField]  GameObject TargetObj;
+    public GameObject TargetObj;
 
     private void OnTriggerEnter(Collider other)
     {

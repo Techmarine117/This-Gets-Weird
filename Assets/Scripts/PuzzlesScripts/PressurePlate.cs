@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    [SerializeField] GameObject TargetObj;    
+    public GameObject TargetObj;    
 
     private void OnTriggerStay(Collider other)
     {
