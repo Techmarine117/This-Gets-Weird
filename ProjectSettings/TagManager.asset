@@ -6,6 +6,7 @@ TagManager:
   tags:
   - pickUp
   - Lever
+  - Players
   layers:
   - Default
   - TransparentFX
