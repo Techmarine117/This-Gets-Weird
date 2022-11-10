@@ -44,18 +44,15 @@ public sealed class GWorld
 {
     private static readonly GWorld instance = new GWorld();
     private static WorldStates world;
-    private static ResourceQueue Patients;
-    private static ResourceQueue Cubicles;
-    private static ResourceQueue Offices;
-    private static ResourceQueue Toilets;
-    private static ResourceQueue Puddles;
+    private static ResourceQueue Waypoint;
     private static Dictionary<string, ResourceQueue> ressources = new Dictionary<string, ResourceQueue>();
 
 
     static GWorld()
     {
         world = new WorldStates();
-       
+       Waypoint = new ResourceQueue("Waypoint","FreeWaypoint", world);
+        ressources.Add("Waypoint", Waypoint);
 
 
 
