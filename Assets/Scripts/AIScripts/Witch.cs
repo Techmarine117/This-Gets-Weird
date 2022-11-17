@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Witch : GAgent
 {
-    
+    AIRayCast Ray;
+
     // Start is called before the first frame update
     new public void Start()
     {
@@ -15,10 +16,36 @@ public class Witch : GAgent
 
         SubGoal s2 = new SubGoal("Waypoints", 2, false);
         goal.Add(s2 , 2);
+
+        SubGoal s3 = new SubGoal("FindNextWaypoint", 3, false);
+        goal.Add(s3, 3);
+
+
+    }
+
+    public void Update()
+    {
+        void GaveChase()
+        {
+            beliefs.ModifyState("Chaseing", 0);
+        }
+        Ray.FindVisibleTargets();
+
+        if (Ray.PlayerHit == true)
+        {
+            Debug.Log("playerSeenChaseing");
+            GaveChase();
+        }else
+        {
+
+        }
+
+
+      
         
     }
 
-   
 
-  
+
+
 }

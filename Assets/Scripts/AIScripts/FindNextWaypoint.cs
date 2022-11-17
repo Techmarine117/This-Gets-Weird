@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChasePlayer : GAction
+public class FindNextWaypoint : GAction
 {
     
 
     public override bool PrePerform()
     {
-        
+       
         inventory.AddItem(target);
 
-        
+       
         return true;
     }
 
