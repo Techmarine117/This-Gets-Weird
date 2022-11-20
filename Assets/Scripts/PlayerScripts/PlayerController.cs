@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
     public bool canSprint;
+    Animator Anim;
 
 
     private void Awake()

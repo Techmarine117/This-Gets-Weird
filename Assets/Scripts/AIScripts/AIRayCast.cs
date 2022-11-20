@@ -40,28 +40,46 @@ public class AIRayCast : MonoBehaviour
     {
         Debug.Log("FINDING VISIBLE TARGETS");
         Collider[] RangeChecks = Physics.OverlapSphere(transform.position, ViewRadius, targetMask);
-
+        Debug.Log(RangeChecks);
         if(RangeChecks.Length != 0)
         {
+            Debug.Log("Range Check line 46");
+
             Transform Target = RangeChecks[0].transform;
             Vector3 DirToTarget = (Target.position - transform.position).normalized;
 
             if (Vector3.Angle(transform.position, DirToTarget) < ViewAngle / 2)
             {
+                Debug.Log("Changing Angle Check");
+
                 float DisToTarget = Vector3.Distance(transform.forward, Target.position);
 
                 if(!Physics.Raycast(transform.position, DirToTarget, DisToTarget, ObstacleMask))
                 {
-                    PlayerHit= true;
+                    Debug.Log("Player Hit true");
+
+                    PlayerHit = true;
+
                 }
-                else
-                    PlayerHit = false;
+                else {
+                    Debug.Log("Player Hit False 3");
+                PlayerHit = false; 
+                }      
             }
-            else
+            else{
+                Debug.Log("Player Hit False 2");
                 PlayerHit = false;
+            }
         }
-        else if (PlayerHit)
-            PlayerHit= false;
+        else if (PlayerHit) {
+            Debug.Log("Player Hit False 1");
+            PlayerHit = false;
+        }
+        else
+        {
+            Debug.Log("NOTHING");
+        }
+            
 
 
     }
