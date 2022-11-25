@@ -5,8 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - pickUp
-  - Lever
   - Players
+  - Switch
+  - Switch2
+  - Valve
+  - Switch3
+  - Switch4
+  - Switch5
+  - Switch6
   layers:
   - Default
   - TransparentFX
