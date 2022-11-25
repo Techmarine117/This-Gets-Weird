@@ -656,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfcf4b4c2da1f7b4190e182cef7f8c71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.801
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bfcf4b4c2da1f7b4190e182cef7f8c71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3744,46 +3744,6 @@ MonoBehaviour:
   Raylength: 5
   pickupPlacholder: {fileID: 103273169}
   pm: {fileID: 753902230}
---- !u!114 &1898506901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898506896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6225c0736ecf0e845aba0cb2a8f786a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 1898506902}
-  speed: 12
-  gravity: -9.81
-  groundCheck: {fileID: 1666300633}
-  groundDistance: 0.4
-  jumpdist: 5
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  canSprint: 0
---- !u!143 &1898506902
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898506896}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.42
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1909368210
 GameObject:
   m_ObjectHideFlags: 0

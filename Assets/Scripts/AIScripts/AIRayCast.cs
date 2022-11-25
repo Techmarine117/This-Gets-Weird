@@ -19,7 +19,7 @@ public class AIRayCast : MonoBehaviour
 
     private void Start()
     {
-        PlayerReference = GameObject.FindGameObjectWithTag("PLayer");
+        PlayerReference = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(FOVRout());
     }
 
