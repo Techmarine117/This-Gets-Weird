@@ -16,13 +16,13 @@ public class PrototypeMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
     public bool canSprint;
-    Animator Anim;
+    
 
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
         canSprint = true;
-        Anim= GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -37,25 +37,24 @@ public class PrototypeMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.LeftShift) && canSprint)
         {
-            Anim.SetBool("IsRunning", true);
+            
             speed = 15f;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 12f;
         }
-        else
-            Anim.SetBool("IsRunning", false);
+        
+            
 
         if (Input.GetKeyDown(KeyCode.C))
         {
             controller.height = 0.5f;
-            Anim.SetBool("IsCrouched", true);
+            
 
             speed = 5f;
         }
-        else
-            Anim.SetBool("IsCrouched", false);
+        
 
         if (Input.GetKeyUp(KeyCode.C))
         {
@@ -67,10 +66,10 @@ public class PrototypeMovement : MonoBehaviour
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             velocity.y = jumpdist;
-             Anim.SetBool("IsJumping", true);
+            
         }
-        else
-            Anim.SetBool("IsJumping", false);
+        
+            
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");

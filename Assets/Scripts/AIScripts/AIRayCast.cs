@@ -48,25 +48,25 @@ public class AIRayCast : MonoBehaviour
             Transform Target = RangeChecks[0].transform;
             Vector3 DirToTarget = (Target.position - transform.position).normalized;
 
-            if (Vector3.Angle(transform.position, DirToTarget) < ViewAngle / 2)
+            if (Vector3.Angle(transform.forward, DirToTarget) < ViewAngle/2 )
             {
                 Debug.Log("Changing Angle Check");
 
-                float DisToTarget = Vector3.Distance(transform.forward, Target.position);
+                float DisToTarget = Vector3.Distance(transform.position, Target.position);
 
                 if(!Physics.Raycast(transform.position, DirToTarget, DisToTarget, ObstacleMask))
                 {
                     Debug.Log("Player Hit true");
-
                     PlayerHit = true;
-
                 }
-                else {
+                else 
+                {
                     Debug.Log("Player Hit False 3");
                 PlayerHit = false; 
                 }      
             }
-            else{
+            else
+            {
                 Debug.Log("Player Hit False 2");
                 PlayerHit = false;
             }
@@ -75,13 +75,6 @@ public class AIRayCast : MonoBehaviour
             Debug.Log("Player Hit False 1");
             PlayerHit = false;
         }
-        else
-        {
-            Debug.Log("NOTHING");
-        }
-            
-
-
     }
 
     
