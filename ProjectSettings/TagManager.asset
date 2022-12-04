@@ -5,9 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - pickUp
-  - Lever
   - Players
-  - Waypoint
+  - Switch
+  - Switch2
+  - Valve
+  - Switch3
+  - Switch4
+  - Switch5
+  - Switch6
   layers:
   - Default
   - TransparentFX
@@ -16,8 +21,8 @@ TagManager:
   - Water
   - UI
   - Waypoint
-  - Obstacles
-  - Targets
+  - 
+  - 
   - 
   - 
   - 
