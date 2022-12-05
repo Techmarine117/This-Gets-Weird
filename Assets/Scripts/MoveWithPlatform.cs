@@ -7,7 +7,7 @@ public class MoveWithPlatform : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Players")
+        if (collision.gameObject.tag == "Player")
         {
             collision.collider.transform.SetParent(transform);
         }
@@ -15,7 +15,7 @@ public class MoveWithPlatform : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Players")
+        if (collision.gameObject.tag == "Player")
         {
             collision.collider.transform.SetParent(null);
         }
