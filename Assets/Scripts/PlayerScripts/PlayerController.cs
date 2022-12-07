@@ -1,69 +1,98 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody rb;
-    private PlayerInput PlayerInput;
-
-    public CharacterController controller;
-
-    public float speed = 12f;
-    public float gravity = -9.81f;
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public float jumpdist;
-
-    public LayerMask groundMask;
-    Vector3 velocity;
-    bool isGrounded;
-    public bool canSprint;
-    Animator Anim;
-
+    PlayerControls playerControls;
+    Vector2 CurrentMovementInput;
+    Vector3 CurrentMovement , RunMovement;
+    bool IsMovementPressed , IsRunPressed;
+    CharacterController characterController;
+    float RotationFactor = 15.0f;
+    float RunSpeed = 6.0f;
+    float Speed = 3.0f;
 
     private void Awake()
     {
-        //rb = GetComponent<Rigidbody>();
-        PlayerInput = GetComponent<PlayerInput>();
-        controller = gameObject.GetComponent<CharacterController>();
-        canSprint = true;
+        playerControls = new PlayerControls();
+        characterController = GetComponent<CharacterController>();
 
+        playerControls.Movement.Move.started += OnMovementInput;
+        playerControls.Movement.Move.canceled += OnMovementInput;
+        playerControls.Movement.Move.performed += OnMovementInput;
+        playerControls.Movement.Run.started += OnRun;
+        playerControls.Movement.Run.canceled += OnRun;
 
     }
 
     private void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        HandleRotation();
+        
 
-        if (!isGrounded && velocity.y < 0)
+        if (IsRunPressed)
         {
-            velocity.y = -2f;
+            characterController.Move(RunMovement * Time.deltaTime);
+        }
+        else
+        {
+            characterController.Move(CurrentMovement * Time.deltaTime);
         }
     }
 
-
-    public void Jump(InputAction.CallbackContext context)   
+    private void OnEnable()
     {
-        if (context.performed)
+        playerControls.Movement.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControls.Movement.Enable();
+    }
+
+
+   private void OnMovementInput(InputAction.CallbackContext context)
+    {
+
+        CurrentMovementInput = context.ReadValue<Vector2>();
+            CurrentMovement.x = CurrentMovementInput.x * Speed;
+            CurrentMovement.z = CurrentMovementInput.y * Speed;
+            RunMovement.x = CurrentMovementInput.x * RunSpeed;
+            RunMovement.z = CurrentMovementInput.y * RunSpeed;
+            IsMovementPressed = CurrentMovementInput.x != 0 || CurrentMovementInput.y != 0;
+    }
+
+  private void OnRun(InputAction.CallbackContext context)
+    {
+        IsRunPressed = context.ReadValueAsButton();
+    }
+
+  private void HandleRotation()
+    {
+        Vector3 PosTolookAt;      
+
+        PosTolookAt.x = CurrentMovement.x;
+        PosTolookAt.y = 0.0f;
+        PosTolookAt.z = CurrentMovement.z;
+
+        Quaternion CurrentRotation = transform.rotation;
+
+        if (IsMovementPressed)
         {
-           
-
-            if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-            {
-                velocity.y = jumpdist;
-            }
-
+           Quaternion TargetRotation = Quaternion.LookRotation(PosTolookAt);
+           transform.rotation =  Quaternion.Slerp(CurrentRotation, TargetRotation, RotationFactor * Time.captureDeltaTime);
         }
     }
 
-    
-    public void Move(InputAction.CallbackContext context)
+    void HandleGravity()
     {
-      Vector2 inputVector = context.ReadValue<Vector2>();
-        float speed = 20f;
-        rb.AddForce( new Vector3(inputVector.x,0, inputVector.y) * speed, ForceMode.Force);
+        if (characterController.isGrounded)
+        {
+            float GroundedGravity = -.05f;
+            CurrentMovement.y = 
+        }
     }
-
 }
