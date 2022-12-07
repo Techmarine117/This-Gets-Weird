@@ -7,12 +7,8 @@ TagManager:
   - pickUp
   - Players
   - Switch
-  - Switch2
   - Valve
-  - Switch3
-  - Switch4
-  - Switch5
-  - Switch6
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX

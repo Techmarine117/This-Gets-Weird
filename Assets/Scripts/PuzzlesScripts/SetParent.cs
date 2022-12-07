@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class SetParent : MonoBehaviour
 {
-    public GameObject puzzleBox;
-    public GameObject parentPlat;
-
-    Transform tempTrans;
     private void OnCollisionEnter(Collision collision)
     {
-        tempTrans = puzzleBox.transform.parent;
-        puzzleBox.transform.parent = parentPlat.transform;
+        collision.gameObject.transform.SetParent(transform);
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        puzzleBox.transform.parent = tempTrans;
+        collision.gameObject.transform.SetParent(null);
     }
 
 

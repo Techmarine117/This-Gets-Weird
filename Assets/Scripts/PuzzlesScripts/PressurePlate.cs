@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    //public GameObject TargetObj;
-    public GameObject obj;
-    public float deactivateDelay = 1f;
-    public Animator platAnim;
-    public float speed = 30f;
+    
+    //public float deactivateDelay = 1f;
+    //public Animator platAnim;
 
-    public AudioSource audio;
+    //public AudioSource audio;
+
+
+    public bool isCubeOnPlate;
+
+    public bool isPlateActive = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        //TargetObj.SetActive(true);
-        platAnim.SetTrigger("Rise");
+        isPlateActive = true;
     }
     private void OnTriggerExit(Collider other)
-    {        
-        StartCoroutine(Delay());
-        audio.Play();
+    {
+        isPlateActive = false;
     }
 
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(deactivateDelay);
-        //TargetObj.SetActive(false);
-        audio.Stop();
-        platAnim.SetTrigger("Lower");
-    }
+    //IEnumerator Delay()
+    //{
+    //    //yield return new WaitForSeconds(deactivateDelay);
+    //    //TargetObj.SetActive(false);
+    //    //audio.Stop();
+    //    //platAnim.SetTrigger("Lower");
+    //}
 }

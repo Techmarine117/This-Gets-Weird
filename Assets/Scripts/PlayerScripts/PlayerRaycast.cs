@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class PlayerRaycast : MonoBehaviour
     public float Raylength;
     private bool isPickup;
     public Transform pickupPlacholder;
-    public PrototypeMovement pm;
+    //public PrototypeMovement pm;
+    
 
     //public Switch switchh;
     void Update()
@@ -18,7 +20,7 @@ public class PlayerRaycast : MonoBehaviour
         // to stop any further action that has to do with raycasting while an object is picked up
         if (isPickup == true && pickUpobj)
         {
-            pm.canSprint = false;         
+            //pm.canSprint = false;         
             pickUpobj.transform.rotation = transform.rotation;
             pickUpobj.transform.position = pickupPlacholder.position;
             if (Input.GetKeyDown(KeyCode.E))
@@ -26,7 +28,7 @@ public class PlayerRaycast : MonoBehaviour
                 //pickUpobj.AddComponent<Rigidbody>();
                 isPickup = false;
                 pickUpobj = null;
-                pm.canSprint = true;
+                //pm.canSprint = true;
                 
 
             }
@@ -60,18 +62,6 @@ public class PlayerRaycast : MonoBehaviour
 
                 }
             }
-
-            //if (hit.collider.tag == "Switch")
-            //{
-            //    if (Input.GetKeyDown(KeyCode.E) && switchh.isSwitchOn == false)
-            //    {
-            //        switchh.SwitchOn();
-            //    }
-            //    else if (Input.GetKeyDown(KeyCode.E) && switchh.isSwitchOn == true)
-            //    {
-            //        switchh.SwitchOff();
-            //    }
-            //}
            
         }
 
