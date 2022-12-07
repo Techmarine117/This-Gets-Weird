@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -92,7 +93,14 @@ public class PlayerController : MonoBehaviour
         if (characterController.isGrounded)
         {
             float GroundedGravity = -.05f;
-            CurrentMovement.y = 
+            CurrentMovement.y = GroundedGravity;
+            RunMovement.y = GroundedGravity;
+        }
+        else
+        {
+            float gravity = -9.8f;
+            CurrentMovement.y += gravity;
+           // RunMovement += gravity;
         }
     }
 }
