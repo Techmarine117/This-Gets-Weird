@@ -41,7 +41,7 @@ public class AIStateMachine : MonoBehaviour
             CurrentState = State.Patrol;
             agent = GetComponent<NavMeshAgent>();
             Ray = GetComponent<AIRayCast>();
-            player = GameObject.FindObjectOfType<PlayerController>().gameObject;
+            //player = GameObject.FindObjectOfType<PlayerController>().gameObject;
             agent.speed = Patrolspeed;
 
         }
