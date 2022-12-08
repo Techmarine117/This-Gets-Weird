@@ -5,8 +5,13 @@ using System.Linq;
 
 public class DataManager : MonoBehaviour
 {
+    [Header("File Storage Config")]
+    [SerializeField] private string FileName;
+
     public static DataManager Instance { get; private set; }
     private GameData gameData;
+    private List<IData> DataObjects;
+    private FileDataHandler dataHandler;
 
     private void Awake()
     {
@@ -19,6 +24,8 @@ public class DataManager : MonoBehaviour
 
     private void Start()
     {
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName);
+        this.DataObjects = FindAllDataObjects();
         LoadGame();
     }
 
@@ -29,20 +36,40 @@ public class DataManager : MonoBehaviour
 
     public void LoadGame()
     {
+        this.gameData = dataHandler.Load();
+
         if(this.gameData == null)
         {
             Debug.Log("no data was found. Initializing data to defaults");
             NewGame();
         }
+
+        foreach(IData data in DataObjects)
+        {
+            data.LoadData(gameData);
+        }
     }
 
     public void SaveGame()
     {
+        foreach(IData data in DataObjects)
+        {
+            data.SaveData(ref gameData);
+        }
+
+        dataHandler.Save(gameData);
 
     }
 
     private void OnApplicationQuit()
     {
         SaveGame();
+    }
+
+    private List<IData> FindAllDataObjects()
+    {
+        IEnumerable<IData> dataObjects = FindObjectsOfType<MonoBehaviour>().OfType<IData>();
+
+        return new List<IData>(dataObjects);
     }
 }
