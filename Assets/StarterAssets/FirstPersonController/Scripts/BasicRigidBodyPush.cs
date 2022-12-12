@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class BasicRigidBodyPush : MonoBehaviour
+public class BasicRigidBodyPush : MonoBehaviour,IData
 {
 	public LayerMask pushLayers;
 	public bool canPush;
@@ -32,4 +32,15 @@ public class BasicRigidBodyPush : MonoBehaviour
 		// Apply the push and take strength into account
 		body.AddForce(pushDir * strength, ForceMode.Impulse);
 	}
+
+    public void LoadData(GameData data)
+    {
+        this.transform.position = data.PlayerPosition;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.PlayerPosition = this.transform.position;
+
+    }
 }

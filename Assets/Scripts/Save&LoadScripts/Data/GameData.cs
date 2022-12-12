@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameData 
 {
     public int Test;
-    public Vector3 PlayerPosition;
+    public Vector3 PlayerPosition, AIPosition;
     
 
     //the value we defined in this constructor will be the default values
@@ -14,6 +14,7 @@ public class GameData
     {
         this.Test = 0;
         PlayerPosition = Vector3.zero;
-        
+        AIPosition = Vector3.zero;
+
     }
 }

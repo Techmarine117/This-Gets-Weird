@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AIStateMachine : MonoBehaviour
+public class AIStateMachine : MonoBehaviour, IData
 {
     public enum State
     {
@@ -114,5 +114,16 @@ public class AIStateMachine : MonoBehaviour
             // attackCol.SetActive(true);
             //  anim.SetBool("IsAttacking", true);
         }
+
+       public void LoadData(GameData data)
+       {
+         this.transform.position = data.AIPosition;
+       }
+
+     public void SaveData( ref GameData data) 
+     {
+        data.AIPosition = this.transform.position;
+
+     }
     
 }
