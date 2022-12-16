@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Dialogue : MonoBehaviour
     public AudioClip[] audioFiles;
     //used to save the subtitle Texts
     public string[] dialogueTexts;
+    public TextMeshProUGUI DialogueBox;
 
     // Update is called once per frame
     void Update()
@@ -18,7 +20,7 @@ public class Dialogue : MonoBehaviour
         if (AS.isPlaying)
         {
             subtitleBox.SetActive(true);
-            subtitleBox.GetComponent<Text>().text = "";
+            DialogueBox.text = "";
             Diologue1();
         }
         else
@@ -34,17 +36,18 @@ public class Dialogue : MonoBehaviour
         {
             if (AS.time >= 12.0f)
             {
-                subtitleBox.GetComponent<Text>().text = dialogueTexts[2];
+                DialogueBox.text = dialogueTexts[2];
+                //subtitleBox.GetComponent<Text>().text = dialogueTexts[2];
                 return;
             }
             if (AS.time >= 8.0f)
             {
-                subtitleBox.GetComponent<Text>().text = dialogueTexts[1];
+                DialogueBox.text = dialogueTexts[1];
                 return;
             }
             if (AS.time >= 2.0f)
             {
-                subtitleBox.GetComponent<Text>().text = dialogueTexts[0];
+                DialogueBox.text = dialogueTexts[0];
                 return;
             }
         }

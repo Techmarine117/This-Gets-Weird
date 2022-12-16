@@ -25,7 +25,7 @@ public class AIStateMachine : MonoBehaviour, IData
         AIRayCast Ray;
         public float chaseRange;
         public float attackRange;
-        private State CurrentState; //Local variable that represents our state
+        public State CurrentState; //Local variable that represents our state
     public float destinationRange;
 
 
@@ -87,7 +87,7 @@ public class AIStateMachine : MonoBehaviour, IData
 
        
 
-        private void Patrol()
+        public void Patrol()
         {
         if (target == null)
         {
