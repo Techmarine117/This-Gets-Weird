@@ -19,6 +19,11 @@ public class MainMenu : MonoBehaviour
     public GameObject ConfirmationPrompt = null;
     public float DefaultVolume = 5.0f;
 
+    [Header("GamePlay Settings Settings")]
+    public TMP_Text SensitivityTextValue;
+    public Slider SensitivitySlider = null;
+    public float DefaultSensitivity = 4;
+
 
     private void Awake()
     {
@@ -73,6 +78,27 @@ public class MainMenu : MonoBehaviour
             VolumeTextValue.text = DefaultVolume.ToString("0.0");
             VolumeApply();
         }
+
+        if(MenuType == "GamePlay")
+        {
+            SensitivityTextValue.text = DefaultSensitivity.ToString("0");
+            SensitivitySlider.value = DefaultSensitivity;
+            GamePlayApply();
+
+        }
+    }
+
+    public void SetSensitivity(float Sensitivity)
+    {
+        DefaultSensitivity = Mathf.RoundToInt(Sensitivity);
+
+        SensitivityTextValue.text = Sensitivity.ToString("0");
+    }
+
+    public void GamePlayApply()
+    {
+        PlayerPrefs.SetFloat("MasterSensitivity", DefaultSensitivity);
+        StartCoroutine(ConfirmationText());
     }
 
     public IEnumerator ConfirmationText()
@@ -82,4 +108,5 @@ public class MainMenu : MonoBehaviour
 
         ConfirmationPrompt.SetActive(false);
     }
+
 }
