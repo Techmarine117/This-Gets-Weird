@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3291554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 855947060}
+      - m_Target: {fileID: 3291553}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -728,6 +728,8 @@ MonoBehaviour:
   BrightnessSlider: {fileID: 2013993854}
   BrightnessTextValue: {fileID: 897508841}
   DefaultBrightness: 1
+  QualityDropdown: {fileID: 975663378}
+  FullScreenToggle: {fileID: 581838995}
   ResolutionDropdown: {fileID: 1987633476}
 --- !u!4 &133316897
 Transform:
@@ -4204,6 +4206,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809427386}
   m_CullTransparentMesh: 1
+--- !u!1 &809814871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809814872}
+  - component: {fileID: 809814873}
+  m_Layer: 0
+  m_Name: LoadPrefsObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809814872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809814871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 851.3439, y: 917.7219, z: 8.723665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809814873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809814871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137a05b577fef4944bc7888859abb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanUse: 1
+  mainMenu: {fileID: 133316896}
+  VolumeTextValue: {fileID: 444055272}
+  VolumeSlider: {fileID: 1071093892}
+  BrightnessSlider: {fileID: 2013993854}
+  BrightnessTextValue: {fileID: 897508841}
+  QualityDropdown: {fileID: 975663378}
+  FullScreenToggle: {fileID: 581838995}
+  SensitivityTextValue: {fileID: 1276454161}
+  SensitivitySlider: {fileID: 1627886653}
 --- !u!1 &855947060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6649,7 +6705,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GamePlay
+          m_StringArgument: Graphics
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1197287645
@@ -9986,7 +10042,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0.60539246, y: 0}
   m_SizeDelta: {x: 1.2108, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11161,8 +11217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.4999447, y: -31.548218}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -4.4999, y: -30.8023}
+  m_SizeDelta: {x: 160, y: 28.5082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987633476
 MonoBehaviour:
@@ -11567,7 +11623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5, y: -0.5}
+  m_AnchoredPosition: {x: -7.5, y: -0.49999905}
   m_SizeDelta: {x: -35, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052871756
@@ -11835,8 +11891,8 @@ RectTransform:
   m_Father: {fileID: 1969636923}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

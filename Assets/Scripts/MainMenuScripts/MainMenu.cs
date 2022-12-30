@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     public float DefaultVolume = 5.0f;
 
     [Header("GamePlay Settings")]
-    public TMP_Text SensitivityTextValue;
+    public TMP_Text SensitivityTextValue = null;
     public Slider SensitivitySlider = null;
     public float DefaultSensitivity = 4;
 
@@ -173,7 +173,7 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.SetFloat("MasterBrightness", BrightnessLevel);
 
-        PlayerPrefs.SetInt("MasterQulity", _QualityLevel);
+        PlayerPrefs.SetInt("MasterQuality", _QualityLevel);
         QualitySettings.SetQualityLevel(_QualityLevel);
 
         PlayerPrefs.SetInt("MasterFullScreen", (IsFullScreen ? 1 : 0));
