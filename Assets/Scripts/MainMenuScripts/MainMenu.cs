@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class MainMenu : MonoBehaviour
 {
@@ -30,6 +32,8 @@ public class MainMenu : MonoBehaviour
     public float DefaultBrightness = 1;
     public TMP_Dropdown QualityDropdown;
     public Toggle FullScreenToggle;
+    public Volume brightnessVolume;
+    private ColorAdjustments CA;
 
     private int _QualityLevel;
     private bool IsFullScreen;
@@ -38,13 +42,17 @@ public class MainMenu : MonoBehaviour
     [Header("Resolution DropDowns")]
     public TMP_Dropdown ResolutionDropdown;
     public Resolution[] Resolutions;
-    
+   // public List<Resolution> FilteredResolutions;
 
-    private void Start()
+
+    private void Awake()
     {
         dataManager = GameObject.FindObjectOfType<DataManager>();
+
         Resolutions = Screen.resolutions;
         ResolutionDropdown.ClearOptions();
+
+        brightnessVolume.profile.TryGet(out CA);
 
         List<string> Options = new List<string>();
 
@@ -54,7 +62,7 @@ public class MainMenu : MonoBehaviour
         for(int i = 0; i < Resolutions.Length; i++)
         {
             Debug.Log(Resolutions[i].ToString());
-            string Option = Resolutions[i].width + "x" + Resolutions[i].height;
+            string Option = Resolutions[i].width + " x " + Resolutions[i].height;
             Options.Add(Option);
 
             if(Resolutions[i].width == Screen.width && Resolutions[i].height == Screen.height)
@@ -63,6 +71,10 @@ public class MainMenu : MonoBehaviour
                 Debug.Log("debug2");
             }
         }
+
+        ResolutionDropdown.AddOptions(Options);
+        ResolutionDropdown.value= CurrentResolutionIndex;
+        ResolutionDropdown.RefreshShownValue();
     }
 
     public void quitGame()
@@ -80,9 +92,9 @@ public class MainMenu : MonoBehaviour
 
     public void LoadLevel()
     {
-        dataManager.LoadGame();
         if (PlayerPrefs.HasKey("SavedLevel"))
         {
+            dataManager.LoadGame();
             LevelToLoad = PlayerPrefs.GetString("SavedLevel");
             SceneManager.LoadScene(LevelToLoad);
         }
@@ -157,6 +169,8 @@ public class MainMenu : MonoBehaviour
     {
         BrightnessLevel = Brightness;
         BrightnessTextValue.text = Brightness.ToString("0.0");
+        CA.postExposure.value= Brightness;
+        
     }
 
     public void SetFullScreen(bool isFullScreen)
