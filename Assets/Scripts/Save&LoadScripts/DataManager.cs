@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 public class DataManager : MonoBehaviour
@@ -59,6 +60,7 @@ public class DataManager : MonoBehaviour
         }
 
         dataHandler.Save(gameData);
+        PlayerPrefs.SetString("SavedLevel", SceneManager.GetActiveScene().name);
 
     }
 

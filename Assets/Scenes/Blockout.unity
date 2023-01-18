@@ -77257,9 +77257,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6945377580593479297, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6945377580593479302, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945377580593479306, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: KeyboardMouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945377580593479308, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem;
 
 public class MainMenu : MonoBehaviour
 {
@@ -42,8 +43,31 @@ public class MainMenu : MonoBehaviour
     [Header("Resolution DropDowns")]
     public TMP_Dropdown ResolutionDropdown;
     public Resolution[] Resolutions;
-   // public List<Resolution> FilteredResolutions;
+    // public List<Resolution> FilteredResolutions;
 
+    [Header("KeyReBind Settings")]
+    [SerializeField]
+    private InputActionReference inputActionReference;
+
+    [SerializeField]
+    private bool ExcludeMouse = true;
+
+    [Range(0, 10)]
+    [SerializeField]
+    private int SelectedBinding;
+
+    [SerializeField]
+    private InputBinding.DisplayStringOptions displayStringOptions;
+
+    public TMP_Text ActionText;
+    public TMP_Text RebindText;
+    public Button RebindButton;
+
+    [Header("Binding Info")]
+    [SerializeField]
+    private InputBinding inputBinding;
+    private int BindingIndex;
+    private string ActionName;
 
     private void Awake()
     {
@@ -75,6 +99,36 @@ public class MainMenu : MonoBehaviour
         ResolutionDropdown.AddOptions(Options);
         ResolutionDropdown.value= CurrentResolutionIndex;
         ResolutionDropdown.RefreshShownValue();
+    }
+
+    private void OnValidate()
+    {
+        if (inputActionReference == null)
+            return;
+
+        GetBindingInfo();
+        UpdateBindingUI();
+    }
+
+    private void OnEnable()
+    {
+        RebindButton.onClick.AddListener(() => DoReBind());
+
+        if(inputActionReference != null)
+        {
+            InputManager.LoadBindingOveride(ActionName);
+            GetBindingInfo();
+            UpdateBindingUI();
+        }
+
+        InputManager.ReBindComplete += UpdateBindingUI;
+        InputManager.RebindCanceled += UpdateBindingUI;
+    }
+
+    private void OnDisable()
+    {
+        InputManager.ReBindComplete -= UpdateBindingUI;
+        InputManager.RebindCanceled -= UpdateBindingUI;
     }
 
     public void quitGame()
@@ -150,6 +204,13 @@ public class MainMenu : MonoBehaviour
             GamePlayApply();
 
         }
+
+        if (MenuType == "Controls")
+        {
+            InputManager.ResetBinding(ActionName, BindingIndex);
+            UpdateBindingUI();
+
+        }
     }
 
     public void SetSensitivity(float Sensitivity)
@@ -209,5 +270,43 @@ public class MainMenu : MonoBehaviour
 
         ConfirmationPrompt.SetActive(false);
     }
+
+   private void GetBindingInfo()
+   {
+        if(inputActionReference.action != null) 
+        { 
+            ActionName = inputActionReference.action.name;
+        }
+
+        if(inputActionReference.action.bindings.Count > SelectedBinding)
+        {
+            inputBinding = inputActionReference.action.bindings[SelectedBinding];
+            BindingIndex = SelectedBinding;
+        }
+   }
+
+  private void UpdateBindingUI()
+  {
+        if (ActionText != null)
+            ActionText.text = ActionName;
+        
+        if(RebindText != null)
+        {
+            if (Application.isPlaying)
+            {
+            RebindText.text = InputManager.GetBindingName(ActionName, BindingIndex);
+
+            }
+        }
+        else
+            RebindText.text = inputActionReference.action.GetBindingDisplayString(BindingIndex);
+
+        
+  }
+
+  public void DoReBind()
+  {
+    InputManager.StartRebind(ActionName, BindingIndex, RebindText, ExcludeMouse);
+  }
 
 }
