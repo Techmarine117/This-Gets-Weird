@@ -61,7 +61,7 @@ public class InputManager : MonoBehaviour
             if(AllCompositeParts)
             {
                 int NextBindingIndex = BindingIndex + 1;
-                if (NextBindingIndex < RebindAction.bindings.Count && RebindAction.bindings[NextBindingIndex].isComposite)
+                if (NextBindingIndex < RebindAction.bindings.Count && RebindAction.bindings[NextBindingIndex].isPartOfComposite)
                     DoRebind(RebindAction, NextBindingIndex, statusText, AllCompositeParts, ExcludeMouse);
             }
 
