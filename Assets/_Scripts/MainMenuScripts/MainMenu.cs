@@ -1,312 +1,312 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
-//using UnityEngine.UI;
-//using TMPro;
-//using UnityEngine.Rendering;
-//using UnityEngine.Rendering.Universal;
-//using UnityEngine.InputSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem;
 
-//public class MainMenu : MonoBehaviour
-//{
-    
-//    public string NewGame;
-//    private string LevelToLoad;
-//    public DataManager dataManager;
-//    public GameObject NoSaveObj = null;
+public class MainMenu : MonoBehaviour
+{
 
-//    [Header("Volume Settings")]
-//    public TMP_Text VolumeTextValue = null;
-//    public Slider VolumeSlider = null;
-//    public GameObject ConfirmationPrompt = null;
-//    public float DefaultVolume = 5.0f;
+    public string NewGame;
+    private string LevelToLoad;
+    public DataManager dataManager;
+    public GameObject NoSaveObj = null;
 
-//    [Header("GamePlay Settings")]
-//    public TMP_Text SensitivityTextValue = null;
-//    public Slider SensitivitySlider = null;
-//    public float DefaultSensitivity = 4;
+    [Header("Volume Settings")]
+    public TMP_Text VolumeTextValue = null;
+    public Slider VolumeSlider = null;
+    public GameObject ConfirmationPrompt = null;
+    public float DefaultVolume = 5.0f;
 
-//    [Header("Graphics Settings")]
-//    public Slider BrightnessSlider = null;
-//    public TMP_Text BrightnessTextValue = null;
-//    public float DefaultBrightness = 1;
-//    public TMP_Dropdown QualityDropdown;
-//    public Toggle FullScreenToggle;
-//    public Volume brightnessVolume;
-//    private ColorAdjustments CA;
+    [Header("GamePlay Settings")]
+    public TMP_Text SensitivityTextValue = null;
+    public Slider SensitivitySlider = null;
+    public float DefaultSensitivity = 4;
 
-//    private int _QualityLevel;
-//    private bool IsFullScreen;
-//    private float BrightnessLevel;
+    [Header("Graphics Settings")]
+    public Slider BrightnessSlider = null;
+    public TMP_Text BrightnessTextValue = null;
+    public float DefaultBrightness = 1;
+    public TMP_Dropdown QualityDropdown;
+    public Toggle FullScreenToggle;
+    public Volume brightnessVolume;
+    private ColorAdjustments CA;
 
-//    [Header("Resolution DropDowns")]
-//    public TMP_Dropdown ResolutionDropdown;
-//    public Resolution[] Resolutions;
-//    // public List<Resolution> FilteredResolutions;
+    private int _QualityLevel;
+    private bool IsFullScreen;
+    private float BrightnessLevel;
 
-//    [Header("KeyReBind Settings")]
-//    [SerializeField]
-//    private InputActionReference inputActionReference;
+    [Header("Resolution DropDowns")]
+    public TMP_Dropdown ResolutionDropdown;
+    public Resolution[] Resolutions;
+    // public List<Resolution> FilteredResolutions;
 
-//    [SerializeField]
-//    private bool ExcludeMouse = true;
+    [Header("KeyReBind Settings")]
+    [SerializeField]
+    private InputActionReference inputActionReference;
 
-//    [Range(0, 10)]
-//    [SerializeField]
-//    private int SelectedBinding;
+    [SerializeField]
+    private bool ExcludeMouse = true;
 
-//    [SerializeField]
-//    private InputBinding.DisplayStringOptions displayStringOptions;
+    [Range(0, 10)]
+    [SerializeField]
+    private int SelectedBinding;
 
-//    public TMP_Text ActionText;
-//    public TMP_Text RebindText;
-//    public Button RebindButton;
+    [SerializeField]
+    private InputBinding.DisplayStringOptions displayStringOptions;
 
-//    [Header("Binding Info")]
-//    [SerializeField]
-//    private InputBinding inputBinding;
-//    private int BindingIndex;
-//    private string ActionName;
+    public TMP_Text ActionText;
+    public TMP_Text RebindText;
+    public Button RebindButton;
 
-//    private void Awake()
-//    {
-//        dataManager = GameObject.FindObjectOfType<DataManager>();
+    [Header("Binding Info")]
+    [SerializeField]
+    private InputBinding inputBinding;
+    private int BindingIndex;
+    private string ActionName;
 
-//        Resolutions = Screen.resolutions;
-//        ResolutionDropdown.ClearOptions();
+    private void Awake()
+    {
+        dataManager = GameObject.FindObjectOfType<DataManager>();
 
-//        brightnessVolume.profile.TryGet(out CA);
+        Resolutions = Screen.resolutions;
+        ResolutionDropdown.ClearOptions();
 
-//        List<string> Options = new List<string>();
+        brightnessVolume.profile.TryGet(out CA);
 
-//        int CurrentResolutionIndex = 0;
-        
+        List<string> Options = new List<string>();
 
-//        for(int i = 0; i < Resolutions.Length; i++)
-//        {
-//            Debug.Log(Resolutions[i].ToString());
-//            string Option = Resolutions[i].width + " x " + Resolutions[i].height;
-//            Options.Add(Option);
+        int CurrentResolutionIndex = 0;
 
-//            if(Resolutions[i].width == Screen.width && Resolutions[i].height == Screen.height)
-//            {
-//                CurrentResolutionIndex = i;
-//                Debug.Log("debug2");
-//            }
-//        }
 
-//        ResolutionDropdown.AddOptions(Options);
-//        ResolutionDropdown.value= CurrentResolutionIndex;
-//        ResolutionDropdown.RefreshShownValue();
-//    }
+        for (int i = 0; i < Resolutions.Length; i++)
+        {
+            Debug.Log(Resolutions[i].ToString());
+            string Option = Resolutions[i].width + " x " + Resolutions[i].height;
+            Options.Add(Option);
 
-//    private void OnValidate()
-//    {
-//        if (inputActionReference == null)
-//            return;
+            if (Resolutions[i].width == Screen.width && Resolutions[i].height == Screen.height)
+            {
+                CurrentResolutionIndex = i;
+                Debug.Log("debug2");
+            }
+        }
 
-//        GetBindingInfo();
-//        UpdateBindingUI();
-//    }
+        ResolutionDropdown.AddOptions(Options);
+        ResolutionDropdown.value = CurrentResolutionIndex;
+        ResolutionDropdown.RefreshShownValue();
+    }
 
-//    private void OnEnable()
-//    {
-//        RebindButton.onClick.AddListener(() => DoReBind());
+    private void OnValidate()
+    {
+        if (inputActionReference == null)
+            return;
 
-//        if(inputActionReference != null)
-//        {
-//            InputManager.LoadBindingOveride(ActionName);
-//            GetBindingInfo();
-//            UpdateBindingUI();
-//        }
+        GetBindingInfo();
+        UpdateBindingUI();
+    }
 
-//        InputManager.ReBindComplete += UpdateBindingUI;
-//        InputManager.RebindCanceled += UpdateBindingUI;
-//    }
+    private void OnEnable()
+    {
+        RebindButton.onClick.AddListener(() => DoReBind());
 
-//    private void OnDisable()
-//    {
-//        InputManager.ReBindComplete -= UpdateBindingUI;
-//        InputManager.RebindCanceled -= UpdateBindingUI;
-//    }
+        if (inputActionReference != null)
+        {
+            InputManager.LoadBindingOveride(ActionName);
+            GetBindingInfo();
+            UpdateBindingUI();
+        }
 
-//    public void quitGame()
-//    {
-//        Debug.Log("quiting game");
-//        Application.Quit();
+        InputManager.ReBindComplete += UpdateBindingUI;
+        InputManager.RebindCanceled += UpdateBindingUI;
+    }
 
-//    }
+    private void OnDisable()
+    {
+        InputManager.ReBindComplete -= UpdateBindingUI;
+        InputManager.RebindCanceled -= UpdateBindingUI;
+    }
 
-//    public void loadNewGame()
-//    {
-//        Debug.Log("level Loading");
-//        SceneManager.LoadScene(NewGame);
-//    }
+    public void quitGame()
+    {
+        Debug.Log("quiting game");
+        Application.Quit();
 
-//    public void LoadLevel()
-//    {
-//        if (PlayerPrefs.HasKey("SavedLevel"))
-//        {
-//            dataManager.LoadGame();
-//            LevelToLoad = PlayerPrefs.GetString("SavedLevel");
-//            SceneManager.LoadScene(LevelToLoad);
-//        }
-//        else
-//        {
-//            NoSaveObj.SetActive(true);
-//        }
-//    }
+    }
 
-//    public void SetVolume(float Volume)
-//    {
-//        AudioListener.volume = Volume;
+    public void loadNewGame()
+    {
+        Debug.Log("level Loading");
+        SceneManager.LoadScene(NewGame);
+    }
 
-//        VolumeTextValue.text = Volume.ToString("0.0");
-//    }
+    public void LoadLevel()
+    {
+        if (PlayerPrefs.HasKey("SavedLevel"))
+        {
+            dataManager.LoadGame();
+            LevelToLoad = PlayerPrefs.GetString("SavedLevel");
+            SceneManager.LoadScene(LevelToLoad);
+        }
+        else
+        {
+            NoSaveObj.SetActive(true);
+        }
+    }
 
-//    public void VolumeApply()
-//    {
-//        PlayerPrefs.SetFloat("MasterVolume", AudioListener.volume);
-//        StartCoroutine(ConfirmationText());
-//    }
+    public void SetVolume(float Volume)
+    {
+        AudioListener.volume = Volume;
 
-//    public void ResetButton(string MenuType)
-//    {
-//        if(MenuType == "Graphics")
-//        {
-//            //ToDo rest brightness value
+        VolumeTextValue.text = Volume.ToString("0.0");
+    }
 
-//            BrightnessSlider.value = DefaultBrightness;
-//            BrightnessTextValue.text = DefaultBrightness.ToString("0.0");
-//            QualityDropdown.value = 1;
-//            QualitySettings.SetQualityLevel(1);
-//            FullScreenToggle.isOn = false;
-//            Screen.fullScreen = false;
-//            Resolution CurrentResolution = Screen.currentResolution;
-//            Screen.SetResolution(CurrentResolution.width, CurrentResolution.height, Screen.fullScreen);
-//            ResolutionDropdown.value = Resolutions.Length;
-//            GrpahicsApply();
-//        }
+    public void VolumeApply()
+    {
+        PlayerPrefs.SetFloat("MasterVolume", AudioListener.volume);
+        StartCoroutine(ConfirmationText());
+    }
 
-//        if(MenuType == "Audio")
-//        {
-//            AudioListener.volume = DefaultVolume;
-//            VolumeSlider.value = DefaultVolume;
-//            VolumeTextValue.text = DefaultVolume.ToString("0.0");
-//            VolumeApply();
-//        }
+    public void ResetButton(string MenuType)
+    {
+        if (MenuType == "Graphics")
+        {
+            //ToDo rest brightness value
 
-//        if(MenuType == "GamePlay")
-//        {
-//            SensitivityTextValue.text = DefaultSensitivity.ToString("0");
-//            SensitivitySlider.value = DefaultSensitivity;
-//            GamePlayApply();
+            BrightnessSlider.value = DefaultBrightness;
+            BrightnessTextValue.text = DefaultBrightness.ToString("0.0");
+            QualityDropdown.value = 1;
+            QualitySettings.SetQualityLevel(1);
+            FullScreenToggle.isOn = false;
+            Screen.fullScreen = false;
+            Resolution CurrentResolution = Screen.currentResolution;
+            Screen.SetResolution(CurrentResolution.width, CurrentResolution.height, Screen.fullScreen);
+            ResolutionDropdown.value = Resolutions.Length;
+            GrpahicsApply();
+        }
 
-//        }
+        if (MenuType == "Audio")
+        {
+            AudioListener.volume = DefaultVolume;
+            VolumeSlider.value = DefaultVolume;
+            VolumeTextValue.text = DefaultVolume.ToString("0.0");
+            VolumeApply();
+        }
 
-//        if (MenuType == "Controls")
-//        {
-//            InputManager.ResetBinding(ActionName, BindingIndex);
-//            UpdateBindingUI();
+        if (MenuType == "GamePlay")
+        {
+            SensitivityTextValue.text = DefaultSensitivity.ToString("0");
+            SensitivitySlider.value = DefaultSensitivity;
+            GamePlayApply();
 
-//        }
-//    }
+        }
 
-//    public void SetSensitivity(float Sensitivity)
-//    {
-//        DefaultSensitivity = Mathf.RoundToInt(Sensitivity);
+        if (MenuType == "Controls")
+        {
+            InputManager.ResetBinding(ActionName, BindingIndex);
+            UpdateBindingUI();
 
-//        SensitivityTextValue.text = Sensitivity.ToString("0");
-//    }
+        }
+    }
 
-//    public void GamePlayApply()
-//    {
-//        PlayerPrefs.SetFloat("MasterSensitivity", DefaultSensitivity);
-//        StartCoroutine(ConfirmationText());
-//    }
+    public void SetSensitivity(float Sensitivity)
+    {
+        DefaultSensitivity = Mathf.RoundToInt(Sensitivity);
 
-//    public void SetBrightness(float Brightness)
-//    {
-//        BrightnessLevel = Brightness;
-//        BrightnessTextValue.text = Brightness.ToString("0.0");
-//        CA.postExposure.value= Brightness;
-        
-//    }
+        SensitivityTextValue.text = Sensitivity.ToString("0");
+    }
 
-//    public void SetFullScreen(bool isFullScreen)
-//    {
-//        IsFullScreen = isFullScreen;
-//    }
+    public void GamePlayApply()
+    {
+        PlayerPrefs.SetFloat("MasterSensitivity", DefaultSensitivity);
+        StartCoroutine(ConfirmationText());
+    }
 
-//    public void SetQuality(int QualityIndex)
-//    {
-//        _QualityLevel = QualityIndex;
-//    }
+    public void SetBrightness(float Brightness)
+    {
+        BrightnessLevel = Brightness;
+        BrightnessTextValue.text = Brightness.ToString("0.0");
+        CA.postExposure.value = Brightness;
 
-//    public void GrpahicsApply()
-//    {
-//        PlayerPrefs.SetFloat("MasterBrightness", BrightnessLevel);
+    }
 
-//        PlayerPrefs.SetInt("MasterQuality", _QualityLevel);
-//        QualitySettings.SetQualityLevel(_QualityLevel);
+    public void SetFullScreen(bool isFullScreen)
+    {
+        IsFullScreen = isFullScreen;
+    }
 
-//        PlayerPrefs.SetInt("MasterFullScreen", (IsFullScreen ? 1 : 0));
-//        Screen.fullScreen = IsFullScreen;
+    public void SetQuality(int QualityIndex)
+    {
+        _QualityLevel = QualityIndex;
+    }
 
-//        StartCoroutine(ConfirmationText());
-//    }
+    public void GrpahicsApply()
+    {
+        PlayerPrefs.SetFloat("MasterBrightness", BrightnessLevel);
 
-//    public void SetResolutions(int ResolutionIndex)
-//    {
-//        Resolution resolution = Resolutions[ResolutionIndex];
-//        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-//    }
+        PlayerPrefs.SetInt("MasterQuality", _QualityLevel);
+        QualitySettings.SetQualityLevel(_QualityLevel);
 
-//    public IEnumerator ConfirmationText()
-//    {
-//        ConfirmationPrompt.SetActive(true);
-//        yield return new WaitForSeconds(5);
+        PlayerPrefs.SetInt("MasterFullScreen", (IsFullScreen ? 1 : 0));
+        Screen.fullScreen = IsFullScreen;
 
-//        ConfirmationPrompt.SetActive(false);
-//    }
+        StartCoroutine(ConfirmationText());
+    }
 
-//   private void GetBindingInfo()
-//   {
-//        if(inputActionReference.action != null) 
-//        { 
-//            ActionName = inputActionReference.action.name;
-//        }
+    public void SetResolutions(int ResolutionIndex)
+    {
+        Resolution resolution = Resolutions[ResolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
 
-//        if(inputActionReference.action.bindings.Count > SelectedBinding)
-//        {
-//            inputBinding = inputActionReference.action.bindings[SelectedBinding];
-//            BindingIndex = SelectedBinding;
-//        }
-//   }
+    public IEnumerator ConfirmationText()
+    {
+        ConfirmationPrompt.SetActive(true);
+        yield return new WaitForSeconds(5);
 
-//  private void UpdateBindingUI()
-//  {
-//        if (ActionText != null)
-//            ActionText.text = ActionName;
-        
-//        if(RebindText != null)
-//        {
-//            if (Application.isPlaying)
-//            {
-//            RebindText.text = InputManager.GetBindingName(ActionName, BindingIndex);
+        ConfirmationPrompt.SetActive(false);
+    }
 
-//            }
-//        }
-//        else
-//            RebindText.text = inputActionReference.action.GetBindingDisplayString(BindingIndex);
+    private void GetBindingInfo()
+    {
+        if (inputActionReference.action != null)
+        {
+            ActionName = inputActionReference.action.name;
+        }
 
-        
-//  }
+        if (inputActionReference.action.bindings.Count > SelectedBinding)
+        {
+            inputBinding = inputActionReference.action.bindings[SelectedBinding];
+            BindingIndex = SelectedBinding;
+        }
+    }
 
-//  public void DoReBind()
-//  {
-//    InputManager.StartRebind(ActionName, BindingIndex, RebindText, ExcludeMouse);
-//  }
+    private void UpdateBindingUI()
+    {
+        if (ActionText != null)
+            ActionText.text = ActionName;
 
-//}
+        if (RebindText != null)
+        {
+            if (Application.isPlaying)
+            {
+                RebindText.text = InputManager.GetBindingName(ActionName, BindingIndex);
+
+            }
+        }
+        else
+            RebindText.text = inputActionReference.action.GetBindingDisplayString(BindingIndex);
+
+
+    }
+
+    public void DoReBind()
+    {
+        InputManager.StartRebind(ActionName, BindingIndex, RebindText, ExcludeMouse);
+    }
+
+}

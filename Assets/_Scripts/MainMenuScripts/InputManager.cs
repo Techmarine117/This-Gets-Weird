@@ -1,145 +1,145 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.InputSystem;
-//using UnityEngine.UI;
-//using System;
-//using TMPro;
-//using Unity.VisualScripting;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using System;
+using TMPro;
+using Unity.VisualScripting;
 
-//public class InputManager : MonoBehaviour
-//{
-//    public static StarterAssets1 starterAssets;
-//    public static event Action ReBindComplete;
-//    public static event Action RebindCanceled;
-//    public static event Action<InputAction, int> RebindStarted;
+public class InputManager : MonoBehaviour
+{
+    public static StarterAssets1 starterAssets;
+    public static event Action ReBindComplete;
+    public static event Action RebindCanceled;
+    public static event Action<InputAction, int> RebindStarted;
 
-//    private void Awake()
-//    {
-//        if(starterAssets == null)
-//            starterAssets = new StarterAssets1();
-        
-//    }
+    private void Awake()
+    {
+        if (starterAssets == null)
+            starterAssets = new StarterAssets1();
 
-//    public static void StartRebind(string ActionName, int BindingIndex, TMP_Text StatusText, bool ExcludeMouse)
-//    {
-//        InputAction action = starterAssets.asset.FindAction(ActionName);
-//        if(action == null || action.bindings.Count <= BindingIndex) 
-//        {
-//            Debug.Log("Couldn't find action or binding");
-//            return;
-//        }
+    }
 
-//        if (action.bindings[BindingIndex].isComposite)
-//        {
-//            int FirstPartIndex = BindingIndex + 1;
-//            if(FirstPartIndex < action.bindings.Count && action.bindings[FirstPartIndex].isComposite) 
-//            DoRebind(action, BindingIndex, StatusText, true, ExcludeMouse);
+    public static void StartRebind(string ActionName, int BindingIndex, TMP_Text StatusText, bool ExcludeMouse)
+    {
+        InputAction action = starterAssets.asset.FindAction(ActionName);
+        if (action == null || action.bindings.Count <= BindingIndex)
+        {
+            Debug.Log("Couldn't find action or binding");
+            return;
+        }
 
-            
-//        }
-//        else
-//            DoRebind(action,BindingIndex, StatusText, false, ExcludeMouse);
-//    }
+        if (action.bindings[BindingIndex].isComposite)
+        {
+            int FirstPartIndex = BindingIndex + 1;
+            if (FirstPartIndex < action.bindings.Count && action.bindings[FirstPartIndex].isComposite)
+                DoRebind(action, BindingIndex, StatusText, true, ExcludeMouse);
 
-//    private static void DoRebind(InputAction RebindAction, int BindingIndex, TMP_Text statusText, bool AllCompositeParts, bool ExcludeMouse)
-//    {
-//        if (RebindAction == null || BindingIndex < 0)
-//            return;
 
-//        statusText.text = $"Press a {RebindAction.expectedControlType}";
+        }
+        else
+            DoRebind(action, BindingIndex, StatusText, false, ExcludeMouse);
+    }
 
-//        RebindAction.Disable();
+    private static void DoRebind(InputAction RebindAction, int BindingIndex, TMP_Text statusText, bool AllCompositeParts, bool ExcludeMouse)
+    {
+        if (RebindAction == null || BindingIndex < 0)
+            return;
 
-//        var Rebind = RebindAction.PerformInteractiveRebinding(BindingIndex);
+        statusText.text = $"Press a {RebindAction.expectedControlType}";
 
-//        Rebind.OnComplete(Operation =>
-//        {
-//            RebindAction.Enable();
-//            Operation.Dispose();
+        RebindAction.Disable();
 
-//            if(AllCompositeParts)
-//            {
-//                int NextBindingIndex = BindingIndex + 1;
-//                if (NextBindingIndex < RebindAction.bindings.Count && RebindAction.bindings[NextBindingIndex].isPartOfComposite)
-//                    DoRebind(RebindAction, NextBindingIndex, statusText, AllCompositeParts, ExcludeMouse);
-//            }
+        var Rebind = RebindAction.PerformInteractiveRebinding(BindingIndex);
 
-//            SaveBindingOveride(RebindAction);
-//            ReBindComplete?.Invoke();
-//        });
+        Rebind.OnComplete(Operation =>
+        {
+            RebindAction.Enable();
+            Operation.Dispose();
 
-//        Rebind.OnCancel(Operation =>
-//        {
-//            RebindAction.Enable();
-//            Operation.Dispose();
+            if (AllCompositeParts)
+            {
+                int NextBindingIndex = BindingIndex + 1;
+                if (NextBindingIndex < RebindAction.bindings.Count && RebindAction.bindings[NextBindingIndex].isPartOfComposite)
+                    DoRebind(RebindAction, NextBindingIndex, statusText, AllCompositeParts, ExcludeMouse);
+            }
 
-//            RebindCanceled?.Invoke();
-//        });
+            SaveBindingOveride(RebindAction);
+            ReBindComplete?.Invoke();
+        });
 
-//        Rebind.WithCancelingThrough("<Keyboard>/escape");
+        Rebind.OnCancel(Operation =>
+        {
+            RebindAction.Enable();
+            Operation.Dispose();
 
-//        if (ExcludeMouse)
-//            Rebind.WithControlsExcluding("Mouse");
+            RebindCanceled?.Invoke();
+        });
 
-//        RebindStarted?.Invoke(RebindAction, BindingIndex);
-//        Rebind.Start(); // Starts the rebinding process
-//    }
+        Rebind.WithCancelingThrough("<Keyboard>/escape");
 
-//    public static string GetBindingName(string ActionName, int Bindingindex)
-//    {
-//        if (starterAssets == null)
-//            starterAssets = new StarterAssets1();
+        if (ExcludeMouse)
+            Rebind.WithControlsExcluding("Mouse");
 
-//        InputAction action = starterAssets.asset.FindAction(ActionName);
-//        return action.GetBindingDisplayString(Bindingindex);
-//    }
+        RebindStarted?.Invoke(RebindAction, BindingIndex);
+        Rebind.Start(); // Starts the rebinding process
+    }
 
-//    private static void SaveBindingOveride(InputAction action)
-//    {
-//        for (int i = 0; i < action.bindings.Count; i++)
-//        {
-//            PlayerPrefs.SetString(action.actionMap + action.name + i, action.bindings[i].overridePath);
-//        }
-//    }
+    public static string GetBindingName(string ActionName, int Bindingindex)
+    {
+        if (starterAssets == null)
+            starterAssets = new StarterAssets1();
 
-//    public static void LoadBindingOveride(string ActionName)
-//    {
-//        if(starterAssets == null)
-//            starterAssets = new StarterAssets1();
+        InputAction action = starterAssets.asset.FindAction(ActionName);
+        return action.GetBindingDisplayString(Bindingindex);
+    }
 
-//        InputAction action = starterAssets.asset.FindAction(ActionName);
+    private static void SaveBindingOveride(InputAction action)
+    {
+        for (int i = 0; i < action.bindings.Count; i++)
+        {
+            PlayerPrefs.SetString(action.actionMap + action.name + i, action.bindings[i].overridePath);
+        }
+    }
 
-//        for (int i = 0; i < action.bindings.Count; i++)
-//        {
-//            if (!string.IsNullOrEmpty(PlayerPrefs.GetString(action.actionMap + action.name + i)))
-//                action.ApplyBindingOverride(i, PlayerPrefs.GetString(action.actionMap + action.name + i));
-//        }
-//    }
+    public static void LoadBindingOveride(string ActionName)
+    {
+        if (starterAssets == null)
+            starterAssets = new StarterAssets1();
 
-//    public static void ResetBinding(string ActionName, int BindingIndex)
-//    {
-//        InputAction action = starterAssets.asset.FindAction(ActionName);
+        InputAction action = starterAssets.asset.FindAction(ActionName);
 
-//        if(action == null || action.bindings.Count <= BindingIndex)
-//        {
-//            Debug.Log("Couldn't find action or binding");
-//            return;
-//        }
+        for (int i = 0; i < action.bindings.Count; i++)
+        {
+            if (!string.IsNullOrEmpty(PlayerPrefs.GetString(action.actionMap + action.name + i)))
+                action.ApplyBindingOverride(i, PlayerPrefs.GetString(action.actionMap + action.name + i));
+        }
+    }
 
-//        if (action.bindings[BindingIndex].isComposite)
-//        {
-//            for (int i = BindingIndex; i < action.bindings.Count && action.bindings[i].isComposite; i++)
-//            {
-//                action.RemoveBindingOverride(i);
-//            }
-            
+    public static void ResetBinding(string ActionName, int BindingIndex)
+    {
+        InputAction action = starterAssets.asset.FindAction(ActionName);
 
-            
-//        }
-//        else
-//            action.RemoveBindingOverride(BindingIndex);
+        if (action == null || action.bindings.Count <= BindingIndex)
+        {
+            Debug.Log("Couldn't find action or binding");
+            return;
+        }
 
-//        SaveBindingOveride(action);
-//    }
-//}
+        if (action.bindings[BindingIndex].isComposite)
+        {
+            for (int i = BindingIndex; i < action.bindings.Count && action.bindings[i].isComposite; i++)
+            {
+                action.RemoveBindingOverride(i);
+            }
+
+
+
+        }
+        else
+            action.RemoveBindingOverride(BindingIndex);
+
+        SaveBindingOveride(action);
+    }
+}

@@ -931,7 +931,7 @@ MonoBehaviour:
   displayStringOptions: 0
   ActionText: {fileID: 1581484814}
   RebindText: {fileID: 53510196}
-  RebindButton: {fileID: 0}
+  RebindButton: {fileID: 53510195}
   inputBinding:
     m_Name: up
     m_Id: 2063a8b5-6a45-43de-851b-65f3d46e7b58
