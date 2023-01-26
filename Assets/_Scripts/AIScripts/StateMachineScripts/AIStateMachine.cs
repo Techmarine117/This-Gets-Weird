@@ -27,6 +27,7 @@ public class AIStateMachine : MonoBehaviour, IData
         public float attackRange;
         public State CurrentState; //Local variable that represents our state
     public float destinationRange;
+    public GameObject EndGameObj;
 
 
 
@@ -43,6 +44,7 @@ public class AIStateMachine : MonoBehaviour, IData
             Ray = GetComponent<AIRayCast>();
             //player = GameObject.FindObjectOfType<PlayerController>().gameObject;
             agent.speed = Patrolspeed;
+            EndGameObj.SetActive(false);
 
         }
 
@@ -111,9 +113,11 @@ public class AIStateMachine : MonoBehaviour, IData
 
         public void Attacking()
         {
-            // attackCol.SetActive(true);
-            //  anim.SetBool("IsAttacking", true);
-        }
+         EndGameObj.SetActive(true);
+        Time.timeScale = 0f;
+        // attackCol.SetActive(true);
+        //  anim.SetBool("IsAttacking", true);
+    }
 
        public void LoadData(GameData data)
        {
