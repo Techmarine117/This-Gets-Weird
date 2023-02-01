@@ -47,31 +47,34 @@ public class MainMenu : MonoBehaviour
 
     [Header("KeyReBind Settings")]
     [SerializeField]
-    private InputActionReference inputActionReference;
+    private InputActionReference[] inputActionReference;
 
     [SerializeField]
     private bool ExcludeMouse = true;
 
-    [Range(0, 10)]
+    [Range(0, 4)]
     [SerializeField]
     private int SelectedBinding;
 
     [SerializeField]
     private InputBinding.DisplayStringOptions displayStringOptions;
 
-    public TMP_Text ActionText;
-    public TMP_Text RebindText;
-    public Button RebindButton;
+    public TMP_Text[] ActionText;
+    public TMP_Text[] RebindText;
+    public Button[] RebindButton;
 
     [Header("Binding Info")]
     [SerializeField]
     private InputBinding inputBinding;
-    private int BindingIndex;
-    private string ActionName;
+    [SerializeField]
+    private int[] BindingIndex;
+    [SerializeField]
+    private string[] ActionName;
 
     private void Awake()
     {
         dataManager = GameObject.FindObjectOfType<DataManager>();
+
 
         Resolutions = Screen.resolutions;
         ResolutionDropdown.ClearOptions();
@@ -108,27 +111,59 @@ public class MainMenu : MonoBehaviour
 
         GetBindingInfo();
         UpdateBindingUI();
+        UpdateBindingUIJump();
     }
 
     private void OnEnable()
     {
-        RebindButton.onClick.AddListener(() => DoReBind());
-
-        if (inputActionReference != null)
+        //possible error
+        int i = 0;
+        foreach (var button in RebindButton)
         {
-            InputManager.LoadBindingOveride(ActionName);
+            button.onClick.AddListener(() => DoReBind(i));
+            i++;
+        }
+       
+
+        if (inputActionReference[0] != null)
+        {
+            InputManager.LoadBindingOveride(ActionName[0]);
             GetBindingInfo();
             UpdateBindingUI();
+        } 
+        if (inputActionReference[1] != null)
+        {
+            InputManager.LoadBindingOveride(ActionName[1]);
+            GetBindingInfo();
+            UpdateBindingUIJump();
         }
-
+        if (inputActionReference[2] != null)
+        {
+            InputManager.LoadBindingOveride(ActionName[2]);
+            GetBindingInfo();
+            UpdateBindingUIRun();
+        }
+            
         InputManager.ReBindComplete += UpdateBindingUI;
         InputManager.RebindCanceled += UpdateBindingUI;
+
+        InputManager.ReBindComplete += UpdateBindingUIJump;
+        InputManager.RebindCanceled += UpdateBindingUIJump;
+
+        InputManager.ReBindComplete += UpdateBindingUIRun;
+        InputManager.RebindCanceled += UpdateBindingUIRun;
     }
 
     private void OnDisable()
     {
         InputManager.ReBindComplete -= UpdateBindingUI;
         InputManager.RebindCanceled -= UpdateBindingUI;
+
+        InputManager.ReBindComplete -= UpdateBindingUIJump;
+        InputManager.RebindCanceled -= UpdateBindingUIJump;
+
+        InputManager.ReBindComplete -= UpdateBindingUIRun;
+        InputManager.RebindCanceled -= UpdateBindingUIRun;
     }
 
     public void quitGame()
@@ -207,8 +242,12 @@ public class MainMenu : MonoBehaviour
 
         if (MenuType == "Controls")
         {
-            InputManager.ResetBinding(ActionName, BindingIndex);
+            InputManager.ResetBinding(ActionName[0], BindingIndex[0]);
+            InputManager.ResetBinding(ActionName[1], BindingIndex[1]);
+            InputManager.ResetBinding(ActionName[2], BindingIndex[2]);
             UpdateBindingUI();
+            UpdateBindingUIJump();
+            UpdateBindingUIRun();
 
         }
     }
@@ -273,40 +312,95 @@ public class MainMenu : MonoBehaviour
 
     private void GetBindingInfo()
     {
-        if (inputActionReference.action != null)
+        if (inputActionReference[0].action != null)
         {
-            ActionName = inputActionReference.action.name;
+            ActionName[0] = inputActionReference[0].action.name;
+        } 
+        if (inputActionReference[1].action != null)
+        {
+            ActionName[1] = inputActionReference[1].action.name;
+        } 
+        if (inputActionReference[2].action != null)
+        {
+            ActionName[2] = inputActionReference[2].action.name;
         }
 
-        if (inputActionReference.action.bindings.Count > SelectedBinding)
+
+        if (inputActionReference[0].action.bindings.Count > SelectedBinding)
         {
-            inputBinding = inputActionReference.action.bindings[SelectedBinding];
-            BindingIndex = SelectedBinding;
+            inputBinding = inputActionReference[0].action.bindings[SelectedBinding];
+            BindingIndex[0] = SelectedBinding;
+            BindingIndex[1] = 0;
+            BindingIndex[2] = 0;
         }
     }
 
     private void UpdateBindingUI()
     {
-        if (ActionText != null)
-            ActionText.text = ActionName;
+        if (ActionText[0] != null)
+            ActionText[0].text = ActionName[0];
 
         if (RebindText != null)
         {
             if (Application.isPlaying)
             {
-                RebindText.text = InputManager.GetBindingName(ActionName, BindingIndex);
-
+                RebindText[0].text = InputManager.GetBindingName(ActionName[0], BindingIndex[0]);
             }
         }
         else
-            RebindText.text = inputActionReference.action.GetBindingDisplayString(BindingIndex);
+        {
+            RebindText[0].text = inputActionReference[0].action.GetBindingDisplayString(BindingIndex[0]);
+        }
+            
 
 
     }
 
-    public void DoReBind()
+
+    private void UpdateBindingUIJump()
     {
-        InputManager.StartRebind(ActionName, BindingIndex, RebindText, ExcludeMouse);
+        
+            if (ActionText[1] != null)
+                ActionText[1].text = ActionName[1];
+
+            if (RebindText[1] != null)
+            {
+                if (Application.isPlaying)
+                {
+                    RebindText[1].text = InputManager.GetBindingName(ActionName[1], BindingIndex[1]);
+                }
+            }
+            else
+            {
+                RebindText[1].text = inputActionReference[1].action.GetBindingDisplayString(BindingIndex[1]);
+            }
+        
+    }
+
+
+    private void UpdateBindingUIRun()
+    {
+
+        if (ActionText[2] != null)
+            ActionText[2].text = ActionName[2];
+
+        if (RebindText[2] != null)
+        {
+            if (Application.isPlaying)
+            {
+                RebindText[2].text = InputManager.GetBindingName(ActionName[2], BindingIndex[2]);
+            }
+        }
+        else
+        {
+            RebindText[2].text = inputActionReference[2].action.GetBindingDisplayString(BindingIndex[2]);
+        }
+
+    }
+
+    public void DoReBind(int actionreferenceindex)
+    {
+        InputManager.StartRebind(ActionName[actionreferenceindex], BindingIndex[actionreferenceindex], RebindText[actionreferenceindex], ExcludeMouse);
     }
 
 }
