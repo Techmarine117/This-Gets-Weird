@@ -329,6 +329,7 @@ public class MainMenu : MonoBehaviour
         if (inputActionReference[0].action.bindings.Count > SelectedBinding)
         {
             inputBinding = inputActionReference[0].action.bindings[SelectedBinding];
+            //changes here
             BindingIndex[0] = SelectedBinding;
             BindingIndex[1] = 0;
             BindingIndex[2] = 0;
@@ -401,6 +402,35 @@ public class MainMenu : MonoBehaviour
     public void DoReBind(int actionreferenceindex)
     {
         InputManager.StartRebind(ActionName[actionreferenceindex], BindingIndex[actionreferenceindex], RebindText[actionreferenceindex], ExcludeMouse);
+    }
+
+    public void addBindingValue()
+    {
+        SelectedBinding++;
+        if (SelectedBinding >= 5) 
+        {
+            SelectedBinding = 1;
+        }
+        if (inputActionReference == null)
+            return;
+
+        GetBindingInfo();
+        UpdateBindingUI();
+        UpdateBindingUIJump();
+    }
+    public void removeBindingValue()
+    {
+        SelectedBinding--;
+        if (SelectedBinding <= 0)
+        {
+            SelectedBinding = 4;
+        }
+        if (inputActionReference == null)
+            return;
+
+        GetBindingInfo();
+        UpdateBindingUI();
+        UpdateBindingUIJump();
     }
 
 }
