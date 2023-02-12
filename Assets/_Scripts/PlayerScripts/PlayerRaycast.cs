@@ -11,8 +11,10 @@ public class PlayerRaycast : MonoBehaviour
     public float Raylength;
     private bool isPickup;
     public Transform pickupPlacholder;
+    public AlphaChange alphaChange;
     //public PrototypeMovement pm;
-    
+
+
 
     //public Switch switchh;
     void Update()
@@ -57,9 +59,14 @@ public class PlayerRaycast : MonoBehaviour
                 {
                     isPickup = true;
                     pickUpobj = hit.collider.gameObject;
+
                     //Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
                     //Destroy(rb);
 
+                    pickUpobj.GetComponent<AlphaChange>().SetTransparent();
+
+
+                    Debug.Log("it worked");
                 }
             }
            
