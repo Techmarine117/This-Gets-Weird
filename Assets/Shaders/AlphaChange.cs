@@ -5,19 +5,34 @@ using UnityEngine;
 public class AlphaChange : MonoBehaviour
 {
     public Renderer TargetObj;
-    
+    public PlayerRaycast playerRaycast;
 
-  
-
-   
-
-    public void SetTransparent()
+    private void Start()
     {
-        
-        Color color =  TargetObj.material.color;
-        color.a = 0.5f;
-        TargetObj.material.color = color;
+        //playerRaycast= GetComponent<PlayerRaycast>();
     }
+
+    private void Update()
+    {
+        if(playerRaycast.isPickup == true)
+        {
+            SetTransparent();
+        }
+        else if(playerRaycast.isPickup == false)
+        {
+            ResetAlpha();
+        }
+        
+    }
+
+
+     public void SetTransparent()
+     {
+        
+         Color color =  TargetObj.material.color;
+         color.a = 0.5f;
+         TargetObj.material.color = color;
+     }
 
     public void ResetAlpha()
     {
