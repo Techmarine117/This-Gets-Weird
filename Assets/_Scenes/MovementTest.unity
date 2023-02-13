@@ -2634,6 +2634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObj: {fileID: 1400046493}
+  playerRaycast: {fileID: 1730632658}
 --- !u!1 &1410096484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,6 +3090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObj: {fileID: 1631655278}
+  playerRaycast: {fileID: 1730632658}
 --- !u!1 &1656266793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2421964532719076582, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
@@ -3340,6 +3342,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730632658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3193598462698674645, guid: f078e1b69340e184e9215fa39c1301b5, type: 3}
+  m_PrefabInstance: {fileID: 13185861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c316bdc35a221a34eaba84c5bc5909a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830662427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,6 +3437,7 @@ MonoBehaviour:
   cam: {fileID: 963194225}
   popUp: {fileID: 1292070704}
   Raylength: 5
+  isPickup: 0
   pickupPlacholder: {fileID: 103273169}
   alphaChange: {fileID: 0}
 --- !u!1001 &1922539266
@@ -3685,6 +3699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObj: {fileID: 1941463306}
+  playerRaycast: {fileID: 1730632658}
 --- !u!1 &1960082090
 GameObject:
   m_ObjectHideFlags: 0
