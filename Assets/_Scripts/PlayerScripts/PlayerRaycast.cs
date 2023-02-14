@@ -9,10 +9,13 @@ public class PlayerRaycast : MonoBehaviour
     public GameObject popUp;
     private GameObject pickUpobj;
     public float Raylength;
-    private bool isPickup;
+    public bool isPickup;
     public Transform pickupPlacholder;
+    public AlphaChange alphaChange;
+    public RaycastHit hit;
     //public PrototypeMovement pm;
-    
+
+
 
     //public Switch switchh;
     void Update()
@@ -29,13 +32,14 @@ public class PlayerRaycast : MonoBehaviour
                 isPickup = false;
                 pickUpobj = null;
                 //pm.canSprint = true;
-                
+
+
 
             }
             return;
         }
 
-        RaycastHit hit;
+        
 
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, Raylength))
         {
@@ -57,9 +61,13 @@ public class PlayerRaycast : MonoBehaviour
                 {
                     isPickup = true;
                     pickUpobj = hit.collider.gameObject;
+
                     //Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
                     //Destroy(rb);
 
+
+
+                    Debug.Log("it worked");
                 }
             }
            

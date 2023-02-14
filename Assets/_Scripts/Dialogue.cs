@@ -34,18 +34,18 @@ public class Dialogue : MonoBehaviour
     {
         if ("dialogueone" == AS.clip.name)
         {
-            if (AS.time >= 12.0f)
+            if (AS.clip.length >= 10.0f)
             {
                 DialogueBox.text = dialogueTexts[2];
                 //subtitleBox.GetComponent<Text>().text = dialogueTexts[2];
                 return;
             }
-            if (AS.time >= 8.0f)
+            if (AS.clip.length >= 8.0f)
             {
                 DialogueBox.text = dialogueTexts[1];
                 return;
             }
-            if (AS.time >= 2.0f)
+            if (AS.clip.length >= 2.0f)
             {
                 DialogueBox.text = dialogueTexts[0];
                 return;
