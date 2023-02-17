@@ -7,7 +7,7 @@ public class PlayerRaycast : MonoBehaviour
 {
     public GameObject cam;
     public GameObject popUp;
-    private GameObject pickUpobj;
+    public GameObject pickUpobj;
     public float Raylength;
     public bool isPickup;
     public Transform pickupPlacholder;
