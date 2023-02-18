@@ -14,9 +14,10 @@ public class AlphaChange : MonoBehaviour
 
     private void Update()
     {
-        if(playerRaycast.isPickup == true)
+        if(playerRaycast.isPickup == true && playerRaycast.pickUpobj == gameObject)
         {
             SetTransparent();
+            Debug.Log(gameObject.name);
         }
         else if(playerRaycast.isPickup == false)
         {
