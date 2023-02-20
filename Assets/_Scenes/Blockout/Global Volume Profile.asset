@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8074568605227507074
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8f6e43869a48f991285995d4df1e93, type: 3}
+  m_Name: ColorGrading
+  m_EditorClassIdentifier: 
+  active: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.742
+  blueShadows:
+    m_OverrideState: 1
+    m_Value: 0
+  greenShadows:
+    m_OverrideState: 1
+    m_Value: 0
+  redHighlights:
+    m_OverrideState: 1
+    m_Value: 0.502
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0.571
+  vibrance:
+    m_OverrideState: 1
+    m_Value: 0.76
+  saturation:
+    m_OverrideState: 1
+    m_Value: 0.138
+--- !u!114 &-3935093561054830617
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f8317041eee140a38873daddb4b3a5f, type: 3}
+  m_Name: StylizedDetail
+  m_EditorClassIdentifier: 
+  active: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.44
+  blur:
+    m_OverrideState: 1
+    m_Value: 0.44
+  edgePreserve:
+    m_OverrideState: 1
+    m_Value: 2
+  rangeStart:
+    m_OverrideState: 0
+    m_Value: 10
+  rangeEnd:
+    m_OverrideState: 0
+    m_Value: 30
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,6 +78,8 @@ MonoBehaviour:
   - {fileID: 1071444922952523541}
   - {fileID: 4973578833777937851}
   - {fileID: 1298949636412186133}
+  - {fileID: -8074568605227507074}
+  - {fileID: -3935093561054830617}
 --- !u!114 &1071444922952523541
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -59,10 +123,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.76
   contrast:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 20
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -70,8 +134,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   saturation:
-    m_OverrideState: 1
-    m_Value: -10
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &4973578833777937851
 MonoBehaviour:
   m_ObjectHideFlags: 3

@@ -6,48 +6,78 @@ namespace Valve
 {
     public class Valve : MonoBehaviour
     {
+        bool isRaised = false;
+
         public Animator valveAnim;
         public Animator waterAnim;
 
-        public float castLength;
-
-        public GameObject gameCam;
-
-        bool isRaised = false;
-
-        private void Update()
+        public void ValveControl()
         {
-            RaycastHit hit;
-
-            if (Physics.Raycast(gameCam.transform.position, gameCam.transform.forward, out hit, castLength))
+            if (!isRaised)
             {
-                if (hit.collider.tag == "Valve")
-                {
-                    if (Input.GetKeyDown(KeyCode.E) && isRaised == false)
-                    {
-                        WaterRaise();
-                    }
-                    else if (Input.GetKeyDown(KeyCode.Q) && isRaised == true)
-                    {
-                        WaterLower();
-                    }
-                }
+                WaterRaised();
             }
-
+            else { WaterLowered(); }
         }
-        public void WaterRaise()
+
+        void WaterRaised()
         {
             isRaised = true;
-            valveAnim.SetTrigger("Turn");
+            valveAnim.SetTrigger("On");
             waterAnim.SetTrigger("Raise");
+
         }
 
-        public void WaterLower()
+        void WaterLowered()
         {
             isRaised = false;
-            valveAnim.SetTrigger("Turn");
+            valveAnim.SetTrigger("Off");
             waterAnim.SetTrigger("Lower");
         }
+
+        //    public Animator valveAnim;
+        //    public Animator waterAnim;
+
+        //    public float castLength;
+
+        //    public GameObject gameCam;
+
+        //    bool isRaised = false;
+
+        //    private void Update()
+        //    {
+        //        RaycastHit hit;
+
+        //        if (Physics.Raycast(gameCam.transform.position, gameCam.transform.forward, out hit, castLength))
+        //        {
+        //            if (hit.collider.tag == "Valve")
+        //            {
+        //                if (Input.GetKeyDown(KeyCode.E) && isRaised == false)
+        //                {
+        //                    WaterRaise();
+        //                }
+        //                else if (Input.GetKeyDown(KeyCode.Q) && isRaised == true)
+        //                {
+        //                    WaterLower();
+        //                }
+        //            }
+        //        }
+
+        //    }
+        //    public void WaterRaise()
+        //    {
+        //        isRaised = true;
+        //        valveAnim.SetTrigger("Turn");
+        //        waterAnim.SetTrigger("Raise");
+        //    }
+
+        //    public void WaterLower()
+        //    {
+        //        isRaised = false;
+        //        valveAnim.SetTrigger("Turn");
+        //        waterAnim.SetTrigger("Lower");
+        //    }
+        //}
     }
 }
 
