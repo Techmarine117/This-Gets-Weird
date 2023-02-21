@@ -11,21 +11,25 @@ namespace Valve
         public Animator valveAnim;
         public Animator waterAnim;
 
+        public ParticleSystem waterParticles;
+
         public void ValveControl()
         {
             if (!isRaised)
             {
-                WaterRaised();
+                StartCoroutine(WaterRaised());
             }
             else { WaterLowered(); }
         }
 
-        void WaterRaised()
+        IEnumerator WaterRaised()
         {
             isRaised = true;
             valveAnim.SetTrigger("On");
             waterAnim.SetTrigger("Raise");
-
+            waterParticles.Play();
+            yield return new WaitForSeconds(5.5f);
+            waterParticles.Stop();
         }
 
         void WaterLowered()

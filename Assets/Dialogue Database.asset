@@ -486,7 +486,7 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Cubes", "active");
 
-        ShowAlert("")'
+        ShowAlert("New Quest")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -542,7 +542,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 210
-        y: 120
+        y: 119
         width: 160
         height: 30
     - id: 6
