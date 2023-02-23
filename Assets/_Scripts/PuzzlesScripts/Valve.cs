@@ -12,32 +12,47 @@ namespace Valve
         public Animator waterAnim;
 
         public ParticleSystem waterParticles;
+        public ParticleSystem waterParticles2;
 
+        AudioSource waterSound;
+
+        private void Start()
+        {
+            waterSound = GetComponent<AudioSource>();
+        }
         public void ValveControl()
         {
             if (!isRaised)
             {
                 StartCoroutine(WaterRaised());
             }
-            else { WaterLowered(); }
+            else { StartCoroutine(WaterLowered()); }
         }
 
         IEnumerator WaterRaised()
         {
-            isRaised = true;
             valveAnim.SetTrigger("On");
             waterAnim.SetTrigger("Raise");
-            waterParticles.Play();
-            yield return new WaitForSeconds(5.5f);
-            waterParticles.Stop();
+            waterParticles2.Play();
+            waterSound.Play();
+            yield return new WaitForSeconds(5f);
+            waterParticles2.Stop();
+            isRaised = true;
+
         }
 
-        void WaterLowered()
+        IEnumerator WaterLowered()
         {
-            isRaised = false;
             valveAnim.SetTrigger("Off");
             waterAnim.SetTrigger("Lower");
+            waterParticles.Play();
+            waterSound.Play();
+            yield return new WaitForSeconds(5f);
+            waterParticles.Stop();
+            isRaised = false;
+
         }
+        
 
         //    public Animator valveAnim;
         //    public Animator waterAnim;
