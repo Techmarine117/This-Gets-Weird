@@ -22,6 +22,7 @@ namespace StarterAssets
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
+
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
@@ -116,7 +117,9 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-		}
+			Crouching();
+
+        }
 
 		private void LateUpdate()
 		{
@@ -249,6 +252,22 @@ namespace StarterAssets
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
 			}
+		}
+
+		private void  Crouching()
+		{
+			if (_input.Crouch)
+			{
+				_controller.height = 0.3f;
+				MoveSpeed = 2.0f;
+
+				Debug.Log("Crouching");
+			}
+			else
+			{
+                _controller.height = 3f;
+                MoveSpeed = 4.0f;
+            }
 		}
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
