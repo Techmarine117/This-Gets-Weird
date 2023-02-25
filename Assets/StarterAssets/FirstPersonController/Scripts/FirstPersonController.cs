@@ -17,7 +17,9 @@ namespace StarterAssets
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 6.0f;
-		[Tooltip("Rotation speed of the character")]
+        [Tooltip("Crouch speed of the character in m/s")]
+        public float CrouchSpeed = 2.0f;
+        [Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
@@ -256,17 +258,22 @@ namespace StarterAssets
 
 		private void  Crouching()
 		{
-			if (_input.Crouch)
+			float targetSpeed = _input.Crouch ? CrouchSpeed : MoveSpeed;
+			
+
+            if (Keyboard.current.cKey.wasPressedThisFrame)
 			{
 				_controller.height = 0.3f;
-				MoveSpeed = 2.0f;
+				
 
 				Debug.Log("Crouching");
-			}
-			else
+                
+            }
+			else if(Keyboard.current.cKey.wasReleasedThisFrame)
 			{
                 _controller.height = 3f;
-                MoveSpeed = 4.0f;
+                
+
             }
 		}
 
