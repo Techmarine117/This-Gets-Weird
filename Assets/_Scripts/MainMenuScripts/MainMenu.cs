@@ -112,6 +112,7 @@ public class MainMenu : MonoBehaviour
         GetBindingInfo();
         UpdateBindingUI();
         UpdateBindingUIJump();
+        UpdateBindingUICrouch();
     }
 
     private void OnEnable()
@@ -143,7 +144,13 @@ public class MainMenu : MonoBehaviour
             GetBindingInfo();
             UpdateBindingUIRun();
         }
-            
+        if (inputActionReference[3] != null)
+        {
+            InputManager.LoadBindingOveride(ActionName[3]);
+            GetBindingInfo();
+            UpdateBindingUICrouch();
+        }
+
         InputManager.ReBindComplete += UpdateBindingUI;
         InputManager.RebindCanceled += UpdateBindingUI;
 
@@ -152,6 +159,11 @@ public class MainMenu : MonoBehaviour
 
         InputManager.ReBindComplete += UpdateBindingUIRun;
         InputManager.RebindCanceled += UpdateBindingUIRun;
+
+        InputManager.ReBindComplete += UpdateBindingUICrouch;
+        InputManager.RebindCanceled += UpdateBindingUICrouch;
+
+
     }
 
     private void OnDisable()
@@ -164,6 +176,9 @@ public class MainMenu : MonoBehaviour
 
         InputManager.ReBindComplete -= UpdateBindingUIRun;
         InputManager.RebindCanceled -= UpdateBindingUIRun;
+
+        InputManager.ReBindComplete -= UpdateBindingUICrouch;
+        InputManager.RebindCanceled -= UpdateBindingUICrouch;
     }
 
     public void quitGame()
@@ -245,9 +260,11 @@ public class MainMenu : MonoBehaviour
             InputManager.ResetBinding(ActionName[0], BindingIndex[0]);
             InputManager.ResetBinding(ActionName[1], BindingIndex[1]);
             InputManager.ResetBinding(ActionName[2], BindingIndex[2]);
+            InputManager.ResetBinding(ActionName[3], BindingIndex[3]);
             UpdateBindingUI();
             UpdateBindingUIJump();
             UpdateBindingUIRun();
+            UpdateBindingUICrouch();
 
         }
     }
@@ -324,6 +341,10 @@ public class MainMenu : MonoBehaviour
         {
             ActionName[2] = inputActionReference[2].action.name;
         }
+        if (inputActionReference[3].action != null)
+        {
+            ActionName[3] = inputActionReference[3].action.name;
+        }
 
 
         if (inputActionReference[0].action.bindings.Count > SelectedBinding)
@@ -333,6 +354,7 @@ public class MainMenu : MonoBehaviour
             BindingIndex[0] = SelectedBinding;
             BindingIndex[1] = 0;
             BindingIndex[2] = 0;
+            BindingIndex[3] = 0;
         }
     }
 
@@ -399,6 +421,26 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    private void UpdateBindingUICrouch()
+    {
+
+        if (ActionText[3] != null)
+            ActionText[3].text = ActionName[3];
+
+        if (RebindText[3] != null)
+        {
+            if (Application.isPlaying)
+            {
+                RebindText[3].text = InputManager.GetBindingName(ActionName[3], BindingIndex[3]);
+            }
+        }
+        else
+        {
+            RebindText[3].text = inputActionReference[3].action.GetBindingDisplayString(BindingIndex[3]);
+        }
+
+    }
+
     public void DoReBind(int actionreferenceindex)
     {
         InputManager.StartRebind(ActionName[actionreferenceindex], BindingIndex[actionreferenceindex], RebindText[actionreferenceindex], ExcludeMouse);
@@ -417,6 +459,8 @@ public class MainMenu : MonoBehaviour
         GetBindingInfo();
         UpdateBindingUI();
         UpdateBindingUIJump();
+        UpdateBindingUICrouch();
+        UpdateBindingUIRun();
     }
     public void removeBindingValue()
     {
@@ -431,6 +475,8 @@ public class MainMenu : MonoBehaviour
         GetBindingInfo();
         UpdateBindingUI();
         UpdateBindingUIJump();
+        UpdateBindingUICrouch();
+        UpdateBindingUIRun();
     }
 
 }
