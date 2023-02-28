@@ -4,6 +4,7 @@ public class MovingPlatform : MonoBehaviour
 {
     
     [SerializeField] GameObject[] waypoints;
+    [SerializeField] Transform Player = null;
 
     int currentIndex;
 
@@ -11,7 +12,9 @@ public class MovingPlatform : MonoBehaviour
 
     public PressurePlate pp;
 
-    private void Update()
+    Vector3 playerPosition;
+
+    private void FixedUpdate()
     {
         if (pp.isPlateActive)
         {
@@ -24,8 +27,22 @@ public class MovingPlatform : MonoBehaviour
                 }
             }
 
+            if (Player != null)
+                playerPosition = transform.InverseTransformPoint(Player.position);
+
             transform.position = Vector3.MoveTowards(transform.position, waypoints[currentIndex].transform.position, platSpeed * Time.deltaTime);
+
+            if (Player != null)
+                Player.position = transform.TransformPoint(playerPosition);
         }
-        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Player = collision.transform;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Player = null;
     }
 }

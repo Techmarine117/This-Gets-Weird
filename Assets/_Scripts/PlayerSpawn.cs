@@ -6,13 +6,15 @@ public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] GameObject player;
     [SerializeField] Transform spawnPoint;
-    private void OnTriggerEnter(Collider other)
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    player.transform.position = spawnPoint.transform.position;
+    //    //look at
+    //}
+
+    public void Spawn()
     {
         player.transform.position = spawnPoint.transform.position;
     }
-
-    //public void Spawn()
-    //{
-    //    player.transform.position = spawnPoint.transform.position;
-    //}
 }

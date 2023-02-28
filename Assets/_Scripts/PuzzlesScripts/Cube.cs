@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cube : MonoBehaviour
 {
     public Transform placeholder;
-    public GameObject puzzleCube;
+    //public GameObject puzzleCube;
     bool hasCube = false;
     public void CubeControl()
     {
@@ -16,10 +16,11 @@ public class Cube : MonoBehaviour
         else { NotPickedUp();}
     }
 
-    void PickedUP()
+    public void PickedUP()
     {
-        hasCube = true;
-        puzzleCube.transform.position = placeholder.position;
+        //hasCube = true;
+        this.transform.rotation = transform.rotation;
+        this.transform.position = placeholder.position;
     }
 
     void NotPickedUp()

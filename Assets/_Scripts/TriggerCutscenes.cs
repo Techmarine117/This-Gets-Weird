@@ -53,14 +53,14 @@ public class TriggerCutscenes : MonoBehaviour
             }
         }
 
-       
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         controller.MoveSpeed = 4.0f;
 
-        if(DestroyTrigger== true)
+        if (DestroyTrigger == true)
         {
             this.gameObject.SetActive(false);
         }

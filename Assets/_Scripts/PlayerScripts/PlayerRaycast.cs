@@ -28,7 +28,7 @@ public class PlayerRaycast : MonoBehaviour
             pickUpobj.transform.position = pickupPlacholder.position;
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //pickUpobj.AddComponent<Rigidbody>();
+                pickUpobj.AddComponent<Rigidbody>();
                 isPickup = false;
                 pickUpobj = null;
                 //pm.canSprint = true;
@@ -62,8 +62,8 @@ public class PlayerRaycast : MonoBehaviour
                     isPickup = true;
                     pickUpobj = hit.collider.gameObject;
 
-                    //Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
-                    //Destroy(rb);
+                    Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
+                    Destroy(rb);
 
 
 
