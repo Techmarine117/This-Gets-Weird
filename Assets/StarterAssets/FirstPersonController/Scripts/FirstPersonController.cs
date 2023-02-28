@@ -17,10 +17,13 @@ namespace StarterAssets
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 6.0f;
-		[Tooltip("Rotation speed of the character")]
+        [Tooltip("Crouch speed of the character in m/s")]
+        public float CrouchSpeed = 2.0f;
+        [Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+
 
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
@@ -116,7 +119,9 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-		}
+			Crouching();
+
+        }
 
 		private void LateUpdate()
 		{
@@ -249,6 +254,27 @@ namespace StarterAssets
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
 			}
+		}
+
+		private void  Crouching()
+		{
+			float targetSpeed = _input.Crouch ? CrouchSpeed : MoveSpeed;
+			
+
+            if (Keyboard.current.cKey.wasPressedThisFrame)
+			{
+				_controller.height = 0.3f;
+				
+
+				Debug.Log("Crouching");
+                
+            }
+			else if(Keyboard.current.cKey.wasReleasedThisFrame)
+			{
+                _controller.height = 3f;
+                
+
+            }
 		}
 
 		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
