@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4334304189050121046}
   - component: {fileID: 2913397977686481970}
   - component: {fileID: 5976173608515702900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2754
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1294063309304320445}
   - component: {fileID: 6506814137375077625}
   - component: {fileID: 8394113236061274128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2753
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6447768057658587284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lollipop 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

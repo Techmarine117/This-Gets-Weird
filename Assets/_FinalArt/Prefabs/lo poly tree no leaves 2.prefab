@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6307226902079476376}
   - component: {fileID: 4021955401195754943}
   - component: {fileID: 2828943797619350460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2234
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8491855220819661490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lo poly tree no leaves 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

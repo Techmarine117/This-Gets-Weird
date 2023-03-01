@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2972827038570286709}
   - component: {fileID: 5134925001732638410}
   - component: {fileID: 4173798520261628644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2522
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2496203805034595294}
   - component: {fileID: 1582030495055025931}
   - component: {fileID: 2462111233141372061}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: log 2 cleaned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4964933991127254348}
   - component: {fileID: 6075110820046168278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: log 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

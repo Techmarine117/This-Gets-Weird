@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5154626424728674052}
   - component: {fileID: 4777084790789336675}
   - component: {fileID: 2310567146050558449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1213
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4467158397961900151}
   - component: {fileID: 2087673148769834404}
   - component: {fileID: 9134098145927272900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box794
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2704316549459777359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: house body001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 3044988009350664045}
   - component: {fileID: 1585700630993014316}
   - component: {fileID: 6934668532994552999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox292
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 2270267895591334391}
   - component: {fileID: 4685191606170891070}
   - component: {fileID: 3381483390286267222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox315
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 1845100597770840262}
   - component: {fileID: 9068689347898477716}
   - component: {fileID: 6095838867903353675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1229
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 5461045313108539363}
   - component: {fileID: 916519398138591275}
   - component: {fileID: 8129975279107704929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box865
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 6516091415738053260}
   - component: {fileID: 7197373108028164938}
   - component: {fileID: 3870514291282615693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid269
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 7535144405104635817}
   - component: {fileID: 4922486593157761761}
   - component: {fileID: 7438947462418425915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox277
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   - component: {fileID: 1610313324435911119}
   - component: {fileID: 8310787523872603744}
   - component: {fileID: 3108329966019858662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1247
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 6373942513496743778}
   - component: {fileID: 338193241280132259}
   - component: {fileID: 7715100321703456304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid263
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 1980799741297731167}
   - component: {fileID: 6456694097775325780}
   - component: {fileID: 4801180460726839096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1269
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 2741946572245311834}
   - component: {fileID: 3045733085636668891}
   - component: {fileID: 1441127111562072145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1242
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 6003513615608581823}
   - component: {fileID: 8824880860412931945}
   - component: {fileID: 5806046503047043547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox293
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 8664340861223176714}
   - component: {fileID: 3860388298688534384}
   - component: {fileID: 7677839191514948577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1235
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 1077455086510862022}
   - component: {fileID: 4801121912430084014}
   - component: {fileID: 5384170168203082557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid261
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1343,7 +1343,7 @@ GameObject:
   - component: {fileID: 3168267183776023164}
   - component: {fileID: 9103949890649600060}
   - component: {fileID: 6540725592959149518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid257
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1426,7 +1426,7 @@ GameObject:
   - component: {fileID: 536200279843712957}
   - component: {fileID: 3876235519742406090}
   - component: {fileID: 8061238752334066511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid276
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 2678624069673036506}
   - component: {fileID: 3509562395860360607}
   - component: {fileID: 3926583942344471055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box826
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,7 +1592,7 @@ GameObject:
   - component: {fileID: 4741174280784837000}
   - component: {fileID: 8437464695281617894}
   - component: {fileID: 1744457055724833780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1267
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1675,7 +1675,7 @@ GameObject:
   - component: {fileID: 1717989230763670566}
   - component: {fileID: 5084405124539776045}
   - component: {fileID: 4374420256825797772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid244
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 5745823843990037186}
   - component: {fileID: 5480414236313739902}
   - component: {fileID: 1173391706231919986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1245
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1841,7 @@ GameObject:
   - component: {fileID: 4204228323205276250}
   - component: {fileID: 5385716950426576303}
   - component: {fileID: 5822767161440479170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1924,7 +1924,7 @@ GameObject:
   - component: {fileID: 66025395846626786}
   - component: {fileID: 1221184181911093360}
   - component: {fileID: 5111529672165147940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid177
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2007,7 +2007,7 @@ GameObject:
   - component: {fileID: 791080512836505855}
   - component: {fileID: 718034980836593515}
   - component: {fileID: 3745781398494225744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid195
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2090,7 +2090,7 @@ GameObject:
   - component: {fileID: 7005031106669640941}
   - component: {fileID: 6272357573992059376}
   - component: {fileID: 2850919733041459202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1257
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2173,7 +2173,7 @@ GameObject:
   - component: {fileID: 7218618276320041521}
   - component: {fileID: 6779620758856386008}
   - component: {fileID: 8028040924943424566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid205
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2256,7 +2256,7 @@ GameObject:
   - component: {fileID: 1748423804381668034}
   - component: {fileID: 5102884319290980313}
   - component: {fileID: 4799157485605267628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2516
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2339,7 +2339,7 @@ GameObject:
   - component: {fileID: 5913116367747934910}
   - component: {fileID: 4640979687644424203}
   - component: {fileID: 4211259902982229237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1240
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2422,7 @@ GameObject:
   - component: {fileID: 2194120545703329123}
   - component: {fileID: 2024234310486354623}
   - component: {fileID: 2326496371578832897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5283
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2505,7 +2505,7 @@ GameObject:
   - component: {fileID: 6367208451538265418}
   - component: {fileID: 793638882570617547}
   - component: {fileID: 546055465998004778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1217
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2588,7 +2588,7 @@ GameObject:
   - component: {fileID: 7202579900418599897}
   - component: {fileID: 7110503074187571206}
   - component: {fileID: 4011047262097622471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid216
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2671,7 +2671,7 @@ GameObject:
   - component: {fileID: 4059925782942659825}
   - component: {fileID: 8631685705142974702}
   - component: {fileID: 8390016661886382129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1277
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2754,7 +2754,7 @@ GameObject:
   - component: {fileID: 1648932915564886347}
   - component: {fileID: 2025618633700547965}
   - component: {fileID: 4613550253514409584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid147
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2837,7 +2837,7 @@ GameObject:
   - component: {fileID: 2984983974694179512}
   - component: {fileID: 6716857194209087394}
   - component: {fileID: 6082204291419982855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid142
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2920,7 +2920,7 @@ GameObject:
   - component: {fileID: 4712406984849726986}
   - component: {fileID: 6570388305667910407}
   - component: {fileID: 684226737508420513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box815
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3003,7 +3003,7 @@ GameObject:
   - component: {fileID: 29438319927443585}
   - component: {fileID: 1591059298918851949}
   - component: {fileID: 3045662121758317646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box885
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3086,7 +3086,7 @@ GameObject:
   - component: {fileID: 6560954533326368917}
   - component: {fileID: 6351417561181652578}
   - component: {fileID: 9092793204903360992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid178
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3169,7 @@ GameObject:
   - component: {fileID: 2876269230538043884}
   - component: {fileID: 2989069892458283838}
   - component: {fileID: 4873016498642029123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid271
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3252,7 +3252,7 @@ GameObject:
   - component: {fileID: 7345029175182854829}
   - component: {fileID: 7077243126392001966}
   - component: {fileID: 1191090810914509375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox286
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3335,7 +3335,7 @@ GameObject:
   - component: {fileID: 2929794422881719514}
   - component: {fileID: 2331294830119844854}
   - component: {fileID: 8011632673078328268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid232
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 2874177491154278680}
   - component: {fileID: 9006402363076669286}
   - component: {fileID: 5300961837953243374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid258
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3501,7 +3501,7 @@ GameObject:
   - component: {fileID: 3653687647674481149}
   - component: {fileID: 3171898251477710171}
   - component: {fileID: 5508127180973173988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid187
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3584,7 +3584,7 @@ GameObject:
   - component: {fileID: 3231754557497788997}
   - component: {fileID: 7122442471542373182}
   - component: {fileID: 5855837234140022932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox316
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3667,7 +3667,7 @@ GameObject:
   - component: {fileID: 4281891712702704297}
   - component: {fileID: 157768072170899878}
   - component: {fileID: 8872196910690591476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid224
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3750,7 +3750,7 @@ GameObject:
   - component: {fileID: 5166272099193300411}
   - component: {fileID: 5935745554434941750}
   - component: {fileID: 69807410594200996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox308
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3833,7 +3833,7 @@ GameObject:
   - component: {fileID: 6548251120236533887}
   - component: {fileID: 141877031007471892}
   - component: {fileID: 2369684963041073630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box848
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3916,7 +3916,7 @@ GameObject:
   - component: {fileID: 2245465300330282352}
   - component: {fileID: 5420812345572404150}
   - component: {fileID: 2679177628375289270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3999,7 +3999,7 @@ GameObject:
   - component: {fileID: 3331290600766420797}
   - component: {fileID: 2270753958281451938}
   - component: {fileID: 1742453375103911981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid164
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4082,7 +4082,7 @@ GameObject:
   - component: {fileID: 2529747115167158582}
   - component: {fileID: 3508130572031044162}
   - component: {fileID: 1595277849834483373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1238
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4165,7 +4165,7 @@ GameObject:
   - component: {fileID: 7588338723080752499}
   - component: {fileID: 7044046763182902976}
   - component: {fileID: 9116624929816393181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1258
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4248,7 +4248,7 @@ GameObject:
   - component: {fileID: 5634483670586380519}
   - component: {fileID: 6317985917947247945}
   - component: {fileID: 9184222900376338048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox325
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4329,7 +4329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6489446640421055071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: candy corns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4482,7 +4482,7 @@ GameObject:
   - component: {fileID: 3635263616310401185}
   - component: {fileID: 2343918433619488951}
   - component: {fileID: 4175086732796392548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox311
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4565,7 +4565,7 @@ GameObject:
   - component: {fileID: 7665328384435472553}
   - component: {fileID: 381870109829109367}
   - component: {fileID: 2242807163881043154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox317
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4648,7 +4648,7 @@ GameObject:
   - component: {fileID: 1747215047884966507}
   - component: {fileID: 287922762013733157}
   - component: {fileID: 2930182386072389758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox294
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4731,7 +4731,7 @@ GameObject:
   - component: {fileID: 5723838192692010793}
   - component: {fileID: 4309344369518883740}
   - component: {fileID: 7318026720257787162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid267
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4814,7 +4814,7 @@ GameObject:
   - component: {fileID: 5916512720558791409}
   - component: {fileID: 6230969228406409930}
   - component: {fileID: 2553094189772573896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2515
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4897,7 +4897,7 @@ GameObject:
   - component: {fileID: 7620192642779671870}
   - component: {fileID: 505935891197938204}
   - component: {fileID: 4984011383915601294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid253
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4980,7 +4980,7 @@ GameObject:
   - component: {fileID: 1323617540290967850}
   - component: {fileID: 5240369086620622454}
   - component: {fileID: 8826362058298663484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid236
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5063,7 +5063,7 @@ GameObject:
   - component: {fileID: 5640489480382636784}
   - component: {fileID: 1662080926481606363}
   - component: {fileID: 7661758358582505726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid214
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5146,7 +5146,7 @@ GameObject:
   - component: {fileID: 7831459000002827035}
   - component: {fileID: 2320569275249331006}
   - component: {fileID: 8350984051358850723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid166
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5229,7 +5229,7 @@ GameObject:
   - component: {fileID: 3005554657141996133}
   - component: {fileID: 1708856851548651679}
   - component: {fileID: 4135246889728134622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid151
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5312,7 +5312,7 @@ GameObject:
   - component: {fileID: 6077531920971504716}
   - component: {fileID: 5099802851723091597}
   - component: {fileID: 7760717263293686806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid148
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5395,7 +5395,7 @@ GameObject:
   - component: {fileID: 8982012944230482371}
   - component: {fileID: 5702221682673764789}
   - component: {fileID: 7319861723510182266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid266
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5478,7 +5478,7 @@ GameObject:
   - component: {fileID: 259301929224487114}
   - component: {fileID: 8869771056237227176}
   - component: {fileID: 6438547148876311558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox344
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5561,7 +5561,7 @@ GameObject:
   - component: {fileID: 8614151943732568343}
   - component: {fileID: 7565694180322478325}
   - component: {fileID: 1442648457441408488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1243
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5644,7 +5644,7 @@ GameObject:
   - component: {fileID: 3405291309106099228}
   - component: {fileID: 7367862245841380868}
   - component: {fileID: 5753100881852084277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1292
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5727,7 +5727,7 @@ GameObject:
   - component: {fileID: 519154135538085025}
   - component: {fileID: 4462755491035759672}
   - component: {fileID: 1848050493744078426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox288
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5810,7 +5810,7 @@ GameObject:
   - component: {fileID: 1587495797423661913}
   - component: {fileID: 2009142604413971792}
   - component: {fileID: 2398268583663171285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid274
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5893,7 +5893,7 @@ GameObject:
   - component: {fileID: 8033793070778867275}
   - component: {fileID: 5677761370152198630}
   - component: {fileID: 5248891208988296556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1276
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5976,7 +5976,7 @@ GameObject:
   - component: {fileID: 3384610229948115950}
   - component: {fileID: 5996163620493446275}
   - component: {fileID: 4585067710178627053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid194
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6059,7 +6059,7 @@ GameObject:
   - component: {fileID: 1817911469392783882}
   - component: {fileID: 4086991920216975241}
   - component: {fileID: 4714534610802935915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2519
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6142,7 +6142,7 @@ GameObject:
   - component: {fileID: 2722921071631888238}
   - component: {fileID: 6491397226786029140}
   - component: {fileID: 8644407363968998330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox343
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6225,7 +6225,7 @@ GameObject:
   - component: {fileID: 9120383305933182449}
   - component: {fileID: 8184245695771350706}
   - component: {fileID: 5565774376336766153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid213
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6308,7 +6308,7 @@ GameObject:
   - component: {fileID: 7323422958820838302}
   - component: {fileID: 221562304506762587}
   - component: {fileID: 7975564710347412917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1259
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6391,7 +6391,7 @@ GameObject:
   - component: {fileID: 5552800059320653900}
   - component: {fileID: 7129683790905121719}
   - component: {fileID: 4948130293787555097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid219
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6474,7 +6474,7 @@ GameObject:
   - component: {fileID: 1386285714147509622}
   - component: {fileID: 6344598351168377250}
   - component: {fileID: 5581589297910147223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox346
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6557,7 +6557,7 @@ GameObject:
   - component: {fileID: 8253944072899699462}
   - component: {fileID: 7492294546596041567}
   - component: {fileID: 7978425062547599465}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox333
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6640,7 +6640,7 @@ GameObject:
   - component: {fileID: 9164235705005692923}
   - component: {fileID: 2575347032273854385}
   - component: {fileID: 5890064879696615173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1239
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6723,7 +6723,7 @@ GameObject:
   - component: {fileID: 2526537494301025928}
   - component: {fileID: 5063739505186699517}
   - component: {fileID: 4537077526081175377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1231
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6806,7 +6806,7 @@ GameObject:
   - component: {fileID: 367050859468247467}
   - component: {fileID: 960639778940243588}
   - component: {fileID: 4930972337639136889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1273
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6889,7 +6889,7 @@ GameObject:
   - component: {fileID: 4526373959380782343}
   - component: {fileID: 586001297926113663}
   - component: {fileID: 674858423729392165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1209
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6972,7 +6972,7 @@ GameObject:
   - component: {fileID: 7458009450252457598}
   - component: {fileID: 2518270566297123679}
   - component: {fileID: 5146388967556595272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1249
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7055,7 +7055,7 @@ GameObject:
   - component: {fileID: 2775635623008044261}
   - component: {fileID: 403951799088802602}
   - component: {fileID: 8477529902830822207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid157
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7138,7 +7138,7 @@ GameObject:
   - component: {fileID: 7320604432797777033}
   - component: {fileID: 8856706018861008171}
   - component: {fileID: 7627223908382074124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box902
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7221,7 +7221,7 @@ GameObject:
   - component: {fileID: 7283365284515709550}
   - component: {fileID: 5873065878909173184}
   - component: {fileID: 2734984209860993880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1220
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7304,7 +7304,7 @@ GameObject:
   - component: {fileID: 874502434183336046}
   - component: {fileID: 8668870061556393950}
   - component: {fileID: 8175402778270726073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1252
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7387,7 +7387,7 @@ GameObject:
   - component: {fileID: 8984595959421641841}
   - component: {fileID: 4621158238796220642}
   - component: {fileID: 2384711827183093807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox295
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7470,7 +7470,7 @@ GameObject:
   - component: {fileID: 8437189103568956281}
   - component: {fileID: 5172892521570499587}
   - component: {fileID: 5552854375533386270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2520
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7553,7 +7553,7 @@ GameObject:
   - component: {fileID: 6738428588320284059}
   - component: {fileID: 9165686876411509704}
   - component: {fileID: 176917046294691439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox280
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7636,7 +7636,7 @@ GameObject:
   - component: {fileID: 6794411304845234465}
   - component: {fileID: 3216620880942794941}
   - component: {fileID: 8487483683334888630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1262
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7719,7 +7719,7 @@ GameObject:
   - component: {fileID: 965460289123319072}
   - component: {fileID: 6123841552648081575}
   - component: {fileID: 6196451440411700179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox314
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7802,7 +7802,7 @@ GameObject:
   - component: {fileID: 4864748353587864251}
   - component: {fileID: 6874085561761179116}
   - component: {fileID: 3544295041537704053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5282
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7885,7 +7885,7 @@ GameObject:
   - component: {fileID: 5028917630466275110}
   - component: {fileID: 5917479595126310794}
   - component: {fileID: 835596656977971826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1221
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7968,7 +7968,7 @@ GameObject:
   - component: {fileID: 5972805293638832992}
   - component: {fileID: 5832594188025862434}
   - component: {fileID: 8445286062762360076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox339
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8051,7 +8051,7 @@ GameObject:
   - component: {fileID: 5414147735605067172}
   - component: {fileID: 6093853451645102944}
   - component: {fileID: 5590465595181307473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox341
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8134,7 +8134,7 @@ GameObject:
   - component: {fileID: 8261647290204349618}
   - component: {fileID: 3731243504025499110}
   - component: {fileID: 1690719889490529744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox306
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8217,7 +8217,7 @@ GameObject:
   - component: {fileID: 4770217030420827745}
   - component: {fileID: 5871606980689572057}
   - component: {fileID: 1925250185264638963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid242
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8300,7 +8300,7 @@ GameObject:
   - component: {fileID: 5201939289244003577}
   - component: {fileID: 2638395170101072685}
   - component: {fileID: 1046928183806176455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox313
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8383,7 +8383,7 @@ GameObject:
   - component: {fileID: 4381820629540329098}
   - component: {fileID: 4834448606189941118}
   - component: {fileID: 1895132764966312569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid272
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8466,7 +8466,7 @@ GameObject:
   - component: {fileID: 1264280243143488197}
   - component: {fileID: 9187806472721469267}
   - component: {fileID: 821152660204123711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid235
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8549,7 +8549,7 @@ GameObject:
   - component: {fileID: 4838115975187877752}
   - component: {fileID: 2339418906079931581}
   - component: {fileID: 8343645232342395620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1261
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8632,7 +8632,7 @@ GameObject:
   - component: {fileID: 8632708679290290210}
   - component: {fileID: 4272146956087091010}
   - component: {fileID: 818265914595852169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1260
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8715,7 +8715,7 @@ GameObject:
   - component: {fileID: 2877217656876635623}
   - component: {fileID: 8347062011042568930}
   - component: {fileID: 8031898771876595926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox305
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8798,7 +8798,7 @@ GameObject:
   - component: {fileID: 5592218909191278953}
   - component: {fileID: 3811570856306869854}
   - component: {fileID: 692235376262134713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid270
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8881,7 +8881,7 @@ GameObject:
   - component: {fileID: 2679290753023646477}
   - component: {fileID: 2117449316967182721}
   - component: {fileID: 2489012847157945367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box873
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8964,7 +8964,7 @@ GameObject:
   - component: {fileID: 8736379459712109397}
   - component: {fileID: 1005105463086551357}
   - component: {fileID: 1859817586665280054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid237
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9047,7 +9047,7 @@ GameObject:
   - component: {fileID: 4087272675935145494}
   - component: {fileID: 4581916461429169739}
   - component: {fileID: 6396498377105314847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid180
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9130,7 +9130,7 @@ GameObject:
   - component: {fileID: 7549784949869745152}
   - component: {fileID: 7306087074175561093}
   - component: {fileID: 7322370446632771083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox345
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9213,7 +9213,7 @@ GameObject:
   - component: {fileID: 7092288366503903029}
   - component: {fileID: 7895775688227481443}
   - component: {fileID: 1975295565827650162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box907
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9296,7 +9296,7 @@ GameObject:
   - component: {fileID: 1878076828054232799}
   - component: {fileID: 2421220921279789908}
   - component: {fileID: 6689793926870174543}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid186
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9379,7 +9379,7 @@ GameObject:
   - component: {fileID: 4906822336443524025}
   - component: {fileID: 3006739866860830629}
   - component: {fileID: 6100276802335351636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid174
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9462,7 +9462,7 @@ GameObject:
   - component: {fileID: 428497286802471439}
   - component: {fileID: 4512117274065968984}
   - component: {fileID: 174024366888050119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1254
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9545,7 +9545,7 @@ GameObject:
   - component: {fileID: 2135044442551960587}
   - component: {fileID: 2272068461669706975}
   - component: {fileID: 5050120438700556306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid192
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9628,7 +9628,7 @@ GameObject:
   - component: {fileID: 8746885693222653891}
   - component: {fileID: 2875540588321933048}
   - component: {fileID: 160753784055902303}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box920
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9709,7 +9709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031548061368884210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: doorknob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9744,7 +9744,7 @@ GameObject:
   - component: {fileID: 5956795956569925865}
   - component: {fileID: 97320759321346936}
   - component: {fileID: 2049162977380637740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box897
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9827,7 +9827,7 @@ GameObject:
   - component: {fileID: 34644980063274642}
   - component: {fileID: 6457512897283442978}
   - component: {fileID: 4540892059873886082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox328
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9910,7 +9910,7 @@ GameObject:
   - component: {fileID: 1009143700044535196}
   - component: {fileID: 453624115206693090}
   - component: {fileID: 6345701269807277156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5281
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9993,7 +9993,7 @@ GameObject:
   - component: {fileID: 7437037536033781731}
   - component: {fileID: 7659064937522756903}
   - component: {fileID: 8331617668339200988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid256
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10076,7 +10076,7 @@ GameObject:
   - component: {fileID: 8417458806658794838}
   - component: {fileID: 7081930441965809296}
   - component: {fileID: 3585489901746868659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox283
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10159,7 +10159,7 @@ GameObject:
   - component: {fileID: 4435593928461607842}
   - component: {fileID: 5953180029345988866}
   - component: {fileID: 3224577304756898709}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1222
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10242,7 +10242,7 @@ GameObject:
   - component: {fileID: 6679745832634000728}
   - component: {fileID: 8416077982934437127}
   - component: {fileID: 1462830993295245371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid264
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10325,7 +10325,7 @@ GameObject:
   - component: {fileID: 5793978866596912672}
   - component: {fileID: 7068437395565687801}
   - component: {fileID: 1190262094739674394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid210
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10408,7 +10408,7 @@ GameObject:
   - component: {fileID: 3687643432728187528}
   - component: {fileID: 5550604785119583370}
   - component: {fileID: 8131328007775144898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid240
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10491,7 +10491,7 @@ GameObject:
   - component: {fileID: 3296574220473601070}
   - component: {fileID: 2393249774586983563}
   - component: {fileID: 4649947660860826840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid185
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10574,7 +10574,7 @@ GameObject:
   - component: {fileID: 3216915993565472248}
   - component: {fileID: 1542735930417941116}
   - component: {fileID: 333267709440777130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid165
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10657,7 +10657,7 @@ GameObject:
   - component: {fileID: 8735868309590622332}
   - component: {fileID: 8575807587613581207}
   - component: {fileID: 1362564708797235041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1232
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10740,7 +10740,7 @@ GameObject:
   - component: {fileID: 8088695867806871994}
   - component: {fileID: 1570943172944822064}
   - component: {fileID: 6902418675344955403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid255
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10823,7 +10823,7 @@ GameObject:
   - component: {fileID: 1413119417432859095}
   - component: {fileID: 2590757106426602453}
   - component: {fileID: 4314772662590372941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder2517
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10906,7 +10906,7 @@ GameObject:
   - component: {fileID: 3650090456491677364}
   - component: {fileID: 6198096739814017532}
   - component: {fileID: 531408232110955081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1241
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10989,7 +10989,7 @@ GameObject:
   - component: {fileID: 518174274977923040}
   - component: {fileID: 6305333743516919450}
   - component: {fileID: 8837988505672309482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1223
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11072,7 +11072,7 @@ GameObject:
   - component: {fileID: 7726403454267013592}
   - component: {fileID: 109039622330264145}
   - component: {fileID: 9184089503906964902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid188
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11155,7 +11155,7 @@ GameObject:
   - component: {fileID: 3043131032997380576}
   - component: {fileID: 1915860708503139881}
   - component: {fileID: 7256335031301547453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox291
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11238,7 +11238,7 @@ GameObject:
   - component: {fileID: 5976533979674744548}
   - component: {fileID: 6843656684965540698}
   - component: {fileID: 4813504220476451934}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid169
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11321,7 +11321,7 @@ GameObject:
   - component: {fileID: 5846476161084360203}
   - component: {fileID: 5442220292270411006}
   - component: {fileID: 2933379413987929924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid173
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11404,7 +11404,7 @@ GameObject:
   - component: {fileID: 1718044010710255091}
   - component: {fileID: 4867790182505217008}
   - component: {fileID: 8170237589611641928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1234
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11487,7 +11487,7 @@ GameObject:
   - component: {fileID: 6311965405292141850}
   - component: {fileID: 4339293097594707746}
   - component: {fileID: 4896077738288801375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid146
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11570,7 +11570,7 @@ GameObject:
   - component: {fileID: 5526164549878100362}
   - component: {fileID: 6755174975122158122}
   - component: {fileID: 1775465272402237643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11653,7 +11653,7 @@ GameObject:
   - component: {fileID: 5832175211481530571}
   - component: {fileID: 8655283068113607417}
   - component: {fileID: 7735943916861439743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid226
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11736,7 +11736,7 @@ GameObject:
   - component: {fileID: 2909581994088798493}
   - component: {fileID: 4316746741762983771}
   - component: {fileID: 1477069059159181828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid209
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11819,7 +11819,7 @@ GameObject:
   - component: {fileID: 7463717854477463817}
   - component: {fileID: 1086777171929514741}
   - component: {fileID: 4383104547282732801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid190
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11902,7 +11902,7 @@ GameObject:
   - component: {fileID: 745090276649109562}
   - component: {fileID: 3657412231284956806}
   - component: {fileID: 3749155650325083639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid260
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11985,7 +11985,7 @@ GameObject:
   - component: {fileID: 9093227991022982858}
   - component: {fileID: 8886574601499854144}
   - component: {fileID: 2939921152753517754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1293
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12068,7 +12068,7 @@ GameObject:
   - component: {fileID: 6594922216706137757}
   - component: {fileID: 5481311800425427865}
   - component: {fileID: 6998069509944345173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1271
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12151,7 +12151,7 @@ GameObject:
   - component: {fileID: 714666691358995319}
   - component: {fileID: 2846828782452515731}
   - component: {fileID: 623406202842111916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5284
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12234,7 +12234,7 @@ GameObject:
   - component: {fileID: 6217687536195194930}
   - component: {fileID: 289263728353510954}
   - component: {fileID: 7125917686669872075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1268
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12317,7 +12317,7 @@ GameObject:
   - component: {fileID: 6581040487857088138}
   - component: {fileID: 9156447654471685368}
   - component: {fileID: 5030136613925628265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid252
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12400,7 +12400,7 @@ GameObject:
   - component: {fileID: 664332737671727025}
   - component: {fileID: 8490856938546618679}
   - component: {fileID: 615843047229564801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5288
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12483,7 +12483,7 @@ GameObject:
   - component: {fileID: 7349383937434270175}
   - component: {fileID: 333474272711328618}
   - component: {fileID: 4536051946548779140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid191
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12566,7 +12566,7 @@ GameObject:
   - component: {fileID: 1436281884822190273}
   - component: {fileID: 3907413243817489520}
   - component: {fileID: 2920533475579840367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid275
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12649,7 +12649,7 @@ GameObject:
   - component: {fileID: 7437537944518471835}
   - component: {fileID: 3980460671500474323}
   - component: {fileID: 8389706944556063782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox276
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12732,7 +12732,7 @@ GameObject:
   - component: {fileID: 1835695274746458212}
   - component: {fileID: 1957026771583978161}
   - component: {fileID: 8906184143630479668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1264
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12815,7 +12815,7 @@ GameObject:
   - component: {fileID: 3082053190422084064}
   - component: {fileID: 111558015771570325}
   - component: {fileID: 1454468527251145522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid141
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12898,7 +12898,7 @@ GameObject:
   - component: {fileID: 6592789520665919684}
   - component: {fileID: 5379915578710628098}
   - component: {fileID: 664442851797987215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox334
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12981,7 +12981,7 @@ GameObject:
   - component: {fileID: 5153395534428577008}
   - component: {fileID: 8927723971296241839}
   - component: {fileID: 1910070399318771460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid248
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13064,7 +13064,7 @@ GameObject:
   - component: {fileID: 2984744287202722674}
   - component: {fileID: 4332473983638456342}
   - component: {fileID: 7543280209654599596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box923
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13147,7 +13147,7 @@ GameObject:
   - component: {fileID: 7870032186963715248}
   - component: {fileID: 9080725358030282397}
   - component: {fileID: 8060342450258728559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid247
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13230,7 +13230,7 @@ GameObject:
   - component: {fileID: 1089120889883461726}
   - component: {fileID: 3332107879086242196}
   - component: {fileID: 8102713137119055508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: roof under001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13313,7 +13313,7 @@ GameObject:
   - component: {fileID: 8119242041100959562}
   - component: {fileID: 58819963540025951}
   - component: {fileID: 6287169382712410665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1244
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13396,7 +13396,7 @@ GameObject:
   - component: {fileID: 5490355851040132737}
   - component: {fileID: 4502598531119643450}
   - component: {fileID: 4247333365319811993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid249
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13479,7 +13479,7 @@ GameObject:
   - component: {fileID: 4150399684715250782}
   - component: {fileID: 3901128817110410312}
   - component: {fileID: 9013548410393765015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox338
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13562,7 +13562,7 @@ GameObject:
   - component: {fileID: 1739591956383373098}
   - component: {fileID: 2509483195620265839}
   - component: {fileID: 7524728877997469215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1214
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13645,7 +13645,7 @@ GameObject:
   - component: {fileID: 899529744670008916}
   - component: {fileID: 5235396204168221757}
   - component: {fileID: 7412543777380889196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box852
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13728,7 +13728,7 @@ GameObject:
   - component: {fileID: 5191499385132117143}
   - component: {fileID: 2962209592026916618}
   - component: {fileID: 175981148461696721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid231
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13811,7 +13811,7 @@ GameObject:
   - component: {fileID: 2862713844420115418}
   - component: {fileID: 2022843268956767086}
   - component: {fileID: 5458095591733831267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box858
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13894,7 +13894,7 @@ GameObject:
   - component: {fileID: 8077799191090677855}
   - component: {fileID: 2977970507749299466}
   - component: {fileID: 3758462582071620042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox275
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13977,7 +13977,7 @@ GameObject:
   - component: {fileID: 2205703192536437471}
   - component: {fileID: 8666244874792442999}
   - component: {fileID: 5048674656607741374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box817
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14060,7 +14060,7 @@ GameObject:
   - component: {fileID: 3037662299419135289}
   - component: {fileID: 3805222601805638087}
   - component: {fileID: 4727689100849006864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14143,7 +14143,7 @@ GameObject:
   - component: {fileID: 5246172972123245544}
   - component: {fileID: 8175244472034898953}
   - component: {fileID: 6763570707518893612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box928
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14226,7 +14226,7 @@ GameObject:
   - component: {fileID: 7116817397655370012}
   - component: {fileID: 2659208422430320967}
   - component: {fileID: 3913615224646887611}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box879
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14309,7 +14309,7 @@ GameObject:
   - component: {fileID: 834401080806350876}
   - component: {fileID: 6409894188918578067}
   - component: {fileID: 8112738292810164032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box916
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14392,7 +14392,7 @@ GameObject:
   - component: {fileID: 1676741720596732501}
   - component: {fileID: 2003046207470313154}
   - component: {fileID: 2752490895775383322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1228
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14475,7 +14475,7 @@ GameObject:
   - component: {fileID: 1157540633689858988}
   - component: {fileID: 5355129409604282295}
   - component: {fileID: 2294721437013289721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox309
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14558,7 +14558,7 @@ GameObject:
   - component: {fileID: 2494593157524546910}
   - component: {fileID: 3508428071555540213}
   - component: {fileID: 1222169624352666960}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1266
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14641,7 +14641,7 @@ GameObject:
   - component: {fileID: 5957481577744302715}
   - component: {fileID: 5901939265883919908}
   - component: {fileID: 4046418384522600354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid158
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14724,7 +14724,7 @@ GameObject:
   - component: {fileID: 2970391034672615874}
   - component: {fileID: 3388719078608304494}
   - component: {fileID: 2973882267426066668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid217
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14807,7 +14807,7 @@ GameObject:
   - component: {fileID: 4482789338535755803}
   - component: {fileID: 7179045858564782706}
   - component: {fileID: 8348880501738462577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid228
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14890,7 +14890,7 @@ GameObject:
   - component: {fileID: 6108323162049985335}
   - component: {fileID: 4792532682538725569}
   - component: {fileID: 6423969572406866192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox296
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14973,7 +14973,7 @@ GameObject:
   - component: {fileID: 2110842221298610694}
   - component: {fileID: 3160936204549766434}
   - component: {fileID: 8676023757237087427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5287
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15056,7 +15056,7 @@ GameObject:
   - component: {fileID: 2505243560091376028}
   - component: {fileID: 1637895044038958865}
   - component: {fileID: 8362389550913606206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1274
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15139,7 +15139,7 @@ GameObject:
   - component: {fileID: 1825484756638982433}
   - component: {fileID: 952128873226428576}
   - component: {fileID: 7856907167958193869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1227
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15222,7 +15222,7 @@ GameObject:
   - component: {fileID: 2441219047379951550}
   - component: {fileID: 7463025954291168916}
   - component: {fileID: 3264666256825753285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1225
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15305,7 +15305,7 @@ GameObject:
   - component: {fileID: 3540794717336542673}
   - component: {fileID: 7081886450244129404}
   - component: {fileID: 1122675538496644957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1212
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15388,7 +15388,7 @@ GameObject:
   - component: {fileID: 7432517200115798336}
   - component: {fileID: 3027597034728302247}
   - component: {fileID: 7441407998818841919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox299
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15471,7 +15471,7 @@ GameObject:
   - component: {fileID: 970068416832388148}
   - component: {fileID: 7592862235784654396}
   - component: {fileID: 7393780011873067979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid175
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15554,7 +15554,7 @@ GameObject:
   - component: {fileID: 4860970806490622208}
   - component: {fileID: 8994768786795512069}
   - component: {fileID: 2005739661363238591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid225
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15637,7 +15637,7 @@ GameObject:
   - component: {fileID: 5296223817938730524}
   - component: {fileID: 8849822897177735351}
   - component: {fileID: 6193581560533959083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1237
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15720,7 +15720,7 @@ GameObject:
   - component: {fileID: 6245253701941442172}
   - component: {fileID: 5146481759784838213}
   - component: {fileID: 3237588736496567266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid207
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15803,7 +15803,7 @@ GameObject:
   - component: {fileID: 1318373444930047679}
   - component: {fileID: 293723797286239369}
   - component: {fileID: 8945981310277014348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1255
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15886,7 +15886,7 @@ GameObject:
   - component: {fileID: 4901323627234883846}
   - component: {fileID: 6397477255787588052}
   - component: {fileID: 7855700665066049814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid171
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15969,7 +15969,7 @@ GameObject:
   - component: {fileID: 7864519937656753523}
   - component: {fileID: 405850810687937468}
   - component: {fileID: 5894188940677449961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box926
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16052,7 +16052,7 @@ GameObject:
   - component: {fileID: 8306681575011690808}
   - component: {fileID: 3568419576484817890}
   - component: {fileID: 586419078944955662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1248
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16135,7 +16135,7 @@ GameObject:
   - component: {fileID: 2520212991718007308}
   - component: {fileID: 6723314746255158762}
   - component: {fileID: 1690581485561869537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid212
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16218,7 +16218,7 @@ GameObject:
   - component: {fileID: 8819263495277661711}
   - component: {fileID: 5871989763783708961}
   - component: {fileID: 8518309354820707520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid154
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16301,7 +16301,7 @@ GameObject:
   - component: {fileID: 8474908490024720030}
   - component: {fileID: 6326238935817974649}
   - component: {fileID: 3831650493871703531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid265
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16384,7 +16384,7 @@ GameObject:
   - component: {fileID: 6273537814748006146}
   - component: {fileID: 2399393045049394250}
   - component: {fileID: 1193929574709378067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid229
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16467,7 +16467,7 @@ GameObject:
   - component: {fileID: 7107248571800074964}
   - component: {fileID: 5690551518487814861}
   - component: {fileID: 8630969832941697383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox336
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16550,7 +16550,7 @@ GameObject:
   - component: {fileID: 8575177090174575419}
   - component: {fileID: 5258002301131802121}
   - component: {fileID: 180820247208387721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid161
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16633,7 +16633,7 @@ GameObject:
   - component: {fileID: 447319987966103713}
   - component: {fileID: 5625222345158666823}
   - component: {fileID: 2992181085457081380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid179
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16716,7 +16716,7 @@ GameObject:
   - component: {fileID: 8444096676822610837}
   - component: {fileID: 5434114293986287869}
   - component: {fileID: 4773837119265764510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid243
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16799,7 +16799,7 @@ GameObject:
   - component: {fileID: 7987668193576608926}
   - component: {fileID: 5525971213373634931}
   - component: {fileID: 1541680722763200296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box831
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16882,7 +16882,7 @@ GameObject:
   - component: {fileID: 6018754879329160513}
   - component: {fileID: 8563343220024209659}
   - component: {fileID: 2845290451546716836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid167
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16965,7 +16965,7 @@ GameObject:
   - component: {fileID: 8987205409249762637}
   - component: {fileID: 4506886739207443267}
   - component: {fileID: 8579932458266570037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox307
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17048,7 +17048,7 @@ GameObject:
   - component: {fileID: 3313673988464913013}
   - component: {fileID: 7161610262368204808}
   - component: {fileID: 5105193031976831584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox323
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17131,7 +17131,7 @@ GameObject:
   - component: {fileID: 3934396141827093609}
   - component: {fileID: 1680603908132206244}
   - component: {fileID: 8814289458343723020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid227
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17214,7 +17214,7 @@ GameObject:
   - component: {fileID: 9079831999146333834}
   - component: {fileID: 5103011835104520382}
   - component: {fileID: 1173062048397442448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box851
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17297,7 +17297,7 @@ GameObject:
   - component: {fileID: 5825552371546489917}
   - component: {fileID: 1505738703724916642}
   - component: {fileID: 6439394701492366951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox282
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17380,7 +17380,7 @@ GameObject:
   - component: {fileID: 512763336820472804}
   - component: {fileID: 1748889494481574797}
   - component: {fileID: 8132703293918900917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox284
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17463,7 +17463,7 @@ GameObject:
   - component: {fileID: 7344701420585709168}
   - component: {fileID: 6572105807681278691}
   - component: {fileID: 1825225345886826722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid163
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17546,7 +17546,7 @@ GameObject:
   - component: {fileID: 91365729128448801}
   - component: {fileID: 8168117998517714156}
   - component: {fileID: 7241932981059332678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox312
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17629,7 +17629,7 @@ GameObject:
   - component: {fileID: 3812281454587610744}
   - component: {fileID: 4024788595562699106}
   - component: {fileID: 5482430763712979050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid211
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17712,7 +17712,7 @@ GameObject:
   - component: {fileID: 2308579928641813768}
   - component: {fileID: 3095104439243128480}
   - component: {fileID: 6947085655195132294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox330
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17795,7 +17795,7 @@ GameObject:
   - component: {fileID: 76902620831061748}
   - component: {fileID: 7643077577073465091}
   - component: {fileID: 2733944281860339679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid172
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17878,7 +17878,7 @@ GameObject:
   - component: {fileID: 5785534540842994809}
   - component: {fileID: 2801984070582771527}
   - component: {fileID: 4033198475126024350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box821
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17961,7 +17961,7 @@ GameObject:
   - component: {fileID: 6066306622936566347}
   - component: {fileID: 2098807189712461798}
   - component: {fileID: 4795288077474346826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid273
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18044,7 +18044,7 @@ GameObject:
   - component: {fileID: 4366941687060949452}
   - component: {fileID: 2547583060808096428}
   - component: {fileID: 6217470008139612756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid159
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18127,7 +18127,7 @@ GameObject:
   - component: {fileID: 3166578872591012751}
   - component: {fileID: 9007230768111256088}
   - component: {fileID: 6046374894703838845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid150
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18210,7 +18210,7 @@ GameObject:
   - component: {fileID: 7736051956502109620}
   - component: {fileID: 764315855855248263}
   - component: {fileID: 5709822730130020492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid198
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18293,7 +18293,7 @@ GameObject:
   - component: {fileID: 2779482003336466743}
   - component: {fileID: 343056106094480726}
   - component: {fileID: 4880136548709674845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box912
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18376,7 +18376,7 @@ GameObject:
   - component: {fileID: 8778238183695810998}
   - component: {fileID: 1596896317173164422}
   - component: {fileID: 9041284898411303561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid203
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18459,7 +18459,7 @@ GameObject:
   - component: {fileID: 6524109345044795737}
   - component: {fileID: 244036653458800555}
   - component: {fileID: 4857693317199165623}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid153
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18542,7 +18542,7 @@ GameObject:
   - component: {fileID: 1115042069561017884}
   - component: {fileID: 2437855148301960240}
   - component: {fileID: 5965670582755122894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox322
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18625,7 +18625,7 @@ GameObject:
   - component: {fileID: 339674336216627728}
   - component: {fileID: 5466827960360577699}
   - component: {fileID: 6788874529895327074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox318
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18708,7 +18708,7 @@ GameObject:
   - component: {fileID: 6364542487868619462}
   - component: {fileID: 1018145350280520997}
   - component: {fileID: 1518936310730423328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid189
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18791,7 +18791,7 @@ GameObject:
   - component: {fileID: 397094758781451526}
   - component: {fileID: 8818123015553606681}
   - component: {fileID: 3794502914175813424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box857
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18874,7 +18874,7 @@ GameObject:
   - component: {fileID: 1618379842850082133}
   - component: {fileID: 2383358900888332204}
   - component: {fileID: 4431455875960178127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox340
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18957,7 +18957,7 @@ GameObject:
   - component: {fileID: 4317494571250554998}
   - component: {fileID: 7238147499700652797}
   - component: {fileID: 7575187127540161945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid197
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19040,7 +19040,7 @@ GameObject:
   - component: {fileID: 7903168959096083756}
   - component: {fileID: 2608452724941255555}
   - component: {fileID: 1756206909913289058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox331
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19123,7 +19123,7 @@ GameObject:
   - component: {fileID: 2647818895004289105}
   - component: {fileID: 5765465417790708579}
   - component: {fileID: 2196247651018076125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1251
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19206,7 +19206,7 @@ GameObject:
   - component: {fileID: 8898417259068448494}
   - component: {fileID: 2721186677805916716}
   - component: {fileID: 7369881931771812988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid170
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19289,7 +19289,7 @@ GameObject:
   - component: {fileID: 4915993470752645864}
   - component: {fileID: 7496483868580708899}
   - component: {fileID: 3090069841532287685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1224
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19370,7 +19370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5983587549832201391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: house
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19406,7 +19406,7 @@ GameObject:
   - component: {fileID: 3024285444680959550}
   - component: {fileID: 3581413860963696793}
   - component: {fileID: 6385799980954174370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox332
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19489,7 +19489,7 @@ GameObject:
   - component: {fileID: 7472882142970936294}
   - component: {fileID: 7109929660771488075}
   - component: {fileID: 3374796045677998237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1250
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19572,7 +19572,7 @@ GameObject:
   - component: {fileID: 4439803935252741106}
   - component: {fileID: 5935847772175091968}
   - component: {fileID: 6051882103762322456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid181
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19655,7 +19655,7 @@ GameObject:
   - component: {fileID: 5769796050452423121}
   - component: {fileID: 994596733601832985}
   - component: {fileID: 8060198245850837080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox319
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19738,7 +19738,7 @@ GameObject:
   - component: {fileID: 4733292915582168553}
   - component: {fileID: 4916648989976470945}
   - component: {fileID: 929164141540046264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox281
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19821,7 +19821,7 @@ GameObject:
   - component: {fileID: 2259569976411833594}
   - component: {fileID: 56833127960064200}
   - component: {fileID: 2343175676473185884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid156
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19904,7 +19904,7 @@ GameObject:
   - component: {fileID: 2259423272487804252}
   - component: {fileID: 4991535522779063924}
   - component: {fileID: 374257322603990071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid160
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19987,7 +19987,7 @@ GameObject:
   - component: {fileID: 839340086472531584}
   - component: {fileID: 5554833150051766061}
   - component: {fileID: 4098853711467762995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox335
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20070,7 +20070,7 @@ GameObject:
   - component: {fileID: 2695364996797787182}
   - component: {fileID: 5046819848884919306}
   - component: {fileID: 922400350031997410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1233
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20153,7 +20153,7 @@ GameObject:
   - component: {fileID: 8235549904252741010}
   - component: {fileID: 6486359452530835500}
   - component: {fileID: 1364952349475911649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox324
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20236,7 +20236,7 @@ GameObject:
   - component: {fileID: 3285017514223417841}
   - component: {fileID: 595586094834785788}
   - component: {fileID: 9152332779907263574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box818
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20319,7 +20319,7 @@ GameObject:
   - component: {fileID: 913203018507339045}
   - component: {fileID: 8388994373359616551}
   - component: {fileID: 1288042390245949411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid145
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20402,7 +20402,7 @@ GameObject:
   - component: {fileID: 244150414594980334}
   - component: {fileID: 5254228733898073231}
   - component: {fileID: 4398650673495840390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox320
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20485,7 +20485,7 @@ GameObject:
   - component: {fileID: 497829198128060773}
   - component: {fileID: 1625791609883099141}
   - component: {fileID: 1057956729545325733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox337
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20568,7 +20568,7 @@ GameObject:
   - component: {fileID: 4876916066076103526}
   - component: {fileID: 5764595057667159780}
   - component: {fileID: 8488018252127655584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox342
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20651,7 +20651,7 @@ GameObject:
   - component: {fileID: 1543152655691044012}
   - component: {fileID: 1646320106735614191}
   - component: {fileID: 4067529605659543245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid215
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20734,7 +20734,7 @@ GameObject:
   - component: {fileID: 4481123214334214259}
   - component: {fileID: 8642488824386621563}
   - component: {fileID: 4013198188693210088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid250
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20817,7 +20817,7 @@ GameObject:
   - component: {fileID: 5917835704969023523}
   - component: {fileID: 7802753577960358247}
   - component: {fileID: 5841733202524207045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid246
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20900,7 +20900,7 @@ GameObject:
   - component: {fileID: 5185865020808699363}
   - component: {fileID: 5400651294424134601}
   - component: {fileID: 914974390577712909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox329
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20983,7 +20983,7 @@ GameObject:
   - component: {fileID: 6211260391511471660}
   - component: {fileID: 6533768997505052479}
   - component: {fileID: 5854723348107720023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid251
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21066,7 +21066,7 @@ GameObject:
   - component: {fileID: 1783267597700794043}
   - component: {fileID: 1359262747083170418}
   - component: {fileID: 3451566486418462773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid155
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21149,7 +21149,7 @@ GameObject:
   - component: {fileID: 6661695664739659512}
   - component: {fileID: 1135170853206155112}
   - component: {fileID: 4156406605579254481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid234
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21232,7 +21232,7 @@ GameObject:
   - component: {fileID: 3310366071372270299}
   - component: {fileID: 4483552488351265661}
   - component: {fileID: 6356331782554781355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid230
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21315,7 +21315,7 @@ GameObject:
   - component: {fileID: 3783895151505816615}
   - component: {fileID: 6218807142468776007}
   - component: {fileID: 14945281498329983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid143
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21398,7 +21398,7 @@ GameObject:
   - component: {fileID: 497738233296522316}
   - component: {fileID: 2207146484649403658}
   - component: {fileID: 751942806766887941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox321
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21481,7 +21481,7 @@ GameObject:
   - component: {fileID: 2148468965533589132}
   - component: {fileID: 3966948822668867444}
   - component: {fileID: 8861379416792429833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box891
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21564,7 +21564,7 @@ GameObject:
   - component: {fileID: 4321394557478770422}
   - component: {fileID: 8393048362628983778}
   - component: {fileID: 1160212030444672030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box824
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21647,7 +21647,7 @@ GameObject:
   - component: {fileID: 8798375362642311}
   - component: {fileID: 6661738081461177196}
   - component: {fileID: 3355458760591109723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox278
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21730,7 +21730,7 @@ GameObject:
   - component: {fileID: 4715219114286261784}
   - component: {fileID: 6975112786099887075}
   - component: {fileID: 2534855281320975159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid176
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21813,7 +21813,7 @@ GameObject:
   - component: {fileID: 2019131631599374883}
   - component: {fileID: 7379840167027037067}
   - component: {fileID: 4024598748624300684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox304
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21896,7 +21896,7 @@ GameObject:
   - component: {fileID: 9179345550798519990}
   - component: {fileID: 3007743234990205872}
   - component: {fileID: 4446423204387326585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid245
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21979,7 +21979,7 @@ GameObject:
   - component: {fileID: 1056303717029420444}
   - component: {fileID: 25743493079790901}
   - component: {fileID: 2877347486964186883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1263
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22062,7 +22062,7 @@ GameObject:
   - component: {fileID: 4192911021660425441}
   - component: {fileID: 5533317525019215763}
   - component: {fileID: 4509005342437091383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox303
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22145,7 +22145,7 @@ GameObject:
   - component: {fileID: 5945223571642967272}
   - component: {fileID: 2293572675693153705}
   - component: {fileID: 1318206805803568343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid268
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22228,7 +22228,7 @@ GameObject:
   - component: {fileID: 8703601687468968413}
   - component: {fileID: 8868248452065300332}
   - component: {fileID: 1747706137645001872}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox347
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22311,7 +22311,7 @@ GameObject:
   - component: {fileID: 9140828920215584321}
   - component: {fileID: 4239826558562109862}
   - component: {fileID: 4804501204421819785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box822
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22394,7 +22394,7 @@ GameObject:
   - component: {fileID: 6521345097561671211}
   - component: {fileID: 1327319158463063540}
   - component: {fileID: 4125815372608325670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1272
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22477,7 +22477,7 @@ GameObject:
   - component: {fileID: 6008208254846633497}
   - component: {fileID: 9139860397996547470}
   - component: {fileID: 1657763103767274211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1208
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22560,7 +22560,7 @@ GameObject:
   - component: {fileID: 6772789594735552261}
   - component: {fileID: 5359316885555135306}
   - component: {fileID: 5030489192574355253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1215
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22643,7 +22643,7 @@ GameObject:
   - component: {fileID: 6020100058226070981}
   - component: {fileID: 6164693820538687497}
   - component: {fileID: 929523620878203445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid218
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22726,7 +22726,7 @@ GameObject:
   - component: {fileID: 7174404559019246752}
   - component: {fileID: 7025437141986159396}
   - component: {fileID: 7272657539801029404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid193
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22809,7 +22809,7 @@ GameObject:
   - component: {fileID: 7673620419449821928}
   - component: {fileID: 7576432973574861231}
   - component: {fileID: 8737730876434646699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid223
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22892,7 +22892,7 @@ GameObject:
   - component: {fileID: 3482077381770131832}
   - component: {fileID: 4540688836224718174}
   - component: {fileID: 5319266015218351304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid202
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22975,7 +22975,7 @@ GameObject:
   - component: {fileID: 4905655420880762334}
   - component: {fileID: 3545497329564876611}
   - component: {fileID: 4056088710738097173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box859
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23058,7 +23058,7 @@ GameObject:
   - component: {fileID: 6773603267643563578}
   - component: {fileID: 996738551698854168}
   - component: {fileID: 8529394000316103206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box791
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23141,7 +23141,7 @@ GameObject:
   - component: {fileID: 5830409251104873925}
   - component: {fileID: 5689674672475017475}
   - component: {fileID: 5088417468927047890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5286
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23224,7 +23224,7 @@ GameObject:
   - component: {fileID: 3324489587806818012}
   - component: {fileID: 2754734533312952739}
   - component: {fileID: 7174701326789751221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid152
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23307,7 +23307,7 @@ GameObject:
   - component: {fileID: 7977104659878610943}
   - component: {fileID: 7135230598304029179}
   - component: {fileID: 7107598823890035562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid208
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23390,7 +23390,7 @@ GameObject:
   - component: {fileID: 6615257314952135792}
   - component: {fileID: 4797388264102150597}
   - component: {fileID: 3939343169540894855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1236
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23473,7 +23473,7 @@ GameObject:
   - component: {fileID: 730609580711454880}
   - component: {fileID: 3684630897819782253}
   - component: {fileID: 8109377444729202890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid168
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23556,7 +23556,7 @@ GameObject:
   - component: {fileID: 6212955404356686426}
   - component: {fileID: 2927691565752144299}
   - component: {fileID: 7846217303647675337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox285
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23639,7 +23639,7 @@ GameObject:
   - component: {fileID: 7261893684884025352}
   - component: {fileID: 6023274104439740062}
   - component: {fileID: 1078497760847616142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid222
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23722,7 +23722,7 @@ GameObject:
   - component: {fileID: 7792715801336684728}
   - component: {fileID: 8656118262141149543}
   - component: {fileID: 6955060262476241828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox289
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23805,7 +23805,7 @@ GameObject:
   - component: {fileID: 2986193168344212678}
   - component: {fileID: 250948232254142919}
   - component: {fileID: 1630616419434947729}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1218
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23888,7 +23888,7 @@ GameObject:
   - component: {fileID: 2114353322258065228}
   - component: {fileID: 3547535431595445082}
   - component: {fileID: 3047624813805501933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1270
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23971,7 +23971,7 @@ GameObject:
   - component: {fileID: 810671182382004613}
   - component: {fileID: 6453355750508559732}
   - component: {fileID: 8146267150240744493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid238
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24054,7 +24054,7 @@ GameObject:
   - component: {fileID: 4463854383604035297}
   - component: {fileID: 1538130032532510310}
   - component: {fileID: 985508359116659221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1226
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24137,7 +24137,7 @@ GameObject:
   - component: {fileID: 7661625285011810585}
   - component: {fileID: 1820020869851234942}
   - component: {fileID: 4599557318301917111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1265
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24220,7 +24220,7 @@ GameObject:
   - component: {fileID: 5659607780728732674}
   - component: {fileID: 3335743594740767570}
   - component: {fileID: 7669155237366613201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox327
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24303,7 +24303,7 @@ GameObject:
   - component: {fileID: 2264633170417566272}
   - component: {fileID: 6069010015195021796}
   - component: {fileID: 9173917445973227955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid220
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24386,7 +24386,7 @@ GameObject:
   - component: {fileID: 696941848812342169}
   - component: {fileID: 4058754282516861471}
   - component: {fileID: 6603861330928566313}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox298
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24469,7 +24469,7 @@ GameObject:
   - component: {fileID: 5587889924194366388}
   - component: {fileID: 1940999365500021100}
   - component: {fileID: 1160410925197225427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1256
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24552,7 +24552,7 @@ GameObject:
   - component: {fileID: 5613419296280506656}
   - component: {fileID: 6391041410069870197}
   - component: {fileID: 2159228681696504692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox302
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24635,7 +24635,7 @@ GameObject:
   - component: {fileID: 2241609598928319021}
   - component: {fileID: 6406832946650113817}
   - component: {fileID: 4038789656507390016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid199
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24716,7 +24716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7974512197640526883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24885,7 +24885,7 @@ GameObject:
   - component: {fileID: 8413601014988203731}
   - component: {fileID: 4012450446436566955}
   - component: {fileID: 4047432339427186955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid254
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24968,7 +24968,7 @@ GameObject:
   - component: {fileID: 2226385777599980818}
   - component: {fileID: 2960698748525270683}
   - component: {fileID: 8305535050176288169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1275
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25051,7 +25051,7 @@ GameObject:
   - component: {fileID: 5198040912026425329}
   - component: {fileID: 3479763053880885246}
   - component: {fileID: 1628034040102142860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid200
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25134,7 +25134,7 @@ GameObject:
   - component: {fileID: 2980348402810044296}
   - component: {fileID: 6214930926470927615}
   - component: {fileID: 5984816362082892832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox326
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25217,7 +25217,7 @@ GameObject:
   - component: {fileID: 7405334610318068064}
   - component: {fileID: 5584710901331213854}
   - component: {fileID: 1397201731715033511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane5289
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25300,7 +25300,7 @@ GameObject:
   - component: {fileID: 5138593330807848201}
   - component: {fileID: 4721844032424832405}
   - component: {fileID: 8974178644657227070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox301
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25381,7 +25381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3904801044785357133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: door candy corn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25428,7 +25428,7 @@ GameObject:
   - component: {fileID: 3113474958124236243}
   - component: {fileID: 716896500261961897}
   - component: {fileID: 8144523196270184578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1230
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25511,7 +25511,7 @@ GameObject:
   - component: {fileID: 6127253357695065851}
   - component: {fileID: 2066384701630055945}
   - component: {fileID: 4632039365080554044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid206
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25594,7 +25594,7 @@ GameObject:
   - component: {fileID: 6727259140885822353}
   - component: {fileID: 7920286275285547486}
   - component: {fileID: 2534403047625638576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid162
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25677,7 +25677,7 @@ GameObject:
   - component: {fileID: 1011343498178682122}
   - component: {fileID: 4004637872539155513}
   - component: {fileID: 8116742279469977809}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox290
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25760,7 +25760,7 @@ GameObject:
   - component: {fileID: 347343813663017502}
   - component: {fileID: 2930724262426543293}
   - component: {fileID: 5081371219980458583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid241
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25843,7 +25843,7 @@ GameObject:
   - component: {fileID: 8638804143553977696}
   - component: {fileID: 3220645948637640517}
   - component: {fileID: 8123918793484066249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Object005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25933,7 +25933,7 @@ GameObject:
   - component: {fileID: 7859466006074018059}
   - component: {fileID: 1283638674169834215}
   - component: {fileID: 8181434617710000257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox297
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26016,7 +26016,7 @@ GameObject:
   - component: {fileID: 575855020227163885}
   - component: {fileID: 2576548266797163548}
   - component: {fileID: 7559662420006851300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1278
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26099,7 +26099,7 @@ GameObject:
   - component: {fileID: 8425290345070185950}
   - component: {fileID: 7324776641441706594}
   - component: {fileID: 3843067015606631279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid239
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26182,7 +26182,7 @@ GameObject:
   - component: {fileID: 8176897421271880071}
   - component: {fileID: 2100353622012140713}
   - component: {fileID: 1805762478265552722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid221
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26265,7 +26265,7 @@ GameObject:
   - component: {fileID: 5575107825808104963}
   - component: {fileID: 2178625169244999625}
   - component: {fileID: 4806554017206528732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid204
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26348,7 +26348,7 @@ GameObject:
   - component: {fileID: 2792332128448785487}
   - component: {fileID: 1275681450954508982}
   - component: {fileID: 7682987871391839326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1216
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26431,7 +26431,7 @@ GameObject:
   - component: {fileID: 6281384978697403061}
   - component: {fileID: 6013859291176396254}
   - component: {fileID: 2379914934376792850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid233
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26514,7 +26514,7 @@ GameObject:
   - component: {fileID: 9114401415716571400}
   - component: {fileID: 2297566121206296315}
   - component: {fileID: 6575419536729976540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox272
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26597,7 +26597,7 @@ GameObject:
   - component: {fileID: 7307545615157994150}
   - component: {fileID: 3087823873967754123}
   - component: {fileID: 1223093730123225528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid262
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26680,7 +26680,7 @@ GameObject:
   - component: {fileID: 5381973314786121607}
   - component: {fileID: 3783705879690911766}
   - component: {fileID: 2900719619644554472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox273
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26763,7 +26763,7 @@ GameObject:
   - component: {fileID: 1269445570813265266}
   - component: {fileID: 779553082751283027}
   - component: {fileID: 3912479270027454580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid201
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26846,7 +26846,7 @@ GameObject:
   - component: {fileID: 4532914799401388649}
   - component: {fileID: 1766953018090391735}
   - component: {fileID: 5628532002957808009}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid144
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26929,7 +26929,7 @@ GameObject:
   - component: {fileID: 7075676657580936725}
   - component: {fileID: 291425912370262562}
   - component: {fileID: 4243827962007369310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid182
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27012,7 +27012,7 @@ GameObject:
   - component: {fileID: 8471155279707258066}
   - component: {fileID: 690169837067251439}
   - component: {fileID: 4573797265816299086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox310
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27095,7 +27095,7 @@ GameObject:
   - component: {fileID: 1867501842536655843}
   - component: {fileID: 7941797889111442573}
   - component: {fileID: 7622936287767851000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox287
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27178,7 +27178,7 @@ GameObject:
   - component: {fileID: 5615976948022274217}
   - component: {fileID: 4746536999188462434}
   - component: {fileID: 7540766582391670811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox274
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27261,7 +27261,7 @@ GameObject:
   - component: {fileID: 2781838387735324649}
   - component: {fileID: 6583554948391303554}
   - component: {fileID: 1078623183176469302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid196
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27344,7 +27344,7 @@ GameObject:
   - component: {fileID: 6050098067315985451}
   - component: {fileID: 3381223128519912318}
   - component: {fileID: 450747396010814247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1219
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27427,7 +27427,7 @@ GameObject:
   - component: {fileID: 5029702431831940542}
   - component: {fileID: 8204606159522845091}
   - component: {fileID: 3395739522482625037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid259
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27510,7 +27510,7 @@ GameObject:
   - component: {fileID: 7374492717072997826}
   - component: {fileID: 7440589238546494204}
   - component: {fileID: 2744800739473524618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1211
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27593,7 +27593,7 @@ GameObject:
   - component: {fileID: 7175295168929775995}
   - component: {fileID: 1729427749832050246}
   - component: {fileID: 5288768805650013590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pyramid149
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27676,7 +27676,7 @@ GameObject:
   - component: {fileID: 7954942103401760976}
   - component: {fileID: 2347694820185228126}
   - component: {fileID: 3114817557694597270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox279
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27759,7 +27759,7 @@ GameObject:
   - component: {fileID: 5695412912730813172}
   - component: {fileID: 4244649616329851118}
   - component: {fileID: 3426083565021204057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ChamferBox300
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27842,7 +27842,7 @@ GameObject:
   - component: {fileID: 9081845094737554248}
   - component: {fileID: 2986914628185939038}
   - component: {fileID: 2664833024476810212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Object004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27925,7 +27925,7 @@ GameObject:
   - component: {fileID: 6963930964138059130}
   - component: {fileID: 4178379707415784961}
   - component: {fileID: 3573860380877051265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1210
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28008,7 +28008,7 @@ GameObject:
   - component: {fileID: 881309539821787966}
   - component: {fileID: 6694450730269881420}
   - component: {fileID: 1606944374922038542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1253
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28091,7 +28091,7 @@ GameObject:
   - component: {fileID: 5137540222711151116}
   - component: {fileID: 7699288197903046146}
   - component: {fileID: 2937847600816219202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1246
   m_TagString: Untagged
   m_Icon: {fileID: 0}

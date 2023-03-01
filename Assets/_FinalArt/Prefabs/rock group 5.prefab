@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 216932402921848816}
   - component: {fileID: 9155218246135393554}
   - component: {fileID: 7315029160185540269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1286
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6105247700492505722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rock group 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5679106746948885387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group279
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 8247618397050414596}
   - component: {fileID: 4078266400420478451}
   - component: {fileID: 8194203023574684985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box1291
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1841018031137407167}
   - component: {fileID: 4608541223454200604}
   - component: {fileID: 7374537874525933374}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: lo poly tree no leaves 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5828046084068808695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group272
   m_TagString: Untagged
   m_Icon: {fileID: 0}

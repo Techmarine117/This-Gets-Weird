@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3952948404547226856}
   - component: {fileID: 4438461969024000666}
   - component: {fileID: 1342196975450297980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2348296437928679419}
   - component: {fileID: 1282483150568670339}
   - component: {fileID: 3048827643996064932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus073
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5118702254871176416}
   - component: {fileID: 6316866685924810832}
   - component: {fileID: 4072559866728996724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus077
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 8913383756317162334}
   - component: {fileID: 6799152691170239707}
   - component: {fileID: 391458783923685787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus071
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4948004786526227644}
   - component: {fileID: 4771726147866283765}
   - component: {fileID: 7881195161396396714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4560367939449290003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tall candy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 6791545091039446753}
   - component: {fileID: 5275017330225501043}
   - component: {fileID: 4022010910590561994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus072
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 1617555520609569749}
   - component: {fileID: 8737624051532839346}
   - component: {fileID: 345588193373867580}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus079
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 347164927674738381}
   - component: {fileID: 8701618468463882499}
   - component: {fileID: 7294021097227690911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 1305808298379991132}
   - component: {fileID: 3242945237645933781}
   - component: {fileID: 7623511154181707104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 8096543684603018795}
   - component: {fileID: 2255652934216061925}
   - component: {fileID: 489957649980591273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Torus075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
