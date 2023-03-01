@@ -2860,6 +2860,10 @@ PrefabInstance:
     - target: {fileID: 6162249930522275779, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
       propertyPath: target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162249930522275779, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
+      propertyPath: EndGameObj
+      value: 
       objectReference: {fileID: 1958690355}
     - target: {fileID: 6162249930522275779, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
       propertyPath: wayPoints.Array.size
@@ -2928,6 +2932,18 @@ PrefabInstance:
     - target: {fileID: 6162249930522275783, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162249930522275788, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
+      propertyPath: PlayerReference
+      value: 
+      objectReference: {fileID: 1446469276}
+    - target: {fileID: 6162249930522275788, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
+      propertyPath: targetMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162249930522275788, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
+      propertyPath: ObstacleMask.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 6162249930522275791, guid: f2f3f225d4279df45b6ae79f698392f2, type: 3}
       propertyPath: m_Name
@@ -30962,6 +30978,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1381843305}
     m_Modifications:
+    - target: {fileID: 2112893587822957689, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1396288137}
+    - target: {fileID: 2112893587822957689, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
     - target: {fileID: 2112893588042343084, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
       propertyPath: m_Name
       value: Pmenu
@@ -31053,6 +31077,22 @@ PrefabInstance:
     - target: {fileID: 2112893588042343085, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112893589499458056, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1396288137}
+    - target: {fileID: 2112893589499458056, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: quitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112893589694365527, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1396288137}
+    - target: {fileID: 2112893589694365527, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadlevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
@@ -33013,17 +33053,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28592104, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28592002, b: 0.50980073, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0, g: 0.22709754, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22709653, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30160734, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30160633, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20358655, g: 0.30945042, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2035856, g: 0.30944943, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -34082,6 +34122,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1322453390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2112893588042343084, guid: ce3006cefc8fb3e4aa32b6929cb6b6c7, type: 3}
+  m_PrefabInstance: {fileID: 1215300905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1329458563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35192,6 +35237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396288135}
   - component: {fileID: 1396288136}
+  - component: {fileID: 1396288137}
   m_Layer: 0
   m_Name: ----Game Management----
   m_TagString: Untagged
@@ -35230,6 +35276,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FileName: MyFile
   UseEncryption: 0
+--- !u!114 &1396288137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396288134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff9c88463f070b4297ea91af22013ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUi: {fileID: 1322453390}
 --- !u!4 &1401545465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 959170863092522789, guid: 716a22b20172fa84ebe703db5a45cf98, type: 3}
@@ -35313,18 +35372,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22161838, g: 1, b: 0.3820769, a: 0.5019608}
+  shallowColor: {r: 0.22161639, g: 1, b: 0.38207486, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.2077676, b: 0.16463032, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.2077657, b: 0.16462842, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30157492, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3015729, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20355582, g: 0.30941802, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20355392, g: 0.309416, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -54605,18 +54664,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22161835, g: 1, b: 0.38207683, a: 0.5019608}
+  shallowColor: {r: 0.22161636, g: 1, b: 0.38207483, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.20776758, b: 0.1646303, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.20776567, b: 0.16462839, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3015749, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30157286, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.2035558, g: 0.309418, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20355389, g: 0.30941597, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -55825,6 +55884,10 @@ PrefabInstance:
     - target: {fileID: 7633012952150974810, guid: 4653163e1b00c974ebe5738d9ee3b128, type: 3}
       propertyPath: m_Name
       value: totem stand 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633012952150974810, guid: 4653163e1b00c974ebe5738d9ee3b128, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4653163e1b00c974ebe5738d9ee3b128, type: 3}
