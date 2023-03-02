@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 903654194170786733}
+  - component: {fileID: 3774425498684058252}
   m_Layer: 0
   m_Name: chest
   m_TagString: Untagged
@@ -23,10 +24,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558934670937893143}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 55.42764, y: 0.4035228, z: -8.655783}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.8067499, y: 1.8067499, z: 1.8067499}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2764156615821096452}
   - {fileID: 8640322175624626165}
@@ -35,7 +36,20 @@ Transform:
   - {fileID: 8453322498820587494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &3774425498684058252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558934670937893143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.67761946, z: 0.60664195}
+  m_Center: {x: 0, y: 0.034284245, z: -0.0059191943}
 --- !u!1 &3774217328242917084
 GameObject:
   m_ObjectHideFlags: 0
