@@ -632,7 +632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 904290797}
   - component: {fileID: 904290796}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ViewRadius: 16.1
-  ViewAngle: 69.69
+  ViewAngle: 133
   PlayerHit: 0
   targetMask:
     serializedVersion: 2
