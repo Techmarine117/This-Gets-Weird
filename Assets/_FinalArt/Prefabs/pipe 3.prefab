@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3365c54e807fa0945b46d774070e9ed8, type: 2}
+  - {fileID: 5629084884208175553, guid: 426a2785f8a940049aac2c246661cf09, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -136,6 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valveAnim: {fileID: 1927402377}
   waterAnim: {fileID: 0}
+  waterParticles: {fileID: 0}
+  waterParticles2: {fileID: 0}
 --- !u!114 &1927402379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +341,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -714021100912745814, guid: 13265c4286a17ce4f854cea2473d1372, type: 3}
+  - {fileID: 5629084884208175553, guid: 426a2785f8a940049aac2c246661cf09, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -423,7 +425,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ecfff4b0efeeb344caec94fb7ebb9ebc, type: 2}
+  - {fileID: 5629084884208175553, guid: 426a2785f8a940049aac2c246661cf09, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -507,7 +509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 01fbcdf3437469b48a584552a58ef31b, type: 2}
+  - {fileID: 5629084884208175553, guid: 426a2785f8a940049aac2c246661cf09, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
