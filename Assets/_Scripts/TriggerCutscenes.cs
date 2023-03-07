@@ -5,7 +5,7 @@ using StarterAssets;
 
 public class TriggerCutscenes : MonoBehaviour
 {
-    public FirstPersonController controller;
+    public StarterAssets.FirstPersonController controller;
     public bool EnableObject;
     public bool DisableObject;
     public bool DestroyTrigger;
@@ -20,7 +20,7 @@ public class TriggerCutscenes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<FirstPersonController>();
+        controller = GetComponent<StarterAssets.FirstPersonController>();
     }
 
 

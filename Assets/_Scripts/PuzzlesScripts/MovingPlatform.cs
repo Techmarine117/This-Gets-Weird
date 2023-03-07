@@ -1,4 +1,5 @@
 using UnityEngine;
+using StarterAssets;
 
 public class MovingPlatform : MonoBehaviour
 {
@@ -13,13 +14,13 @@ public class MovingPlatform : MonoBehaviour
     public PressurePlate pp;
 
     Vector3 playerPosition;
-    float tempJumpStremgth;
+    //float tempJumpStremgth;
     bool onPlatform = false;
-    public Jump jump;
+    
 
     private void Start()
     {
-        tempJumpStremgth = jump.jumpStrength;
+        
     }
     private void FixedUpdate()
     {
@@ -47,13 +48,11 @@ public class MovingPlatform : MonoBehaviour
     {
         onPlatform = true;
         Player = collision.transform;
-        jump.jumpStrength = jump.jumpStrength * 1.33f;
     }
 
     private void OnCollisionExit(Collision collision)
     {
         onPlatform = false;
         Player = null;
-        jump.jumpStrength = tempJumpStremgth;
     }
 }
