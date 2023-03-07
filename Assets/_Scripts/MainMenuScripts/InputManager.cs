@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 
 public class InputManager : MonoBehaviour
 {
-    public static StarterAssets starterAssets;
+    public static StarterAssets1 starterAssets;
     public static event Action ReBindComplete;
     public static event Action RebindCanceled;
     public static event Action<InputAction, int> RebindStarted;
@@ -17,7 +17,7 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         if (starterAssets == null)
-            starterAssets = new StarterAssets();
+            starterAssets = new StarterAssets1();
 
     }
 
@@ -89,7 +89,7 @@ public class InputManager : MonoBehaviour
     public static string GetBindingName(string ActionName, int Bindingindex)
     {
         if (starterAssets == null)
-            starterAssets = new StarterAssets();
+            starterAssets = new StarterAssets1();
 
         InputAction action = starterAssets.asset.FindAction(ActionName);
         return action.GetBindingDisplayString(Bindingindex);
@@ -106,7 +106,7 @@ public class InputManager : MonoBehaviour
     public static void LoadBindingOveride(string ActionName)
     {
         if (starterAssets == null)
-            starterAssets = new StarterAssets();
+            starterAssets = new StarterAssets1();
 
         InputAction action = starterAssets.asset.FindAction(ActionName);
 
