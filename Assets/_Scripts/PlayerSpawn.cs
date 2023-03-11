@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class PlayerSpawn : MonoBehaviour
 {
-    [SerializeField] GameObject player;
     [SerializeField] Transform spawnPoint;
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    player.transform.position = spawnPoint.transform.position;
-    //    //look at
-    //}
-
-    public void Spawn()
+    private void OnTriggerStay(Collider other)
     {
-        player.transform.position = spawnPoint.transform.position;
+        if(other.tag == "Players")
+        {
+            other.transform.position = spawnPoint.transform.position;
+            Debug.Log("work");
+        }
     }
 }
