@@ -22,14 +22,15 @@ public class BoyController : MonoBehaviour
     private void Update()
     {
         Patrol();
-        //if (Vector3.Distance(transform.position,Player.position) >= PlayerRange)
-        //{
-        //    agent.speed = 0;
-        //}
-        //else if (Vector3.Distance(transform.position,Player.position) < PlayerRange)
-        //{
-        //    agent.speed = speed;
-        //}
+        var distance = Vector3.Distance(transform.position, Player.position);
+        if ( distance >= PlayerRange)
+        {
+            agent.speed = 0;
+        }
+        else 
+        {
+            agent.speed = speed;
+        }
         Debug.Log(Vector3.Distance(transform.position, Player.position));
     }
 

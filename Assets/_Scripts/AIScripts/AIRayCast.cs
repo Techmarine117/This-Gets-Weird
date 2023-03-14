@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class AIRayCast : MonoBehaviour
@@ -11,7 +10,7 @@ public class AIRayCast : MonoBehaviour
 
     private void Start()
     {
-        PlayerReference = GameObject.FindGameObjectWithTag("Player");
+        PlayerReference = GameObject.FindGameObjectWithTag("FPSPlayer");
     }
 
     private void Update()
