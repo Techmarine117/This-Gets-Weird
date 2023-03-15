@@ -155,7 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee1dcd6a6c5b434abd4f4f31408ea7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1910545803}
   spawnPoint: {fileID: 1910304828}
 --- !u!65 &108017537
 BoxCollider:
@@ -361,6 +360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2421964532719076582, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
+      propertyPath: m_TagString
+      value: FPSPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 2421964532719076604, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -405,13 +408,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2421964532785599480, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
+      propertyPath: m_TagString
+      value: FPSPlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 2421964532967131794, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FPSPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 2421964533225252378, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FPSPlayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
@@ -512,11 +519,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1910545803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2421964532719076582, guid: c71ad04644a17db49a26c9a1a5f0632f, type: 3}
-  m_PrefabInstance: {fileID: 1037773510}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1921530220
 GameObject:
   m_ObjectHideFlags: 0

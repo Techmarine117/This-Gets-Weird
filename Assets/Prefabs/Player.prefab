@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2421964532719076601}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Players
+  m_TagString: FPSPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,16 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c408d6d4f4cc43f4eb91b5e45807e690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 2421964532719076602}
-  speed: 12
-  gravity: -9.81
-  groundCheck: {fileID: 2421964533225252381}
-  groundDistance: 0.4
-  jumpdist: 0
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  canSprint: 0
 --- !u!143 &2421964532719076602
 CharacterController:
   m_ObjectHideFlags: 0
@@ -115,9 +105,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2421964533492290046}
   popUp: {fileID: 0}
+  pickUpobj: {fileID: 0}
   Raylength: 5
+  isPickup: 0
   pickupPlacholder: {fileID: 2421964532785599483}
-  pm: {fileID: 2421964532719076603}
+  alphaChange: {fileID: 0}
 --- !u!65 &2421964532719076601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -175,7 +167,7 @@ GameObject:
   - component: {fileID: 2421964532967131796}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Players
+  m_TagString: FPSPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
