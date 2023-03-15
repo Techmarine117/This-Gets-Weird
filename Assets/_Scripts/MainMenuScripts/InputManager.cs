@@ -9,21 +9,21 @@ using Unity.VisualScripting;
 
 public class InputManager : MonoBehaviour
 {
-    public static StarterAssets1 starterAssets;
+    public static InputControls inputControls;
     public static event Action ReBindComplete;
     public static event Action RebindCanceled;
     public static event Action<InputAction, int> RebindStarted;
 
     private void Awake()
     {
-        if (starterAssets == null)
-            starterAssets = new StarterAssets1();
+        if (inputControls == null)
+            inputControls = new InputControls();
 
     }
 
     public static void StartRebind(string ActionName, int BindingIndex, TMP_Text StatusText, bool ExcludeMouse)
     {
-        InputAction action = starterAssets.asset.FindAction(ActionName);
+        InputAction action = inputControls.asset.FindAction(ActionName);
         if (action == null || action.bindings.Count <= BindingIndex)
         {
             Debug.Log("Couldn't find action or binding");
@@ -88,10 +88,10 @@ public class InputManager : MonoBehaviour
 
     public static string GetBindingName(string ActionName, int Bindingindex)
     {
-        if (starterAssets == null)
-            starterAssets = new StarterAssets1();
+        if (inputControls == null)
+            inputControls = new InputControls();
 
-        InputAction action = starterAssets.asset.FindAction(ActionName);
+        InputAction action = inputControls.asset.FindAction(ActionName);
         return action.GetBindingDisplayString(Bindingindex);
     }
 
@@ -105,10 +105,10 @@ public class InputManager : MonoBehaviour
 
     public static void LoadBindingOveride(string ActionName)
     {
-        if (starterAssets == null)
-            starterAssets = new StarterAssets1();
+        if (inputControls == null)
+            inputControls = new InputControls();
 
-        InputAction action = starterAssets.asset.FindAction(ActionName);
+        InputAction action = inputControls.asset.FindAction(ActionName);
 
         for (int i = 0; i < action.bindings.Count; i++)
         {
@@ -119,7 +119,7 @@ public class InputManager : MonoBehaviour
 
     public static void ResetBinding(string ActionName, int BindingIndex)
     {
-        InputAction action = starterAssets.asset.FindAction(ActionName);
+        InputAction action = inputControls.asset.FindAction(ActionName);
 
         if (action == null || action.bindings.Count <= BindingIndex)
         {
