@@ -3224,7 +3224,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: We left the renderers for the invisible walls on to see if you think
-          they made sense.
+          they make sense.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
