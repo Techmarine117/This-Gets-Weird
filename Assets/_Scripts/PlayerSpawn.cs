@@ -8,7 +8,7 @@ public class PlayerSpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Players")
+        if(other.tag == "FPSPlayer")
         {
             other.transform.position = spawnPoint.transform.position;
             Debug.Log("work");
