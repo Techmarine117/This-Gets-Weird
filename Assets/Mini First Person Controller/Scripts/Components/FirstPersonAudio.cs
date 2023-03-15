@@ -32,6 +32,7 @@ public class FirstPersonAudio : MonoBehaviour
     AudioSource[] MovingAudios => new AudioSource[] { stepAudio, runningAudio, crouchedAudio };
 
 
+
     void Reset()
     {
         // Setup stuff.
@@ -85,7 +86,6 @@ public class FirstPersonAudio : MonoBehaviour
         {
             SetPlayingMovingAudio(null);
         }
-
         // Remember lastCharacterPosition.
         lastCharacterPosition = CurrentCharacterPosition;
     }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using StarterAssets;
+using System.Collections;
 
 public class MovingPlatform : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class MovingPlatform : MonoBehaviour
     //float tempJumpStremgth;
     bool onPlatform = false;
     public bool platformStays = false;
+
+    public FirstPersonAudio firstPersonAudio;
 
     private void FixedUpdate()
     {
@@ -52,12 +55,15 @@ public class MovingPlatform : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         onPlatform = true;
+        firstPersonAudio.velocityThreshold = 10f;
         Player = collision.transform;
     }
 
     private void OnCollisionExit(Collision collision)
     {
         onPlatform = false;
+        firstPersonAudio.velocityThreshold = 0.01f;
         Player = null;
     }
+
 }
