@@ -10,6 +10,7 @@ public class AlphaChange : MonoBehaviour
     private void Start()
     {
         //playerRaycast= GetComponent<PlayerRaycast>();
+        playerRaycast = FindObjectOfType<PlayerRaycast>();
     }
 
     private void Update()

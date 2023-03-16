@@ -11,7 +11,7 @@ public class PlayerRaycast : MonoBehaviour
     public float Raylength;
     public bool isPickup;
     public Transform pickupPlacholder;
-    public AlphaChange alphaChange;
+    //public AlphaChange alphaChange;
     public RaycastHit hit;
     //public PrototypeMovement pm;
 

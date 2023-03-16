@@ -55,7 +55,7 @@ public class MovingPlatform : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         onPlatform = true;
-        firstPersonAudio.velocityThreshold = 10f;
+        firstPersonAudio.velocityThreshold = 20f;
         Player = collision.transform;
     }
 

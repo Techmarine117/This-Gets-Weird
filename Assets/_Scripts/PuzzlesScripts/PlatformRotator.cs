@@ -16,6 +16,8 @@ public class PlatformRotator : MonoBehaviour
 
     bool onPlatform = false;
 
+    public FirstPersonAudio firstPersonAudio2;
+
     private void Update()
     {
         if (switchScript.isSwitchOn == true)
@@ -38,12 +40,14 @@ public class PlatformRotator : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         onPlatform = true;
+        firstPersonAudio2.velocityThreshold = 20f;
         Player = collision.transform;
     }
 
     private void OnCollisionExit(Collision collision)
     {
         onPlatform = false;
+        firstPersonAudio2.velocityThreshold = 0.01f;
         Player = null;
     }
 
