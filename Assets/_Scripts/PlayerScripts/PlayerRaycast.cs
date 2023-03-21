@@ -23,17 +23,18 @@ public class PlayerRaycast : MonoBehaviour
         // to stop any further action that has to do with raycasting while an object is picked up
         if (isPickup == true && pickUpobj)
         {
-            //pm.canSprint = false;         
+            //pm.canSprint = false;
             pickUpobj.transform.rotation = transform.rotation;
             pickUpobj.transform.position = pickupPlacholder.position;
+            //pickUpobj.transform.parent = pickupPlacholder.transform;
+            //pickUpobj.transform.rotation = pickupPlacholder.rotation;
+
             if (Input.GetKeyDown(KeyCode.E))
             {
                 pickUpobj.AddComponent<Rigidbody>();
                 isPickup = false;
-                pickUpobj = null;
+                //pickUpobj.transform.parent = null;
                 //pm.canSprint = true;
-
-
 
             }
             return;
@@ -50,8 +51,6 @@ public class PlayerRaycast : MonoBehaviour
                 popUp.SetActive(true);
                 Debug.Log("hit");
 
-
-
             }
 
 
@@ -61,11 +60,9 @@ public class PlayerRaycast : MonoBehaviour
                 {
                     isPickup = true;
                     pickUpobj = hit.collider.gameObject;
-
+                    
                     Rigidbody rb = hit.collider.GetComponent<Rigidbody>();
                     Destroy(rb);
-
-
 
                     Debug.Log("it worked");
                 }
