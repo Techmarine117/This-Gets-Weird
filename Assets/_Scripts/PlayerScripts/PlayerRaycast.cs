@@ -2,6 +2,7 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class PlayerRaycast : MonoBehaviour
 {
@@ -14,9 +15,14 @@ public class PlayerRaycast : MonoBehaviour
     //public AlphaChange alphaChange;
     public RaycastHit hit;
     //public PrototypeMovement pm;
+    [SerializeField] Selector selector;
 
 
-
+    private void Start()
+    {
+        //var selectorComponent = Selector;
+        //selectorComponent = GameObject.Find("FirstPersonController").GetComponent<Selector>();
+    }
     //public Switch switchh;
     void Update()
     {
@@ -24,16 +30,18 @@ public class PlayerRaycast : MonoBehaviour
         if (isPickup == true && pickUpobj)
         {
             //pm.canSprint = false;
-            pickUpobj.transform.rotation = transform.rotation;
-            pickUpobj.transform.position = pickupPlacholder.position;
-            //pickUpobj.transform.parent = pickupPlacholder.transform;
-            //pickUpobj.transform.rotation = pickupPlacholder.rotation;
+            //pickUpobj.transform.rotation = transform.rotation;
+            //pickUpobj.transform.position = pickupPlacholder.position;
+            pickUpobj.transform.parent = pickupPlacholder.transform;
+            pickUpobj.transform.rotation = pickupPlacholder.rotation;
+            pickUpobj.transform.localPosition = Vector3.zero;
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 pickUpobj.AddComponent<Rigidbody>();
                 isPickup = false;
-                //pickUpobj.transform.parent = null;
+                pickUpobj.transform.parent = null;
+                selector.enabled = true;
                 //pm.canSprint = true;
 
             }

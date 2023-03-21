@@ -42,6 +42,7 @@ public class FirstPersonLook : MonoBehaviour
 
     public void DisableLook()
     {
+        
         sensitivity = 0;
     }
 

@@ -142,8 +142,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3493042, y: 0.30478287, z: 9.822784}
-  m_Center: {x: -0.016418457, y: 0.08226204, z: 0.0066375732}
+  m_Size: {x: 1.4904171, y: 0.30478287, z: 9.963255}
+  m_Center: {x: 0.0028632875, y: 0.08226204, z: -0.012797353}
 --- !u!114 &2635550440673550967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +160,4 @@ MonoBehaviour:
   switchScript: {fileID: 0}
   rotationSpeed: 30
   Player: {fileID: 0}
+  firstPersonAudio2: {fileID: 0}

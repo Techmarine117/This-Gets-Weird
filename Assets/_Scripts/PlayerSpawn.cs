@@ -5,13 +5,18 @@ using UnityEngine;
 public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
-
-    private void OnTriggerStay(Collider other)
+    [SerializeField] Transform cubeSpawnPoint;
+    private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "FPSPlayer")
+        if (other.tag == "FPSPlayer")
         {
             other.transform.position = spawnPoint.transform.position;
-            Debug.Log("work");
+        }
+
+        if (other.tag == "pickUp")
+        {
+            other.transform.position = cubeSpawnPoint.transform.position;
         }
     }
+
 }

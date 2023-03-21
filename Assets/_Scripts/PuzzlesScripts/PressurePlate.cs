@@ -17,7 +17,10 @@ public class PressurePlate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isPlateActive = true;
+        if (GameObject.FindWithTag("FPSPlayer") || GameObject.FindWithTag("pickUp"))
+        {
+            isPlateActive = true;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
