@@ -15,7 +15,7 @@ public class SavePoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Players")
+        if (other.tag == "FPSPlayer")
         {
             Debug.Log("Triggered");
             dataManager.SaveGame();

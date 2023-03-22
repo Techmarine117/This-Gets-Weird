@@ -3735,7 +3735,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 17
         destinationConversationID: 6
-        destinationDialogueID: 18
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3802,8 +3802,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 618.9011
+        x: 344.70584
+        y: 600.0776
         width: 160
         height: 30
     - id: 19
@@ -3861,6 +3861,62 @@ MonoBehaviour:
         serializedVersion: 2
         x: 120
         y: 670
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Like if you want to replay a puzzle and skip ahead after restarting
+          the game.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 20
+        destinationConversationID: 6
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 472.94113
+        y: 490.58826
         width: 160
         height: 30
     entryGroups: []

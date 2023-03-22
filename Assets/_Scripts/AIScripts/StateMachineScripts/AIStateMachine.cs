@@ -115,6 +115,8 @@ public class AIStateMachine : MonoBehaviour, IData
         {
          EndGameObj.SetActive(true);
         Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         // attackCol.SetActive(true);
         //  anim.SetBool("IsAttacking", true);
     }
