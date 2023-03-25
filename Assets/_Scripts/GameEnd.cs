@@ -28,8 +28,10 @@ public class GameEnd : MonoBehaviour
     {
         dataManager.LoadGame();
         LevelToLoad = PlayerPrefs.GetString("SavedLevel");
+        //SceneManager.UnloadSceneAsync(LevelToLoad);
+        Time.timeScale = 1f;
         SceneManager.LoadScene(LevelToLoad);
-
+       
     }
 
 }
