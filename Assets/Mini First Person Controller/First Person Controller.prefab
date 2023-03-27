@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 915040610}
   m_Layer: 10
   m_Name: Capsule Mesh
-  m_TagString: Untagged
+  m_TagString: FPSPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

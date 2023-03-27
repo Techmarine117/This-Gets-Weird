@@ -45,8 +45,9 @@ public class AIStateMachine : MonoBehaviour, IData
             //player = GameObject.FindObjectOfType<PlayerController>().gameObject;
             agent.speed = Patrolspeed;
             EndGameObj.SetActive(false);
+        Time.timeScale = 1f;
 
-        }
+    }
 
         private void Update()
         {
