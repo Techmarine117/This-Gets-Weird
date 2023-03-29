@@ -9,8 +9,9 @@ public class DataManager : MonoBehaviour
     [Header("File Storage Config")]
     [SerializeField] private string FileName;
     [SerializeField] private bool UseEncryption;
+    //[SerializeField] private DataManager[] DataManagers;
 
-   public static DataManager Instance { get; private set; }
+    public static DataManager Instance { get; private set; }
     private GameData gameData;
     private List<IData> DataObjects;
     private FileDataHandler dataHandler;
@@ -29,6 +30,7 @@ public class DataManager : MonoBehaviour
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
         this.DataObjects = FindAllDataObjects();
         LoadGame();
+        //DataManagers = FindObjectsOfType<DataManager>();
     }
 
     public void NewGame()

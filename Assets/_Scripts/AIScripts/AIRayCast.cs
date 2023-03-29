@@ -7,6 +7,7 @@ public class AIRayCast : MonoBehaviour
     public bool PlayerHit;
     public LayerMask ObstacleMask;
     public GameObject PlayerReference;
+    public Crouch crouch;
 
     private void Start()
     {
@@ -16,6 +17,14 @@ public class AIRayCast : MonoBehaviour
     private void Update()
     {
         FindVisibleTargets();
+        if (crouch.IsCrouched == true)
+        {
+            ViewAngle = 110;
+        }
+       else
+       {
+           ViewAngle = 200;
+        }
     }
 
     public void FindVisibleTargets()
