@@ -13,7 +13,7 @@ public class GameData
     public GameData()
     {
         this.Test = 0;
-        PlayerPosition = Vector3.zero;
+        PlayerPosition = new Vector3(80,51,9);
         AIPosition = Vector3.zero;
 
     }

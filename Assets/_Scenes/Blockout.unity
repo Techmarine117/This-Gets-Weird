@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1.4137208, g: 0.6206437, b: 0.45733705, a: 1}
+  m_IndirectSpecularColor: {r: 0.99999905, g: 0, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -32947,7 +32947,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh664704
+  m_Name: pb_Mesh-91412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49669,17 +49669,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.2858318, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28582695, b: 0.50980073, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0, g: 0.22700831, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22700346, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3015181, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30151325, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20350197, g: 0.3093612, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20349738, g: 0.30935636, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -54198,8 +54198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92da7f058a67f441ab84ae89090e982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: SaveFileWeird
+  FileName: SaveFileWeird1
   UseEncryption: 1
+  onMaskCollected: []
 --- !u!1 &1397445552
 GameObject:
   m_ObjectHideFlags: 0
@@ -54314,18 +54315,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22143984, g: 1, b: 0.3818983, a: 0.5019608}
+  shallowColor: {r: 0.22143015, g: 1, b: 0.38188863, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.20759836, b: 0.16446108, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.20758918, b: 0.1644519, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30139637, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30138668, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20338657, g: 0.30923945, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2033774, g: 0.30922976, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -75375,18 +75376,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22143981, g: 1, b: 0.38189828, a: 0.5019608}
+  shallowColor: {r: 0.22143012, g: 1, b: 0.3818886, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.20759833, b: 0.16446105, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.20758915, b: 0.16445187, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30139634, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30138665, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20338655, g: 0.30923942, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20337737, g: 0.30922973, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -77524,6 +77525,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1396288139}
+        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+        m_MethodName: SaveMaskCollected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1

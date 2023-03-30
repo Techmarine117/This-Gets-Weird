@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.Events;
 
 public class DataManager : MonoBehaviour
 {
     [Header("File Storage Config")]
     [SerializeField] private string FileName;
     [SerializeField] private bool UseEncryption;
+
+    [SerializeField] private UnityEvent[] onMaskCollected;
     //[SerializeField] private DataManager[] DataManagers;
 
     public static DataManager Instance { get; private set; }
@@ -25,6 +28,10 @@ public class DataManager : MonoBehaviour
         Instance= this;
     }
 
+    public void SaveMaskCollected(int maskID)
+    {
+        /// save the gasme data that the mask was collected
+    }
     private void Start()
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
