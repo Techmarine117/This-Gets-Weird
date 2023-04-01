@@ -422,7 +422,7 @@ MonoBehaviour:
   - {fileID: 485940324}
   speed: 3
   Player: {fileID: 444021128}
-  PlayerRange: 20
+  PlayerRange: 100
   isLooping: 1
   agent: {fileID: 874779037}
   destinationRange: 1.1
