@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7493056833050633657}
   - component: {fileID: 7493056833050633656}
   - component: {fileID: 7493056833050633650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (2)
   m_TagString: pickUp
   m_Icon: {fileID: 0}
