@@ -82,9 +82,4 @@ public class PlayerRaycast : MonoBehaviour
         }
 
     }
-    public void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        //Gizmos.DrawSphere(transform.position + (transform.forward * SphereOffset), SphereRadius);
-    }
 }
