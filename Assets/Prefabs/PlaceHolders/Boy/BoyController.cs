@@ -18,10 +18,14 @@ public class BoyController : MonoBehaviour
     //{
     //    transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     //}
-    
+    private void Start()
+    {
+        StartCoroutine(Patrol());
+    }
+
     private void Update()
     {
-        Patrol();
+        
         var distance = Vector3.Distance(transform.position, Player.position);
         if ( distance >= PlayerRange)
         {
@@ -31,7 +35,7 @@ public class BoyController : MonoBehaviour
         {
             agent.speed = speed;
         }
-        Debug.Log(Vector3.Distance(transform.position, Player.position));
+        //Debug.Log(Vector3.Distance(transform.position, Player.position));
     }
 
     private void RotateToDirection()
@@ -40,16 +44,21 @@ public class BoyController : MonoBehaviour
         //transform.Rotate(walkingPoints[index].transform.position, Time.deltaTime);
     }
 
-    public void Patrol()
+    public IEnumerator Patrol()
     {
         if (Vector3.Distance(transform.position, walkingPoints[index].transform.position) < destinationRange)
         {
+            
             index++;
             if (index >= walkingPoints.Length && isLooping)
             {
                 index = 0;
             }
+            
+            
         }
         agent.SetDestination(walkingPoints[index].transform.position);
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(Patrol());
     }
 }

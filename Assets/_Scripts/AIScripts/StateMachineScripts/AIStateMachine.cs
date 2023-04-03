@@ -28,6 +28,7 @@ public class AIStateMachine : MonoBehaviour, IData
         public State CurrentState; //Local variable that represents our state
     public float destinationRange;
     public GameObject EndGameObj;
+    
 
 
 

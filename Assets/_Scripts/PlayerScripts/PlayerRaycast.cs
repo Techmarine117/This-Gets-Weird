@@ -14,6 +14,9 @@ public class PlayerRaycast : MonoBehaviour
     public Transform pickupPlacholder;
     //public AlphaChange alphaChange;
     public RaycastHit hit;
+    public float SphereRadius;
+    public float SphereOffset;
+    public LayerMask raycastMask;
     //public PrototypeMovement pm;
     [SerializeField] Selector selector;
 
@@ -50,7 +53,7 @@ public class PlayerRaycast : MonoBehaviour
 
         
 
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, Raylength))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, Raylength,raycastMask))
         {
             if (hit.collider.tag == "interactible")
             {

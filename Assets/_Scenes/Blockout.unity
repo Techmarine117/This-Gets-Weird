@@ -31466,7 +31466,7 @@ GameObject:
   - component: {fileID: 757975372}
   - component: {fileID: 757975371}
   - component: {fileID: 757975377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: pickUp
   m_Icon: {fileID: 0}
@@ -32947,7 +32947,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh664704
+  m_Name: pb_Mesh-91412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44418,6 +44418,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 555142840, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: SphereOffset
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555142840, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: SphereRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555142840, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: raycastMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 915040610, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_Height
       value: 1.46
@@ -49669,17 +49681,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.2858318, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28582522, b: 0.50980073, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0, g: 0.22700831, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22700173, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3015181, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30151153, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20350197, g: 0.3093612, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20349574, g: 0.30935463, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -54198,8 +54210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92da7f058a67f441ab84ae89090e982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileName: SaveFileWeird
+  FileName: SaveFileWeird1
   UseEncryption: 1
+  onMaskCollected: []
 --- !u!1 &1397445552
 GameObject:
   m_ObjectHideFlags: 0
@@ -54314,18 +54327,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22143984, g: 1, b: 0.3818983, a: 0.5019608}
+  shallowColor: {r: 0.2214267, g: 1, b: 0.38188517, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.20759836, b: 0.16446108, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.2075859, b: 0.16444862, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30139637, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30138323, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20338657, g: 0.30923945, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20337412, g: 0.3092263, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -75375,18 +75388,18 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.22143981, g: 1, b: 0.38189828, a: 0.5019608}
+  shallowColor: {r: 0.22142667, g: 1, b: 0.38188514, a: 0.5019608}
   deepColor: {r: 0.016570885, g: 0.50980073, b: 0.01176469, a: 1}
   colorDepth: 0.72
-  horizonColor: {r: 0.9333334, g: 0.20759833, b: 0.16446105, a: 1}
+  horizonColor: {r: 0.9333334, g: 0.20758587, b: 0.16444859, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30139634, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3013832, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20338655, g: 0.30923942, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20337409, g: 0.30922627, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -77524,6 +77537,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1396288139}
+        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+        m_MethodName: SaveMaskCollected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -103441,6 +103466,10 @@ PrefabInstance:
     - target: {fileID: 7493056833050633658, guid: 429a97aab5e4f684eaf3a8fd6d1a2cb7, type: 3}
       propertyPath: m_Name
       value: Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493056833050633658, guid: 429a97aab5e4f684eaf3a8fd6d1a2cb7, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7493056833050633659, guid: 429a97aab5e4f684eaf3a8fd6d1a2cb7, type: 3}
       propertyPath: m_RootOrder
