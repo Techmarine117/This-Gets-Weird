@@ -23,7 +23,7 @@ public class AIRayCast : MonoBehaviour
         }
        else
        {
-           ViewAngle = 200;
+           ViewAngle = 360;
         }
     }
 

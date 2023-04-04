@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555142836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.9999924, z: 0}
+  m_LocalPosition: {x: 0.000007138047, y: 1.9999847, z: -0.0000042892025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -107,6 +107,11 @@ MonoBehaviour:
   Raylength: 5
   isPickup: 0
   pickupPlacholder: {fileID: 1145865193}
+  SphereRadius: 1
+  SphereOffset: 1.5
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 128
   selector: {fileID: 1930044390}
 --- !u!114 &201148138
 MonoBehaviour:
@@ -838,7 +843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593727746557118}
   m_LocalRotation: {x: -0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.9999924, z: 0}
+  m_LocalPosition: {x: 0.000007138047, y: 1.9999847, z: -0.0000042892025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -989,6 +994,11 @@ MonoBehaviour:
   Raylength: 5
   isPickup: 0
   pickupPlacholder: {fileID: 1145865193}
+  SphereRadius: 0
+  SphereOffset: 0
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
   selector: {fileID: 0}
 --- !u!114 &1622868772
 MonoBehaviour:
@@ -1081,9 +1091,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 4
   canRun: 1
-  runSpeed: 10
+  runSpeed: 7
   runningKey: 304
 --- !u!114 &114497868231759342
 MonoBehaviour:
@@ -1116,7 +1126,7 @@ MonoBehaviour:
   movementSpeed: 2
   headToLower: {fileID: 555142837}
   crouchYHeadPosition: 1
-  colliderToLower: {fileID: 0}
+  colliderToLower: {fileID: 915040610}
 --- !u!114 &1930044389
 MonoBehaviour:
   m_ObjectHideFlags: 0

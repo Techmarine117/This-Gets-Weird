@@ -52,4 +52,18 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("level Loading");
         SceneManager.LoadScene("mainMenu");
     }
+
+    public void BookResume()
+    {
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void BookPause()
+    {
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
 }

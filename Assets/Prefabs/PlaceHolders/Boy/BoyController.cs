@@ -10,6 +10,7 @@ public class BoyController : MonoBehaviour
     [SerializeField] Transform Player;
     [SerializeField] float PlayerRange;
     [SerializeField] bool isLooping = false;
+    [SerializeField] float pauseLength = 3f;
     public NavMeshAgent agent;
     int index;
     public float destinationRange;
@@ -58,7 +59,7 @@ public class BoyController : MonoBehaviour
             
         }
         agent.SetDestination(walkingPoints[index].transform.position);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(pauseLength);
         StartCoroutine(Patrol());
     }
 }
