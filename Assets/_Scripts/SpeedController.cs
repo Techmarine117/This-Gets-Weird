@@ -17,4 +17,14 @@ public class SpeedController : MonoBehaviour
     {
         FPSmvmt.speed = tempSpeed;
     }
+
+    public void CanRun()
+    {
+        FPSmvmt.canRun = true;
+    }
+
+    public void SpeedChangeAfterIntro()
+    {
+        FPSmvmt.speed = FPSmvmt.speedAfterIntro;
+    }
 }

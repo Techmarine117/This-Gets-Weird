@@ -7,6 +7,14 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool Paused = false;
     public GameObject pauseMenuUi;
+    [SerializeField] FirstPersonLook FPLook;
+
+    float tempSensitivity;
+
+    private void Start()
+    {
+        tempSensitivity = FPLook.sensitivity;
+    }
 
     public void Update()
     {
@@ -30,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         Paused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        FPLook.sensitivity = tempSensitivity;
     }
 
     public void Pause()
@@ -39,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         Paused = true;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
+        FPLook.sensitivity = 0f;
     }
     public void quitGame()
     {
@@ -55,14 +65,12 @@ public class PauseMenu : MonoBehaviour
 
     public void BookResume()
     {
-        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     public void BookPause()
     {
-        Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
