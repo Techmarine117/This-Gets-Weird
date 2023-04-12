@@ -284,6 +284,40 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+  - id: 5
+    fields:
+    - title: Name
+      value: Look at the Magical Spellbook
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations: []
   variables:
   - id: 1
@@ -6386,8 +6420,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 247
-        y: 11
+        x: 120
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -6447,8 +6481,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 247
-        y: 61
+        x: 120
+        y: 70
         width: 160
         height: 30
     - id: 2
@@ -6502,8 +6536,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 121
-        y: 169
+        x: 30
+        y: 120
         width: 160
         height: 30
     - id: 3
@@ -6551,8 +6585,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 402
-        y: 159
+        x: 210
+        y: 120
         width: 160
         height: 30
     - id: 4
@@ -6606,8 +6640,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 115
-        y: 246
+        x: 120
+        y: 170
         width: 160
         height: 30
     - id: 5
@@ -6661,8 +6695,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 118
-        y: 327
+        x: 120
+        y: 220
         width: 160
         height: 30
     - id: 6
@@ -6716,8 +6750,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 22
-        y: 403
+        x: 120
+        y: 270
         width: 160
         height: 30
     - id: 7
@@ -6771,8 +6805,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 88.02797
-        y: 517.3344
+        x: 120
+        y: 370
         width: 160
         height: 30
     - id: 8
@@ -6826,8 +6860,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 309.81317
-        y: 561.945
+        x: 120
+        y: 420
         width: 160
         height: 30
     - id: 9
@@ -6881,8 +6915,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 341.60434
-        y: 666.0439
+        x: 120
+        y: 470
         width: 160
         height: 30
     - id: 10
@@ -6936,8 +6970,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 434.38177
-        y: 793.4179
+        x: 120
+        y: 520
         width: 160
         height: 30
     - id: 11
@@ -6991,8 +7025,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 22
-        y: 453
+        x: 120
+        y: 320
         width: 160
         height: 30
     - id: 12
@@ -7041,12 +7075,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 365.8104
-        y: 926.27496
+        x: 120
+        y: 570
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 24.999939, y: 120.31244}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.64000034
   - id: 12
     fields:
@@ -7481,7 +7515,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.7600002
   - id: 13
     fields:
     - title: Title
@@ -7628,8 +7662,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 453
-        y: 99
+        x: 467
+        y: 103
         width: 160
         height: 30
     entryGroups: []
@@ -8384,7 +8418,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Alright, well I'm way too tired to hunt something. Doesn't look like
-          there is too my wildlife here anyway...
+          there is too much wildlife here anyway...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8466,7 +8500,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 1.369873}
     canvasZoom: 0.73000026
   - id: 15
     fields:
@@ -8732,7 +8766,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 720
+        y: 770
         width: 160
         height: 30
     - id: 5
@@ -8787,7 +8821,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 770
+        y: 820
         width: 160
         height: 30
     - id: 6
@@ -8841,8 +8875,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 66.19961
-        y: 1139.6934
+        x: 30
+        y: 1170
         width: 160
         height: 30
     - id: 7
@@ -9116,8 +9150,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 309.59158
-        y: 278.16336
+        x: 30
+        y: 370
         width: 160
         height: 30
     - id: 12
@@ -9180,7 +9214,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 420
+        y: 470
         width: 160
         height: 30
     - id: 13
@@ -9235,7 +9269,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 470
+        y: 520
         width: 160
         height: 30
     - id: 14
@@ -9290,7 +9324,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 517.95917
+        y: 570
         width: 160
         height: 30
     - id: 15
@@ -9344,8 +9378,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390.6383
-        y: 481.70215
+        x: 30
+        y: 620
         width: 160
         height: 30
     - id: 16
@@ -9401,7 +9435,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 620
+        y: 720
         width: 160
         height: 30
     - id: 18
@@ -9455,8 +9489,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 414.91074
-        y: 368.58893
+        x: 30
+        y: 420
         width: 160
         height: 30
     - id: 19
@@ -9512,8 +9546,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 433.19147
-        y: 573.1915
+        x: 30
+        y: 670
         width: 160
         height: 30
     - id: 20
@@ -9567,8 +9601,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 839.5876
+        x: 30
+        y: 870
         width: 160
         height: 30
     - id: 21
@@ -9622,8 +9656,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 889.5876
+        x: 30
+        y: 920
         width: 160
         height: 30
     - id: 22
@@ -9677,8 +9711,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 939.5876
+        x: 30
+        y: 970
         width: 160
         height: 30
     - id: 23
@@ -9732,8 +9766,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 989.5876
+        x: 30
+        y: 1020
         width: 160
         height: 30
     - id: 24
@@ -9788,8 +9822,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 1039.5876
+        x: 30
+        y: 1070
         width: 160
         height: 30
     - id: 25
@@ -9844,8 +9878,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55.773193
-        y: 1088.4512
+        x: 30
+        y: 1120
         width: 160
         height: 30
     - id: 26
@@ -9893,13 +9927,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 66.19961
-        y: 1189.6934
+        x: 30
+        y: 1220
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1.1363525, y: 830.6802}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 1.3698425, y: 0}
+    canvasZoom: 0.73000026
   - id: 16
     fields:
     - title: Title
@@ -9996,6 +10030,12 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
+      - originConversationID: 16
+        originDialogueID: 0
+        destinationConversationID: 16
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -10052,7 +10092,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Variable["LookBook1"] == false
+      conditionsString: CurrentQuestState("Look at the Magical Spellbook") == "unassigned"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10107,7 +10147,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: Variable["LookBook1"] == true
+      conditionsString: CurrentQuestState("Look at the Magical Spellbook") == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10465,7 +10505,62 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
+        value: Argh! Well get going before I turn into cat food!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 10
+        destinationConversationID: 16
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 331
+        y: 513
+        width: 160
+        height: 30
+    - id: 11
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Ok, ok. I'll get on it!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -10481,19 +10576,71 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestState("Destroy the Mask of Despair", "active");
+
+        SetQuestState("Look
+        at the Magical Spellbook", "success")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 331
-        y: 513
+        y: 561.86365
+        width: 160
+        height: 30
+    - id: 12
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Get going!
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: CurrentQuestState("Look at the Magical Spellbook") == "success"
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 591
+        y: 114
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 141}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.8800001
   - id: 17
     fields:
     - title: Title
@@ -10667,8 +10814,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 147
-        y: 128
+        x: 85
+        y: 121
         width: 160
         height: 30
     - id: 2
