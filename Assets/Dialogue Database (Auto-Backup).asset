@@ -1783,8 +1783,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 393
-        y: 157
+        x: 557
+        y: 231
         width: 160
         height: 30
     - id: 5
@@ -1961,11 +1961,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Look at these branches. All twisted and stuff...
+        value: I've been thinking a lot about Mother lately and how she treats us...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'Delay(4);
+        value: 'Delay(5);
 
           SetContinueMode(false)'
         type: 0
@@ -1991,8 +1991,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 342
-        y: 330
+        x: 345
+        y: 236
         width: 160
         height: 30
     - id: 9
@@ -2018,11 +2018,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hey! Don't say that!!
+        value: I mean, she's always yelling at us. Putting us down. Sometimes hits
+          us...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'Delay(4);
+        value: 'Delay(5);
 
           SetContinueMode(false)'
         type: 0
@@ -2048,8 +2049,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 638
-        y: 401
+        x: 367
+        y: 411
         width: 160
         height: 30
     - id: 10
@@ -2075,12 +2076,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Ya, it's kind of eerie. Almost like they are going to reach out and
-          grab you!!
+        value: Ya, she is kind of hard on us sometimes...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'Delay(5);
+        value: 'Delay(4);
 
           SetContinueMode(false)'
         type: 0
@@ -2107,7 +2107,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 340
-        y: 418
+        y: 327
         width: 160
         height: 30
     - id: 11
@@ -2133,11 +2133,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hahaha!!
+        value: Maybe one day we will leave. Go on our own adventure. Just you and
+          I...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 'Delay(4);
+        value: 'Delay(5);
 
           SetContinueMode(false)'
         type: 0
@@ -2157,12 +2158,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 637
-        y: 493
+        x: 407
+        y: 506
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1}
+    canvasScrollPosition: {x: 0, y: 58}
     canvasZoom: 1
   - id: 3
     fields:
@@ -8626,7 +8627,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oh stop your crying you little brat! Nobody is coming to save you.
+        value: Oh stop your crying you useless brat! Nobody is coming to save you.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8736,8 +8737,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I think I might go and take a little CAT NAP while I wait for this
-          spell to kick in. Hee Hee!
+        value: I think I might go and take a little CAT NAP while I wait to CONSUME
+          you. Hee Hee!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -9516,9 +9517,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Hmmmm....
-
-'
+        value: Hmmmm....
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -9932,8 +9931,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1.3698425, y: 0}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 0, y: 368.7498}
+    canvasZoom: 0.64000034
   - id: 16
     fields:
     - title: Title
