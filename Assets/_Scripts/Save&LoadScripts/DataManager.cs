@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine.Events;
 using Unity.Mathematics;
 using PixelCrushers.DialogueSystem;
+using PixelCrushers;
 
 public class DataManager : MonoBehaviour, IData
 {
@@ -37,8 +38,20 @@ public class DataManager : MonoBehaviour, IData
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
         this.DataObjects = FindAllDataObjects();
-        LoadGame();
+        //LoadGame();
         //DataManagers = FindObjectsOfType<DataManager>();
+        this.gameData = dataHandler.Load();
+
+        if (this.gameData == null)
+        {
+            Debug.Log("no data was found. Initializing data to defaults");
+            NewGame();
+        }
+
+        foreach (IData data in DataObjects)
+        {
+            data.LoadData(gameData);
+        }
     }
 
     public void NewGame()
@@ -48,18 +61,10 @@ public class DataManager : MonoBehaviour, IData
 
     public void LoadGame()
     {
-        this.gameData = dataHandler.Load();
+        FindObjectOfType<SaveSystem>().LoadGameFromSlot(0);
+        
+        
 
-        if(this.gameData == null)
-        {
-            Debug.Log("no data was found. Initializing data to defaults");
-            NewGame();
-        }
-
-        foreach(IData data in DataObjects)
-        {
-            data.LoadData(gameData);
-        }
     }
 
     public void SaveGame()
@@ -88,9 +93,9 @@ public class DataManager : MonoBehaviour, IData
 
     public void SaveData(ref GameData data)
     {
-        data.Mask1 = dialogueDatabase.GetVariable("Mask1Collected").InitialBoolValue;
-        data.Mask2 = dialogueDatabase.GetVariable("Mask2Collected").InitialBoolValue;
-        data.Mask3 = dialogueDatabase.GetVariable("Mask3Collected").InitialBoolValue;
+        //data.Mask1 = dialogueDatabase.GetVariable("Mask1Collected").InitialBoolValue;
+        //data.Mask2 = dialogueDatabase.GetVariable("Mask2Collected").InitialBoolValue;
+        //data.Mask3 = dialogueDatabase.GetVariable("Mask3Collected").InitialBoolValue;
     }
 
     public void LoadData(GameData data)

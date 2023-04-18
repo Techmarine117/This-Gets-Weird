@@ -1,3 +1,4 @@
+using PixelCrushers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class SavePoint : MonoBehaviour
         {
             Debug.Log("Triggered");
             dataManager.SaveGame();
-            
+            FindObjectOfType<SaveSystem>().SaveGameToSlot(0);
         }
     }
 
