@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.Events;
+using Unity.Mathematics;
+using PixelCrushers.DialogueSystem;
 
-public class DataManager : MonoBehaviour
+public class DataManager : MonoBehaviour, IData
 {
     [Header("File Storage Config")]
     [SerializeField] private string FileName;
@@ -18,6 +20,7 @@ public class DataManager : MonoBehaviour
     private GameData gameData;
     private List<IData> DataObjects;
     private FileDataHandler dataHandler;
+    [SerializeField] private DialogueDatabase dialogueDatabase;
 
     private void Awake()
     {
@@ -26,12 +29,10 @@ public class DataManager : MonoBehaviour
             Debug.LogError("There is more than one data manager in the scene");
         }
         Instance= this;
+
+        int MasksCollected = onMaskCollected.Length;
     }
 
-    public void SaveMaskCollected(int maskID)
-    {
-        /// save the gasme data that the mask was collected
-    }
     private void Start()
     {
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
@@ -73,15 +74,27 @@ public class DataManager : MonoBehaviour
 
     }
 
-    private void OnApplicationQuit()
-    {
-        SaveGame();
-    }
+   // private void OnApplicationQuit()
+    //{
+        //SaveGame();
+   // }
 
     private List<IData> FindAllDataObjects()
     {
         IEnumerable<IData> dataObjects = FindObjectsOfType<MonoBehaviour>().OfType<IData>();
 
         return new List<IData>(dataObjects);
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.Mask1 = dialogueDatabase.GetVariable("Mask1Collected").InitialBoolValue;
+        data.Mask2 = dialogueDatabase.GetVariable("Mask2Collected").InitialBoolValue;
+        data.Mask3 = dialogueDatabase.GetVariable("Mask3Collected").InitialBoolValue;
+    }
+
+    public void LoadData(GameData data)
+    {
+        //this.transform.position = data.AIPosition;
     }
 }
