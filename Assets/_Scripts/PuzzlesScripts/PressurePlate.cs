@@ -8,13 +8,14 @@ public class PressurePlate : MonoBehaviour
     //public float deactivateDelay = 1f;
     //public Animator platAnim;
 
-    public AudioSource audio;
-    public AudioClip PressurePlateClip;
+    public AudioSource audioOn;
+    public AudioSource audioOff;
+    //public AudioClip PressurePlateClip;
 
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
+        //audio = GetComponent<AudioSource>();
     }
 
 
@@ -27,13 +28,13 @@ public class PressurePlate : MonoBehaviour
         if (GameObject.FindWithTag("FPSPlayer") || GameObject.FindWithTag("pickUp"))
         {
             isPlateActive = true;
-            audio.PlayOneShot(PressurePlateClip, 1);
+            audioOn.Play();
         }
     }
     private void OnTriggerExit(Collider other)
     {
         isPlateActive = false;
-        audio.PlayOneShot(PressurePlateClip, 1);
+        audioOff.Play();
     }
 
     //IEnumerator Delay()

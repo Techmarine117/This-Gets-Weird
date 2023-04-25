@@ -8,6 +8,8 @@ public class SwitchManager : MonoBehaviour
 
     public bool isSwitchOn = false;
 
+    [SerializeField] AudioSource lever;
+
     
     public void SwitchControl()
     {
@@ -21,6 +23,7 @@ public class SwitchManager : MonoBehaviour
     public IEnumerator SwitchOff()
     {
         switchAnim.SetTrigger("Off");
+        lever.Play();
         yield return new WaitForSeconds(0.35f);
         isSwitchOn = false;
 
@@ -28,6 +31,7 @@ public class SwitchManager : MonoBehaviour
     public IEnumerator SwitchOn()
     {
         switchAnim.SetTrigger("On");
+        lever.Play();
         yield return new WaitForSeconds(0.35f);
         isSwitchOn = true;
     }

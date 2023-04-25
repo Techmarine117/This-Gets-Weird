@@ -1,0 +1,7 @@
+Things to Note: 
+
+- The leaves the opacity map can affect that part only. The texture for this ends in .tif and it has an embedded Alpha Map 
+
+- The .tif file needs to be inserted into the Base Map 
+
+- AO and Metallic Smoothness (for the tree trunks and branches) are optional as they do not affect the texture as much, they are just there for propriety 

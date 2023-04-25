@@ -7,6 +7,7 @@ public class SavePoint : MonoBehaviour
 {
 
     public DataManager dataManager;
+    [SerializeField] GameObject savingAni;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +20,17 @@ public class SavePoint : MonoBehaviour
         if (other.tag == "FPSPlayer")
         {
             Debug.Log("Triggered");
+            StartCoroutine(SaveAnim());
             dataManager.SaveGame();
             FindObjectOfType<SaveSystem>().SaveGameToSlot(0);
+            
         }
     }
 
-
+    IEnumerator SaveAnim()
+    {
+        savingAni.SetActive(true);
+        yield return new WaitForSeconds(3.5f);
+        savingAni.SetActive(false);
+    }
 }

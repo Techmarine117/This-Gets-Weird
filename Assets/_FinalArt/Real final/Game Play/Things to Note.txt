@@ -1,0 +1,7 @@
+Things to Note:
+
+- You can remove the Metallic Smoothness for the Switch in Unity because it makes the overall texture darker but that is up to you 
+
+- Pipes 1-3 textures were combined for efficiency but I imported both separate and combined models just in case
+
+- Pipe 4 wheel was exported separately so you can turn that as needed  
