@@ -1,0 +1,5 @@
+Things to Note:
+
+- I made sure to separate the gate so that you can swing it open
+
+- The bridge comes in 2 materials, the railing (the curved sticks) and the bridge logs are 1 material while the railing support (the straight sticks) are another 1 

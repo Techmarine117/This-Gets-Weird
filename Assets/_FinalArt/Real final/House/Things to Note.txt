@@ -1,0 +1,24 @@
+Things to Note: 
+
+Meshes
+- [The House] is combined but it comes in separate pieces when you import it in Unity so that you can move them around as needed
+
+- [The smaller meshes] are the separated pieces in case you want to put them in group by group and not all together
+
+- [The windows] do not have glass in them, I made them for the sake of the exhibition, but I did not make an official texture for them in Substance. I can export them as a separate model and if you know how to make one in Unity that would be better, but if not, please let me know. 
+
+Textures
+- There are 8 combined textures [see Unity Setup Reference Photo]
+	- **House Bricks** (all sides of the house) 
+	- **Candy Corn** (all sides of the house)
+	- **Door + Hinge** (separated for rotation purposes)
+	- **House Body** (including roof support and chimney)
+	- **House Candies** (wall + roof)
+	- **Outside Candies** (lollipops, gumdrops, bricks)
+	- **Roof** (including ear roofs and all window panes)  
+	- **Windows + Nose** (front windows of house) 
+- Some of the textures require Metallic while others don't (this is largely due to preference but the textures WITH metallic are:
+	- All candies (except candy corn texture)
+	- Roof and windows + nose (in total 4 textures)
+
+
