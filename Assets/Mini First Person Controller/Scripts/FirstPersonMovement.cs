@@ -45,10 +45,12 @@ public class FirstPersonMovement : MonoBehaviour,IData
     public void LoadData(GameData data)
     {
         this.transform.position = data.PlayerPosition;
+        speed = data.speed;
     }
 
     public void SaveData(ref GameData data)
     {
         data.PlayerPosition = this.transform.position;
+        data.speed = speed;
     }
 }

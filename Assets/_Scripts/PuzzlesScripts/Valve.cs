@@ -33,6 +33,7 @@ namespace Valve
         IEnumerator WaterRaised()
         {
             valveAnim.SetTrigger("On");
+            waterAnim.ResetTrigger("Lower");
             waterAnim.SetTrigger("Raise");
             waterParticles2.Play();
             waterSound.Play();
@@ -46,6 +47,7 @@ namespace Valve
         IEnumerator WaterLowered()
         {
             valveAnim.SetTrigger("Off");
+            waterAnim.ResetTrigger("Raise");
             waterAnim.SetTrigger("Lower");
             waterParticles.Play();
             waterSound.Play();
