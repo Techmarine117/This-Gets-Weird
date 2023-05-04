@@ -15,6 +15,8 @@ public class BoyController : MonoBehaviour
     int index;
     public float destinationRange;
 
+    [SerializeField] Animator animator;
+
     //private void LateUpdate()
     //{
     //    transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
