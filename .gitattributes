@@ -7,3 +7,4 @@ Assets/_FinalArt/Real[[:space:]]final/Lantern/street_lantern.fbx filter=lfs diff
 Assets/_FinalArt/Real[[:space:]]final/House/Chest/chest.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/_FinalArt/Real[[:space:]]final/House/BookShelf/book_shelf.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/_FinalArt/Real[[:space:]]final/Witch/cat_lady_model.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/_FinalArt/Real[[:space:]]final/Witch/cat_lady_correct_model.fbx filter=lfs diff=lfs merge=lfs -text
