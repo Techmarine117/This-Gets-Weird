@@ -5,3 +5,4 @@ Assets/_FinalArt/Real[[:space:]]final/Mushrooms/mushrooms.fbx filter=lfs diff=lf
 Assets/_FinalArt/Real[[:space:]]final/House/Cage/cage.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/_FinalArt/Real[[:space:]]final/Lantern/street_lantern.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/_FinalArt/Real[[:space:]]final/House/Chest/chest.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/_FinalArt/Real[[:space:]]final/House/BookShelf/book_shelf.fbx filter=lfs diff=lfs merge=lfs -text
