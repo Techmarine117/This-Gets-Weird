@@ -25,6 +25,7 @@ public class AIStateMachine : MonoBehaviour, IData
     AIRayCast Ray;
     public float chaseRange;
     public float attackRange;
+    public float killRange;
     public State CurrentState; //Local variable that represents our state
     public float destinationRange;
     public GameObject EndGameObj;
@@ -115,18 +116,27 @@ public class AIStateMachine : MonoBehaviour, IData
     public void Chasing()
     {
         agent.SetDestination(player.transform.position);
-
-
+        anim.SetBool("Pounceing", false);
     }
 
     public void Attacking()
     {
-        EndGameObj.SetActive(true);
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
         // attackCol.SetActive(true);
-        //  anim.SetBool("IsAttacking", true);
+        anim.SetBool("Pounceing", true);
+    }
+    public void EndGame()
+    {
+        if(Vector3.Distance(gameObject.transform.position,player.transform.position) <= killRange)
+        {
+            EndGameObj.SetActive(true);
+            Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
+        else if (Vector3.Distance(gameObject.transform.position, player.transform.position) > killRange)
+        {
+            anim.SetBool("Pounceing", false);
+        }
     }
 
     public void LoadData(GameData data)
