@@ -21,7 +21,7 @@ public class StupidTrigger : MonoBehaviour
     }
     IEnumerator Activate()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         FPLook.EnableLook();
         SCon.ResumeSpeed();
         //stuTrig.SetActive(false);

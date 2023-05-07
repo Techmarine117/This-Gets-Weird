@@ -27,4 +27,10 @@ public class SpeedController : MonoBehaviour
     {
         FPSmvmt.speed = FPSmvmt.speedAfterIntro;
     }
+
+    public void ReduceSpeed()
+    {
+        FPSmvmt.speed = 2;
+        FPSmvmt.canRun = false;
+    }
 }
