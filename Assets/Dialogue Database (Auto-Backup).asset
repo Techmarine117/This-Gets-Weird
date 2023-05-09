@@ -658,6 +658,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 14
+    fields:
+    - title: Name
+      value: Convo2
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -1132,7 +1146,9 @@ MonoBehaviour:
         value: 'SetActive(Peasant Girl Intro,true);
 
           SetActive(H - This
-          isnt the way,true)'
+          isnt the way,true);
+
+          SetActive(H - who is that,true)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -1325,7 +1341,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 245.45453
+        x: 244.45453
         y: 260.49585
         width: 160
         height: 30
@@ -7239,18 +7255,6 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
-      - originConversationID: 12
-        originDialogueID: 0
-        destinationConversationID: 12
-        destinationDialogueID: 13
-        isConnector: 0
-        priority: 2
-      - originConversationID: 12
-        originDialogueID: 0
-        destinationConversationID: 12
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7306,7 +7310,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestState("Burn the Mask of Abuse") == "unassigned"
+      conditionsString: Variable["Convo2"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -7314,7 +7318,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 314.36844
-        y: 111.36839
+        y: 110.19191
         width: 160
         height: 30
     - id: 2
@@ -7813,55 +7817,6 @@ MonoBehaviour:
         y: 750.7138
         width: 160
         height: 30
-    - id: 13
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Burn the mask!!!
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 12
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: CurrentQuestState("Burn the Mask of Abuse") == "active"
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 582.07513
-        y: 194.97737
-        width: 160
-        height: 30
     - id: 14
       fields:
       - title: Title
@@ -7956,7 +7911,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: SetQuestState("Burn the Mask of Abuse", "active")
+      userScript: Variable["Convo2"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7964,55 +7919,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 267.863
         y: 974.809
-        width: 160
-        height: 30
-    - id: 16
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Oh God... what am I going to do...
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 12
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: CurrentQuestState("Burn the Mask of Abuse") == "success"
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 832.263
-        y: 143.7368
         width: 160
         height: 30
     - id: 17
@@ -8181,8 +8087,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 409.75616}
-    canvasZoom: 0.8200002
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.85000014
   - id: 13
     fields:
     - title: Title
@@ -9848,10 +9754,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'By the power of the witching hour,
-
-          Let this boy turn into
-          a mouse, with all its power!'
+        value: By the power of the witching hour, Let this boy turn into a mouse,
+          with all its power!
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence

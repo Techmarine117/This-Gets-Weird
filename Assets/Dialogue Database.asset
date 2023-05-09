@@ -1146,7 +1146,9 @@ MonoBehaviour:
         value: 'SetActive(Peasant Girl Intro,true);
 
           SetActive(H - This
-          isnt the way,true)'
+          isnt the way,true);
+
+          SetActive(H - who is that,true)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -1339,7 +1341,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 245.45453
+        x: 244.45453
         y: 260.49585
         width: 160
         height: 30
@@ -7907,7 +7909,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 15
+        destinationConversationID: 12
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: Variable["Convo2"] = true
       onExecute:
@@ -8084,8 +8092,57 @@ MonoBehaviour:
         y: 373.6277
         width: 160
         height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Did you destroy that other mask yet??
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 266.68655
+        y: 1067.1619
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 512.94104}
     canvasZoom: 0.85000014
   - id: 13
     fields:
@@ -11293,7 +11350,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Ya, she didn't take too kindly to me resisting...
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -15704,7 +15761,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: SetContinueMode(true)
         type: 0
         typeString: 
       conversationID: 24
@@ -16432,7 +16489,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetContinueMode(true)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 24
