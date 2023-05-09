@@ -6,6 +6,8 @@ public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
     [SerializeField] Transform cubeSpawnPoint;
+    [SerializeField] Transform player;
+    [SerializeField] GameObject UIObj;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "FPSPlayer")
@@ -19,4 +21,12 @@ public class PlayerSpawn : MonoBehaviour
         }
     }
 
+    public void SpawnFunction()
+    {
+        player.transform.position = spawnPoint.transform.position;
+        Time.timeScale = 1.0f;
+        Cursor.visible = false;
+        UIObj.SetActive(false);
+        
+    }
 }

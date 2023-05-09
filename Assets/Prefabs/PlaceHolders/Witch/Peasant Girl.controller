@@ -10,11 +10,11 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 5795618494003783263}
-    m_Position: {x: 370, y: -40, z: 0}
+    m_State: {fileID: 2511584857148512973}
+    m_Position: {x: 427.7705, y: 242.87485, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3920423384425164842}
-    m_Position: {x: 400, y: 150, z: 0}
+    m_State: {fileID: 6894955514119614694}
+    m_Position: {x: 582.5945, y: 28.59845, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -24,7 +24,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 3920423384425164842}
+  m_DefaultState: {fileID: 6894955514119614694}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -53,14 +53,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &3920423384425164842
+--- !u!1102 &2511584857148512973
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walking
+  m_Name: IdleFinal
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -73,20 +73,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 8eb45a9a3638b57449f84636422f4769, type: 3}
+  m_Motion: {fileID: 7400000, guid: 149cd4044c254cc488bf4e7b02a33535, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5795618494003783263
+--- !u!1102 &6894955514119614694
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rumba Dancing
+  m_Name: FinalWalk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -99,7 +99,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 49a61f3f32c70c943a2fa63f0bbf782c, type: 3}
+  m_Motion: {fileID: 7400000, guid: e28740e669b902e4f890e8fd9d00a171, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
