@@ -83,7 +83,7 @@ MonoBehaviour:
       value: Hansel
       type: 0
       typeString: 
-    portrait: {fileID: 2800000, guid: e09467c22cbe5934b8aade1f88446893, type: 3}
+    portrait: {fileID: 2800000, guid: 5244e331597b3764c93d16a1b4fecc1f, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -109,7 +109,7 @@ MonoBehaviour:
       value: The Witch
       type: 0
       typeString: 
-    portrait: {fileID: 2800000, guid: bab88ae155dd12840946b123192639de, type: 3}
+    portrait: {fileID: 2800000, guid: 49ad4e88f63738a469154d5d1ffefc78, type: 3}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
@@ -221,7 +221,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Trackable
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
   - id: 3
@@ -358,6 +358,14 @@ MonoBehaviour:
       typeString: CustomFieldType_QuestState
     - title: Is Item
       value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
   - id: 8
@@ -15266,11 +15274,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: test
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SetActive(BloodSplat,true)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21

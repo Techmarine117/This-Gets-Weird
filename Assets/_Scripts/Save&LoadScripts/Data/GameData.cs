@@ -15,7 +15,7 @@ public class GameData
         
         PlayerPosition = new Vector3(80,51,9);
         AIPosition = Vector3.zero;
-        speed = 6;
+        speed = 2;
 
     }
 }
