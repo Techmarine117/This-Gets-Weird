@@ -36,17 +36,16 @@ public class DataManager : MonoBehaviour, IData
 
     private void Start()
     {
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
-        this.DataObjects = FindAllDataObjects();
-        //LoadGame();
-        //DataManagers = FindObjectsOfType<DataManager>();
-        this.gameData = dataHandler.Load();
-
         if (this.gameData == null)
         {
             Debug.Log("no data was found. Initializing data to defaults");
             NewGame();
         }
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, FileName, UseEncryption);
+        this.DataObjects = FindAllDataObjects();
+        //LoadGame();
+        //DataManagers = FindObjectsOfType<DataManager>();
+        this.gameData = dataHandler.Load();
 
         foreach (IData data in DataObjects)
         {

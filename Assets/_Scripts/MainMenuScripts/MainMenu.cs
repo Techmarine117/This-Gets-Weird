@@ -7,6 +7,9 @@ using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.InputSystem;
+using System.IO;
+using JetBrains.Annotations;
+using UnityEngine.Playables;
 
 public class MainMenu : MonoBehaviour
 {
@@ -14,6 +17,8 @@ public class MainMenu : MonoBehaviour
     public string NewGame;
     private string LevelToLoad;
     public DataManager dataManager;
+    private FileDataHandler dataHandler;
+    private GameData gameData;
     public GameObject NoSaveObj = null;
 
     [Header("Volume Settings")]
@@ -189,6 +194,15 @@ public class MainMenu : MonoBehaviour
     }
 
     public void loadNewGame()
+    {
+        Debug.Log("level Loading");
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, "SavedLevel", true);
+        //this.dataHandler.DeleteSave();
+        this.gameData = new GameData();
+        this.dataHandler.Save(this.gameData);
+        SceneManager.LoadScene(NewGame);
+    }
+    public void LoadGame()
     {
         Debug.Log("level Loading");
         SceneManager.LoadScene(NewGame);
