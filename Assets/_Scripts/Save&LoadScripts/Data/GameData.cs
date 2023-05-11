@@ -7,7 +7,7 @@ public class GameData
 {
     
     public Vector3 PlayerPosition, AIPosition;
-    public float speed = 3;
+    public float speed = 2;
     public float speedAfterIntro = 6;
 
     //the value we defined in this constructor will be the default values
@@ -16,7 +16,7 @@ public class GameData
         
         PlayerPosition = new Vector3(80,51,9);
         AIPosition = Vector3.zero;
-        speed = 6;
+        speed = 2;
         speedAfterIntro = 6;
 
     }
